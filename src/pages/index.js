@@ -20,11 +20,13 @@ const IndexPage = () => (
         <SEO title="Home" />
         <Intro />
         <Infography />
-        <ProduktDesign id="home" />
+        <ProduktDesign />
         <Produktion />
         <Importieren />
         <Logistik />
         <Fulhen />
+        <Infography/>
+        <ProduktDesign/>
         <ContactForm />
         <Blog />
       </Layout>
