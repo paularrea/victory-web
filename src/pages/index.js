@@ -2,7 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
-import styles from "../styles/index.scss"
+import styles from "../styles/index.module.scss"
 
 import Intro from "../components/1.intro/intro"
 import Infography from "../components/2.Infography/infography"
