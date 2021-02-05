@@ -1,7 +1,13 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/browser-apis/
- */
-
-// You can delete this file if you're not using it
+import "./src/styles/index.module.scss"
+import "./src/styles/layout.module.scss"
+import "./src/styles/footer.module.scss"
+import "./src/styles/intro.module.scss"
+import "./src/styles/infography.module.scss"
+import "./src/styles/produktDesign.module.scss"
+import "./src/styles/produktion.module.scss"
+import "./src/styles/importieren.module.scss"
+import "./src/styles/logistik.module.scss"
+import "./src/styles/fuhlen.module.scss"
+import "./src/styles/form.module.scss"
+import "./src/styles/blog.module.scss"
+import "./src/styles/about.module.scss"
