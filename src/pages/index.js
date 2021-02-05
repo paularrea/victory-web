@@ -12,7 +12,7 @@ import Importieren from "../components/5.importieren/importieren"
 import Logistik from "../components/6.logistik/logistik"
 import Fulhen from "../components/7.fuhlen/fuhlen"
 import ContactForm from "../components/8.Contact/form"
-import Blog from "../components/9.Blog/blog"
+import Blog from  "../components/9.Blog/blog"
 
 const IndexPage = () => (
     <div className={styles.website}>
