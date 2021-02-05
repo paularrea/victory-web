@@ -27,12 +27,24 @@ const IndexPage = () => (
       <div>
         <ProduktDesign />
       </div>
-      <Produktion />
-      <Importieren />
-      <Logistik />
-      <Fulhen />
-      <ContactForm />
-      <Blog />
+      <div>
+        <Produktion />
+      </div>
+      <div>
+        <Importieren />
+      </div>
+      <div>
+        <Logistik />
+      </div>
+      <div>
+        <Fulhen />
+      </div>
+      <div>
+        <ContactForm />
+      </div>
+      <div>
+        <Blog />
+      </div>
     </Layout>
   </div>
 );
