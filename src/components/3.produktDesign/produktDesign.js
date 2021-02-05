@@ -1,9 +1,9 @@
-import React from "react"
-import styles from "../../styles/produktDesign.module.scss"
-import PDImg from "./pdImg"
-import MediaQuery from "react-responsive"
-import PDDesktopImg from "./pdDesktopImg"
-import { AnchorLink } from "gatsby-plugin-anchor-links"
+import React from "react";
+import styles from "../../styles/produktDesign.module.scss";
+import PDImg from "./pdImg";
+import MediaQuery from "react-responsive";
+import PDDesktopImg from "./pdDesktopImg";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const ProduktDesign = () => {
   return (
@@ -25,10 +25,14 @@ const ProduktDesign = () => {
         className={styles.flex_container}
       >
         <MediaQuery maxWidth={800}>
-          <PDImg />
+          <div>
+            <PDImg />
+          </div>
         </MediaQuery>
         <MediaQuery minWidth={800}>
-          <PDDesktopImg />
+          <div>
+            <PDDesktopImg />
+          </div>
         </MediaQuery>
         <div
           data-sal="slide-up"
@@ -59,7 +63,7 @@ const ProduktDesign = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProduktDesign
+export default ProduktDesign;
