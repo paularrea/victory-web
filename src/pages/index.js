@@ -25,8 +25,6 @@ const IndexPage = () => (
         <Importieren />
         <Logistik />
         <Fulhen />
-        <Infography/>
-        <ProduktDesign/>
         <ContactForm />
         <Blog />
       </Layout>
