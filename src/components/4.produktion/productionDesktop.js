@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./produktion.module.scss"
+import styles from "../../styles/produktion.module.scss"
 import ProduktionImg from "./productionImg"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 

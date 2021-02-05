@@ -1,6 +1,6 @@
 import React from "react"
 import HomeOne from "./homeOne"
-import styles from "./intro.module.scss"
+import styles from "../../styles/intro.module.scss"
 import MediaQuery from "react-responsive"
 import DesktopIntro from "./desktopIntro"
 

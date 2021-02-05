@@ -2,8 +2,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 
-import styles from "../header.module.scss"
-import Logo from "../components/logo"
+import styles from "../../../styles/header.module.scss"
+import Logo from "./logo"
 
 const DesktopHeader = () => {
 //   const [selectedHome, setSelectedHome] = useState(false)

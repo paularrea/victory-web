@@ -1,7 +1,7 @@
 import React from "react"
 import Logo from "../header/components/logo"
 
-import styles from "./footer.module.scss"
+import styles from "../../styles/footer.module.scss"
 
 import LinkedInIcon from "../icons/media-icons/linkedinIcon"
 import FacebookIcon from "../icons/media-icons/fbIcon"

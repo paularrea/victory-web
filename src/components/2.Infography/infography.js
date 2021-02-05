@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./infography.module.scss"
+import styles from "../../styles/infography.module.scss"
 import MediaQuery from "react-responsive"
 import InfographyDesktop from "./infographyDesktop"
 import Image from "./Image"

@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import styles from "../../header/header.module.scss"
+import styles from "../../../styles/header.module.scss"
 
 const FacebookIcon = () => {
   const data = useStaticQuery(graphql`

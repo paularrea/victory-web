@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./fuhlen.module.scss"
+import styles from "../../styles/fuhlen.module.scss"
 
 import FuhlenImgDesktop from "./fuhlenImgDesktop"
 import gif from "../../gif/victory.gif"

@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./blog.module.scss"
+import styles from "../../styles/blog.module.scss"
 
 import BlogImgOne from "./blogImgOne"
 import BlogImgTwo from "./blogImgTwo"

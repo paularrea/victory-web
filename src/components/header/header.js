@@ -4,7 +4,7 @@ import React from "react"
 import MediaQuery from "react-responsive"
 import DesktopHeader from "./components/desktopHeader"
 
-import styles from "./header.module.scss"
+import styles from "../../styles/header.module.scss"
 import Logo from "./components/logo"
 import Burger from "./components/burger"
 

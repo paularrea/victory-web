@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import styles from "../../6.logistik/logistik.module.scss"
+import styles from "../../../styles/logistik.module.scss"
 
 const LogistikThree = () => {
   const data = useStaticQuery(graphql`

@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./logistik.module.scss"
+import styles from "../../styles/logistik.module.scss"
 import LogistikImg from "./logistikImg"
 import MediaQuery from "react-responsive"
 import { AnchorLink } from "gatsby-plugin-anchor-links"

@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import styles from "../../footer/footer.module.scss"
+import styles from "../../../styles/footer.module.scss"
 
 const LocationIcon = () => {
   const data = useStaticQuery(graphql`

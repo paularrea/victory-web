@@ -1,6 +1,6 @@
 import React from "react"
 import HomeImgDesktop from "./homeImgDesktop"
-import styles from "./intro.module.scss"
+import styles from "../../styles/intro.module.scss"
 
 const DesktopIntro = () => {
   return (

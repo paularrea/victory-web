@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./form.module.scss"
+import styles from "../../styles/form.module.scss"
 import { useForm } from "react-hook-form"
 
 const ContactForm = () => {

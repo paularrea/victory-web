@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./produktDesign.module.scss"
+import styles from "../../styles/produktDesign.module.scss"
 import PDImg from "./pdImg"
 import MediaQuery from "react-responsive"
 import PDDesktopImg from "./pdDesktopImg"

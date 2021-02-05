@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./produktion.module.scss"
+import styles from "../../styles/produktion.module.scss"
 import MediaQuery from "react-responsive"
 import ProduktionImg from "./productionImg"
 import ProduktionDesktop from "./productionDesktop"

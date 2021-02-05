@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./importieren.module.scss"
+import styles from "../../styles/importieren.module.scss"
 import ImportierenImg from "./importierenImg"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 
