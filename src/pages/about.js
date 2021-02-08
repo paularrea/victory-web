@@ -1,18 +1,23 @@
-import React from "react"
+import React from "react";
 
-import Layout from "../components/layout/layout"
-import SEO from "../components/seo"
-import Blog from "../components/9.Blog/blog"
-import DesktopImage from "../components/about/DesktopImage"
+import Layout from "../components/layout/layout";
+import SEO from "../components/seo";
+import DesktopImage from "../components/about/DesktopImage";
 
-import styles from "../styles/about.module.scss"
-import TeamList from "../components/about/team"
-import ContactAbout from "../components/about/contactAbout"
+import styles from "../styles/about.module.scss";
+import TeamList from "../components/about/team";
+import ContactAbout from "../components/about/contactAbout";
+import VideoComponent from "../components/about/video";
+import BlogAbout from "../components/9.Blog/blogAbout";
 
 const About = () => {
   return (
     <Layout>
       <SEO title="About" />
+      <div className={styles.video}>
+           <VideoComponent />
+      </div>
+   
       <div id="id" className={styles.container}>
         <div
           data-sal="fade"
@@ -26,6 +31,7 @@ const About = () => {
             Aktivitäten und unser Leistungsspektrum geben.
           </h5>
         </div>
+      </div>
         <div className={styles.flex_container}>
           <div
             data-sal="fade"
@@ -35,6 +41,7 @@ const About = () => {
           >
             <DesktopImage />
           </div>
+
           <div
             data-sal="slide-up"
             data-sal-delay="100"
@@ -55,15 +62,16 @@ const About = () => {
               bekennen uns zu den ethischen und moralischen Werten, die unsere
               Arbeits- und Lebensphilosophie bestimmen.
             </p>
-          </div>
         </div>
-        <hr className={styles.hr}/>
       </div>
-      <TeamList/>
-      <ContactAbout/>
-      <Blog />
+      <div id="id" className={styles.container}>
+        <hr className={styles.hr} />
+      </div>
+      <TeamList />
+      <ContactAbout />
+      <BlogAbout />
     </Layout>
-  )
-}
+  );
+};
 
-export default About
+export default About;

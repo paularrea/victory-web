@@ -20,19 +20,7 @@
              font-weight: 400;
              margin: 0;
             }
-            .form{
-                .input{
-                    width: 100%;
-                    padding: .75rem 1rem;
-                    margin-bottom: 1rem;
-                    border: 1px solid #D1D1D1;
-                    font-size: 16px;
-                    color: #1D252D;
-                    ::placeholder{
-                     color: #1D252D;
-                    }
-                }
-            } 
+            
          }
          .hr{
             display: none;
@@ -58,19 +46,6 @@
                 margin: 0;
                }
         }
-        .form{
-            .input{
-                width: 48%;
-                padding: .75rem 1rem;
-                margin: .75rem .5rem;
-                border: 1px solid #D1D1D1;
-                font-size: 16px;
-                color: #1D252D;
-                ::placeholder{
-                 color: #1D252D;
-                }
-            }
-        } 
         button{
             margin-top: 2rem;
             margin-left: .2rem;
@@ -112,5 +87,6 @@
     @media (min-width: 1600px) {
         .container{
             padding: 6rem 20rem; 
+            padding-bottom: 0;
         }
     }

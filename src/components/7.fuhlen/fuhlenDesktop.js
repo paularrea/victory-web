@@ -1,8 +1,9 @@
-import React from "react"
-import styles from "../../styles/fuhlen.module.scss"
+import React from "react";
+import styles from "../../styles/fuhlen.module.scss";
 
-import FuhlenImgDesktop from "./fuhlenImgDesktop"
-import gif from "../../gif/victory.gif"
+import FuhlenImgDesktop from "./fuhlenImgDesktop";
+import FuhlenLogo from "./fuhlenLogo";
+import gif from "../../gif/victory.gif";
 
 const FuhlenDesktop = () => {
   return (
@@ -14,10 +15,23 @@ const FuhlenDesktop = () => {
         <h1>FÜHLEN DEN SIEG</h1>
       </div>
       <div className={styles.container}>
-        <div data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
+        <div
+          className={styles.img_container}
+          data-sal="fade"
+          data-sal-delay="100"
+          data-sal-duration="1000"
+        >
+          <div className={styles.logo}>
+            <FuhlenLogo />
+          </div>
           <img src={gif} alt="macbook gif" />
         </div>
-        <div data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000" className={styles.text_container}>
+        <div
+          data-sal="slide-up"
+          data-sal-delay="100"
+          data-sal-duration="1000"
+          className={styles.text_container}
+        >
           <h2>DAS KRONJUWEL</h2>
           <h5>
             Für Kunden, die keine eigenen Kollektionen entwickeln wollen, haben
@@ -41,7 +55,7 @@ const FuhlenDesktop = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default FuhlenDesktop
+export default FuhlenDesktop;

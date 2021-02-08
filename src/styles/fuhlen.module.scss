@@ -1,5 +1,10 @@
 .fulhen_container{
     background-color: #F5F6FC;
+    background-image: url('../images/map.png');
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     h1{
         font-size: 60px;
         color: #F5F6FC;
@@ -42,13 +47,30 @@
             margin: 0;
             padding: 2rem 3rem;
            }
-        
         .container{
             display: flex;
             background-color: #E6E7F4;
             justify-content: center;
             align-items: center;
             padding: 4rem 2rem; 
+            div{
+                width: 50%;
+                div{
+                    width: 100%; 
+                }
+                img{
+                    width: 100%;
+                }
+            }
+            .img_container{
+                position: relative;
+                .logo{
+                    width: 20%;
+                    position: absolute;
+                    top: 10%;
+                    left: 0;
+                }
+            }
            h2{
             font-size: 44px;
             line-height: 48px;
@@ -75,42 +97,43 @@
             margin: 0;
            }
         }
-        .text_container{
-            width: 40%;
-            margin: 0 1rem;
-            h2,h5,p{
-                width: 35vw;
-            }
-        }
     }
-    
 }
 @media (min-width: 900px) {
-    .container{
-        padding: 6rem 4rem; 
+    .fulhen_container{
+         .container{
+        padding: 4rem 4rem; 
         padding-bottom: 0;
+        }   
     }
 }
 @media (min-width: 950px) {
+    .fulhen_container{
     .container{
-        padding: 6rem 6rem; 
+        padding: 4rem 6rem; 
         padding-bottom: 0;
+        }
     }
 }
 @media (min-width: 1100px) {
+    .fulhen_container{
     .container{
-        padding: 6rem 10rem; 
-    }
-
+        padding: 4rem 10rem; 
+        }   
+    }    
 }
 @media (min-width: 1300px) {
+    .fulhen_container{
     .container{
-        padding: 6rem 15rem; 
+        padding: 4rem 15rem; 
         padding-bottom: 0;
+        }
     }
 }
 @media (min-width: 1600px) {
+    .fulhen_container{
     .container{
-        padding: 6rem 20rem; 
+        padding: 4rem 20rem; 
+        }
     }
 }

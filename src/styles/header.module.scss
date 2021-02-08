@@ -1,29 +1,27 @@
 header{
+    border-top: 2px solid #FBD872;
     background-color: #1D1F2A;
     height: auto;
     width: 100vw;
     padding: 1.5rem 2rem;
     position: fixed;
     z-index: 99999;
+    box-shadow: 0px 1px 30px #1D252D1A;
 }
-
 .navBar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: transparent;
 }
-
 .logo{
     width: 8.5rem;
     height: auto;
 }
-
 .icon{
     width: 36px;
     height: 36px;
 }
-
 // Desktop Header
 @media (min-width: 800px) {
     header{
@@ -58,7 +56,34 @@ header{
         button{
             margin: 0;
         }
-        
+        .drop_down{
+            position: relative;
+            display: inline-block;
+            &:hover .drop_down_content{
+            max-height: 500px;
+            transition: max-height 0.5s ease-in;
+            }
+           .drop_down_content{
+            position: absolute;
+            background-color: #FFFFFF;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            max-height: 0;
+            transition: max-height 0.35s ease-out;
+            overflow: hidden;
+            a{
+                color: #1D1F2A;
+                width: 100%;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                &:hover{
+                    background-color: #ddd;
+                }
+            }
+        } 
+        }
     }
 }
 @media (min-width: 900px) {

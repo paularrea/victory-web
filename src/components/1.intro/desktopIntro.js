@@ -20,7 +20,7 @@ const DesktopIntro = () => {
           className={styles.btn_container}
         >
           <button>RUFEN SIE UNS AN</button>
-          <button>DEN SHOP BESUCHEN</button>
+          <button><a href="https://www.victoryshop.ch/en/" rel="noreferrer" target="_blank">DEN SHOP BESUCHEN</a></button>
         </div>
       </div>
       <div data-sal="fade" data-sal-delay="100" data-sal-duration="1000">

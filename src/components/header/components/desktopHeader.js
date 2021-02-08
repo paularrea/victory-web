@@ -1,18 +1,18 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { AnchorLink } from "gatsby-plugin-anchor-links"
+import React from "react";
+import PropTypes from "prop-types";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
-import styles from "../../../styles/header.module.scss"
-import Logo from "./logo"
+import styles from "../../../styles/header.module.scss";
+import Logo from "./logo";
 
 const DesktopHeader = () => {
-//   const [selectedHome, setSelectedHome] = useState(false)
-//   const [selectedServices, setSelectedServices] = useState(false)
-//   const [selectedAbout, setSelectedAbout] = useState(false)
+  //   const [selectedHome, setSelectedHome] = useState(false)
+  //   const [selectedServices, setSelectedServices] = useState(false)
+  //   const [selectedAbout, setSelectedAbout] = useState(false)
 
-//   const homeLink = selectedHome ? styles.active : styles.disabled
-//   const servicesLink = selectedServices ? styles.active : styles.disabled
-//   const aboutLink = selectedAbout ? styles.active : styles.disabled
+  //   const homeLink = selectedHome ? styles.active : styles.disabled
+  //   const servicesLink = selectedServices ? styles.active : styles.disabled
+  //   const aboutLink = selectedAbout ? styles.active : styles.disabled
 
   return (
     <header>
@@ -33,18 +33,28 @@ const DesktopHeader = () => {
           >
             HAUS
           </AnchorLink>
-          <AnchorLink
-            // className={servicesLink}
-            // onAnchorLinkClick={
-            //   (() => setSelectedHome(false),
-            //   setSelectedServices(true),
-            //   setSelectedAbout(false))
-            // }
-            id="services"
-            to="/#services"
-          >
-            SERVICES
-          </AnchorLink>
+          <div className={styles.drop_down}>
+            <AnchorLink
+              // className={servicesLink}
+              // onAnchorLinkClick={
+              //   (() => setSelectedHome(false),
+              //   setSelectedServices(true),
+              //   setSelectedAbout(false))
+              // }
+              id="services"
+              to="/#services"
+              className={styles.drop_btn}
+            >
+              SERVICES
+            </AnchorLink>
+            <div class={styles.drop_down_content}>
+              <AnchorLink to="/#produktDesign">Produktdesign</AnchorLink>
+              <AnchorLink to="/#produktion">Produktion</AnchorLink>
+              <AnchorLink to="/#importieren">Importieren</AnchorLink>
+              <AnchorLink to="/#logistik">Logistik</AnchorLink>
+            </div>
+          </div>
+
           <AnchorLink
             // className={aboutLink}
             // onAnchorLinkClick={
@@ -59,15 +69,23 @@ const DesktopHeader = () => {
           </AnchorLink>
         </nav>
         <div>
-          <button> <a href="https://www.victoryshop.ch/en/" rel="noreferrer" target="_blank">VICTORY SHOP</a></button>
+          <button>
+            <a
+              href="https://www.victoryshop.ch/en/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              VICTORY SHOP
+            </a>
+          </button>
         </div>
       </div>
     </header>
-  )
-}
+  );
+};
 
 DesktopHeader.propTypes = {
   siteTitle: PropTypes.string,
-}
+};
 
-export default DesktopHeader
+export default DesktopHeader;

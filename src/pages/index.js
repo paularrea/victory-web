@@ -11,7 +11,7 @@ import Produktion from "../components/4.produktion/produktion";
 import Importieren from "../components/5.importieren/importieren";
 import Logistik from "../components/6.logistik/logistik";
 import Fulhen from "../components/7.fuhlen/fuhlen";
-import ContactForm from "../components/8.Contact/form";
+import ContactForm from "../components/8.Contact/contact";
 import Blog from "../components/9.Blog/blog";
 
 const IndexPage = () => (

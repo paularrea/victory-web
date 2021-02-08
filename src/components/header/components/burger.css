@@ -9,7 +9,8 @@
 .hideBar{
     background-color: #1D1F2A;
     position: absolute;
-    height: .3rem;
+    height: .5rem;
+    top: 1;
     width: 1.6rem;
     z-index: 1100;
 }

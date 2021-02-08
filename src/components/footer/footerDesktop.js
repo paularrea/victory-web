@@ -1,17 +1,17 @@
-import React from "react"
-import Logo from "../header/components/logo"
+import React from "react";
+import Logo from "../header/components/logo";
 
-import styles from "../../styles/footer.module.scss"
+import styles from "../../styles/footer.module.scss";
 
-import LinkedInIcon from "../icons/media-icons/linkedinIcon"
-import FacebookIcon from "../icons/media-icons/fbIcon"
-import YoutubeIcon from "../icons/media-icons/youtubeIcon"
-import TwitterIcon from "../icons/media-icons/twitterIcon"
-import InstagramIcon from "../icons/media-icons/instaIcon"
+import LinkedInIcon from "../icons/media-icons/linkedinIcon";
+import FacebookIcon from "../icons/media-icons/fbIcon";
+import YoutubeIcon from "../icons/media-icons/youtubeIcon";
+import TwitterIcon from "../icons/media-icons/twitterIcon";
+import InstagramIcon from "../icons/media-icons/instaIcon";
 
-import LocationIcon from "../icons/contact-icons/locationIcon"
-import MailIcon from "../icons/contact-icons/mailIcon"
-import PhoneIcon from "../icons/contact-icons/phoneIcon"
+import LocationIcon from "../icons/contact-icons/locationIcon";
+import MailIcon from "../icons/contact-icons/mailIcon";
+import PhoneIcon from "../icons/contact-icons/phoneIcon";
 
 const FooterDesktop = () => {
   return (
@@ -33,7 +33,13 @@ const FooterDesktop = () => {
               <LocationIcon />
             </div>
             <div>
-              <p>Solothurnstrasse 24 C, 3422 Kirchberg Bern Schweiz</p>
+              <a
+                href="https://www.google.com/maps/dir//Solothurnstrasse+24C,+3422+Kirchberg,+Suiza/@47.088762,7.5803751,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x478e2e8fb3298e67:0xc936accc2ffb169a!2m2!1d7.5825638!2d47.088762!3e0"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Solothurnstrasse 24 C, 3422 Kirchberg Bern Schweiz
+              </a>
             </div>
           </div>
           <div className={styles.contact_div}>
@@ -41,7 +47,9 @@ const FooterDesktop = () => {
               <PhoneIcon />
             </div>
             <div>
-              <p>+41 31 301 94 39</p>
+              <a href="tel:+41313019439" rel="noreferrer" target="_blank">
+                +41 31 301 94 39
+              </a>
             </div>
           </div>
           <div className={styles.contact_div}>
@@ -49,7 +57,13 @@ const FooterDesktop = () => {
               <MailIcon />
             </div>
             <div>
-              <p>info@victoryswitzerland.com</p>
+              <a
+                href="mailto:info@victoryswitzerland.com"
+                rel="noreferrer"
+                target="_blank"
+              >
+                info@victoryswitzerland.com
+              </a>
             </div>
           </div>
         </div>
@@ -59,19 +73,49 @@ const FooterDesktop = () => {
         <div className={styles.follow_container}>
           <ul className={styles.media_list}>
             <li>
-              <InstagramIcon />
+              <a
+                href="https://www.instagram.com/victoryswitzerland/?hl=es"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <InstagramIcon />
+              </a>
             </li>
             <li>
-              <FacebookIcon />
+              <a
+                href="https://www.facebook.com/victoryswitzerland/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <FacebookIcon />
+              </a>
             </li>
             <li>
-              <YoutubeIcon />
+              <a
+                href="https://www.youtube.com/channel/UCl7cknUnSR8FcsinGHRok9Q"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <YoutubeIcon />
+              </a>
             </li>
             <li>
-              <TwitterIcon />
+              <a
+                href="https://twitter.com/VICTORYSWITZER1"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <TwitterIcon />
+              </a>
             </li>
             <li>
-              <LinkedInIcon />
+              <a
+                href="https://www.linkedin.com/company/victory-switzerland/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <LinkedInIcon />
+              </a>
             </li>
           </ul>
         </div>
@@ -80,7 +124,7 @@ const FooterDesktop = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default FooterDesktop
+export default FooterDesktop;

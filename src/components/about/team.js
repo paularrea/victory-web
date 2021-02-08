@@ -98,7 +98,7 @@ const TeamList = () => {
           <h4>Bruno</h4>
           <p>Verkäufer</p>
         </div>
-        <div className={styles.team_member}></div>
+        <div className={styles.team_member_none}></div>
       </div>
     </div>
   )

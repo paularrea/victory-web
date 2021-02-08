@@ -21,7 +21,7 @@ const breakpointColumnsObj = {
 
 const LogistikDesktop = () => {
   return (
-    <div className={styles.container}>
+    <div id='logistik' className={styles.container}>
       <div data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
         <h2>LOGISTIK</h2>
         <h5>

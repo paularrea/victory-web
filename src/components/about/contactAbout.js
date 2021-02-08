@@ -1,109 +1,139 @@
-import React from "react"
-import { useForm } from "react-hook-form"
-import styles from "../../styles/about.module.scss"
-import FormAboutImg from "./formAboutImg"
+import React from "react";
+import "./formAbout.css"
+import FormAboutImg from "./formAboutImg";
 
-const ContactAbout = () => {
-  const { register, handleSubmit, errors } = useForm()
-  const onSubmit = data => console.log(data)
+export default class ContactForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.submitForm = this.submitForm.bind(this);
+    this.state = {
+      status: "",
+    };
+  }
 
-  return (
-    <div className={styles.contact_container}>
-      <div className={styles.flex_container}>
-        <div>
-          <FormAboutImg />
-        </div>
-        <div>
-          <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
-            {/* register your input into the hook by invoking the "register" function */}
-            <input
-              data-sal="slide-up"
-              data-sal-delay="100"
-              data-sal-duration="1000"
-              className={styles.input}
-              name="name"
-              placeholder="Name"
-              ref={register({ required: true })}
-            />
-            {/* include validation with required or other standard HTML validation rules */}
-            <input
-              data-sal="slide-up"
-              data-sal-delay="100"
-              data-sal-duration="1000"
-              className={styles.input}
-              name="vorname"
-              placeholder="Vorname"
-              ref={register({ required: true })}
-            />
-            <input
-              data-sal="slide-up"
-              data-sal-delay="200"
-              data-sal-duration="1000"
-              className={styles.input}
-              name="unternehmen"
-              placeholder="Unternehmen"
-              ref={register({ required: true })}
-            />
+  render() {
+    const { status } = this.state;
 
-            <input
-              data-sal="slide-up"
-              data-sal-delay="200"
-              data-sal-duration="1000"
-              className={styles.input}
-              name="industrie"
-              placeholder="Industrie"
-            />
-
-            <input
-              data-sal="slide-up"
-              data-sal-delay="300"
-              data-sal-duration="1000"
-              className={styles.input}
-              name="telefon"
-              type="number"
-              placeholder="Telefon"
-              ref={register({ min: 18, max: 99 })}
-            />
-
-            <input
-              data-sal="slide-up"
-              data-sal-delay="300"
-              data-sal-duration="1000"
-              className={styles.input}
-              name="e-mail"
-              placeholder="E-mail"
-              ref={register({ required: true })}
-            />
-            {/* errors will return when field validation fails  */}
-            {errors.exampleRequired && <span>This field is required</span>}
-            <div
-              data-sal="slide-up"
-              data-sal-delay="250"
-              data-sal-duration="1000"
-              className={styles.btn_container}
+    return (
+      <div className='contact_container'>
+        <div className='flex_form'>
+          <div className='img_container'>
+            <FormAboutImg />
+          </div>
+          <div>
+            <form
+              onSubmit={this.submitForm}
+              action="https://formspree.io/f/mqkgjwpg"
+              method="POST"
             >
-              <button
+              <input
                 data-sal="slide-up"
-                data-sal-delay="400"
+                data-sal-delay="100"
                 data-sal-duration="1000"
-                type="submit"
-              >
-                ABSENDEN
-              </button>
-              <button
+                className="input_about"
+                name="name"
+                type="text"
+                placeholder="Name"
+              />
+              <input
                 data-sal="slide-up"
-                data-sal-delay="400"
+                data-sal-delay="100"
                 data-sal-duration="1000"
-                type="submit"
-              >
-                WIR RUFEN SIE
-              </button>
-            </div>
-          </form>
+                className="input_about"
+                name="vorname"
+                type="text"
+                placeholder="Vorname"
+              />
+              <input
+                data-sal="slide-up"
+                data-sal-delay="200"
+                data-sal-duration="1000"
+                className="input_about"
+                name="unternehmen"
+                type="text"
+                placeholder="Unternehmen"
+              />
+              <input
+                data-sal="slide-up"
+                data-sal-delay="200"
+                data-sal-duration="1000"
+                className="input_about"
+                name="industrie"
+                type="text"
+                placeholder="Industrie"
+              />
+              <input
+                data-sal="slide-up"
+                data-sal-delay="300"
+                data-sal-duration="1000"
+                className="input_about"
+                name="telefon"
+                type="number"
+                placeholder="Telefon"
+              />
+              <input
+                data-sal="slide-up"
+                data-sal-delay="300"
+                data-sal-duration="1000"
+                className="input_about"
+                name="e-mail"
+                type="email"
+                placeholder="E-mail"
+              />
+              {status === "SUCCESS" ? (
+                <p>Thanks!</p>
+              ) : (
+                <div
+                  data-sal="slide-up"
+                  data-sal-delay="250"
+                  data-sal-duration="1000"
+                  className='btn_container'
+                >
+                  <button
+                    data-sal="slide-up"
+                    data-sal-delay="400"
+                    data-sal-duration="1000"
+                    type="submit"
+                    className='about_contact_btn'
+                  >
+                    ABSENDEN
+                  </button>
+                  <button
+                    data-sal="slide-up"
+                    data-sal-delay="400"
+                    data-sal-duration="1000"
+                    type="submit"
+                    className='about_contact_btn'
+                  >
+                    WIR RUFEN SIE
+                  </button>
+                </div>
+              )}
+
+              {status === "ERROR" && <p>Ooops! There was an error.</p>}
+            </form>
+          </div>
         </div>
       </div>
-    </div>
-  )
-}
+    );
+  }
 
-export default ContactAbout
+  submitForm(ev) {
+    ev.preventDefault();
+    const form = ev.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+        this.setState({ status: "SUCCESS" });
+      } else {
+        this.setState({ status: "ERROR" });
+      }
+    };
+    xhr.send(data);
+  }
+}

@@ -1,7 +1,7 @@
 .container{
-   padding: 2rem; 
-   padding-bottom: 4rem;
-   background-color: #F5F6FC;
+    padding: 2rem; 
+    padding-bottom: 4rem;
+    background-color: #F5F6FC;
    h2{
     font-size: 30px;
     color: #1D1F2A;
@@ -55,6 +55,11 @@
 @media (min-width: 870px) {
     .container{
         padding: 4rem 2rem; 
+        background-image: url('../images/map.png');
+        background-size: 65%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
         h2{
          font-size: 44px;
         }
@@ -73,16 +78,17 @@
             width: 100%;
             display: flex;
             justify-content: space-between;
-            align-items: flex-start;
+            align-items: center;
             padding: 4rem 0;
             div{
-                min-width: 400px !important;
-                width: 30vw !important;
+                width: 50%;
+                div{
+                    width: 100%;
+                }
             }
-        }
-        .text_container{
-            padding: 0;
-            padding-left: 4rem;
+            .text_container{
+            padding: 0 0 0 4rem;
+            padding-left: 6rem;
             .big_p{
                 font-size: 24px;
                 color: #1D1F2A;
@@ -94,6 +100,7 @@
                 line-height: 21px;
             }
         }
+    }
         
          hr{
          display: none; 
@@ -116,15 +123,6 @@
 @media (min-width: 1100px) {
     .container{
         padding: 6rem 10rem; 
-    }
-    .flex_container{
-        div{
-            min-width: 450px !important;
-            width: 450px !important;
-        }
-    }
-    .text_container{
-        padding-left: 6rem;
     }
 }
 @media (min-width: 1300px) {

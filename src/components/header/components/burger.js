@@ -49,7 +49,7 @@ const Burger = () => {
           </div>
         </AnchorLink>
         <hr />
-        <AnchorLink id="services" className="menu-item" to="/#services">
+        <AnchorLink className="menu-item" to="/#produktDesign">
           <div
             role="link"
             className="anchor-div"
@@ -86,21 +86,51 @@ const Burger = () => {
           <hr />
           <h3>Folge uns</h3>
           <ul className="media-list">
-            <li>
-              <InstagramIcon />
-            </li>
-            <li>
-              <FacebookIcon />
-            </li>
-            <li>
-              <YoutubeIcon />
-            </li>
-            <li>
-              <TwitterIcon />
-            </li>
-            <li>
-              <LinkedInIcon />
-            </li>
+          <li>
+                <a
+                  href="https://www.instagram.com/victoryswitzerland/?hl=es"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <InstagramIcon />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/victoryswitzerland/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <FacebookIcon />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/channel/UCl7cknUnSR8FcsinGHRok9Q"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <YoutubeIcon />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/VICTORYSWITZER1"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <TwitterIcon />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/company/victory-switzerland/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <LinkedInIcon />
+                </a>
+              </li>
           </ul>
         </div>
       </Menu>
