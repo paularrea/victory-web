@@ -23,7 +23,7 @@ const Logo = () => {
   }
 
   // return <Img className={styles.logo} fluid={data.placeholderImage.childImageSharp.fluid} />
-  return <img src={logo} className={styles.logo} alt="brand logo"/>
+  return <img src={logo} className={styles.logo} alt="brand logo" />
 }
 
 export default Logo
