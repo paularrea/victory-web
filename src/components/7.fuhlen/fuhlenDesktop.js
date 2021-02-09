@@ -8,11 +8,13 @@ import gif from "../../gif/victory.gif";
 const FuhlenDesktop = () => {
   return (
     <div className={styles.fulhen_container}>
-      <div data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
+      <div className={styles.img_bg_container}>
+       <div className={styles.img_desktop} data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
         <FuhlenImgDesktop />
-      </div>
-      <div data-sal="fade" data-sal-delay="200" data-sal-duration="1000">
+      </div> 
+      <div className={styles.title_container} data-sal="fade" data-sal-delay="200" data-sal-duration="1000">
         <h1>FÜHLEN DEN SIEG</h1>
+      </div>
       </div>
       <div className={styles.container}>
         <div

@@ -13,3 +13,13 @@
     opacity: 1;
   }
 }
+
+.infography_img_container{
+  width: 100vw;
+  background-color: white;
+  .infography_img{
+    padding: 2rem;
+    max-width: 1360px;
+    margin: 0 auto;
+  }
+}

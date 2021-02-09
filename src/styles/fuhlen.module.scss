@@ -32,21 +32,37 @@
     }
 }
 @media (min-width: 870px) {
+   
     .fulhen_container{
-        position: relative;
         background-color: #F5F6FC;
-        h1{
-            position: absolute;
-            width: 50rem;
-            top: 5rem;
-            left: 5rem;
-            font-size: 120px;
-            color: transparent;
-            -webkit-text-stroke: 3px #C4D8E7;
-            font-weight: 700;
-            margin: 0;
-            padding: 2rem 3rem;
-           }
+        .img_bg_container{
+            width: 100vw;
+            background-color: #EFF0F8; 
+            position: relative; 
+            .img_desktop{
+            max-width: 1360px;
+            margin: 0 auto;  
+        }
+            .title_container{
+                position: absolute;
+                top: 15%;
+                left: -30%;
+                right: 0;
+                bottom: 0;
+                margin: 0;
+                width: 50rem;
+                margin-left: auto;
+                margin-right: auto;
+                position: absolute;
+                h1{ 
+                    font-size: 120px;
+                    color: transparent;
+                    -webkit-text-stroke: 3px #C4D8E7;
+                    font-weight: 700;
+                    padding: 2rem 3rem;
+                   }
+            }
+        }
         .container{
             display: flex;
             background-color: #E6E7F4;
