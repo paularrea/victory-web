@@ -9,7 +9,7 @@ import FuhlenImgTwo from "./fuhlenImgTwo"
 const Fuhlen = () => {
   return (
     <>
-      <MediaQuery maxWidth={800}>
+      <MediaQuery maxWidth={870}>
         <div data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
           <FuhlenImg />
         </div>
@@ -53,7 +53,7 @@ const Fuhlen = () => {
           </div>
         </div>
       </MediaQuery>
-      <MediaQuery minWidth={800}>
+      <MediaQuery minWidth={870}>
         <FuhlenDesktop />
       </MediaQuery>
     </>

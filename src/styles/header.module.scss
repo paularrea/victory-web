@@ -27,6 +27,7 @@ header{
     header{
         width: 100%;
         padding: 2rem 2rem;
+        position: fixed;
     }
     .navBar{
         .logo_nav_container{
@@ -86,6 +87,23 @@ header{
         }
     }
 }
+.go_top_button{
+    position: absolute;
+    cursor: pointer;
+    top: 60vh;
+    right: 3vw;
+    svg:hover{
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+}
+.svg:hover{
+    fill: white !important;
+}
+.go_top_button_disabled{
+    display: none;
+}
+
 @media (min-width: 900px) {
     header{
         padding: 2rem 4rem; 
@@ -110,4 +128,89 @@ header{
     header{
         padding: 2rem 20rem; 
     }
+}
+@media (min-width: 1800px) {
+    header{
+        padding: 2rem 25rem; 
+    }
+}
+@media (min-width: 2000px) {
+    header{
+        padding: 2rem 30rem; 
+    }
+}
+@media (min-width: 2200px) {
+    header{
+        padding: 2rem 35rem; 
+    }
+}
+@media (min-width: 2400px) {
+    header{
+        padding: 2rem 40rem; 
+    }
+}
+@media (min-width: 2600px) {
+    header{
+        padding: 2rem 50rem; 
+    }
+}
+@media (min-width: 2800px) {
+    header{
+        padding: 2rem 60rem; 
+    }
+}
+@media (min-width: 3000px) {
+    header{
+        padding: 2rem 65rem; 
+    }
+}
+@media (min-width: 3200px) {
+    header{
+        padding: 2rem 70rem; 
+    }
+}
+@media (min-width: 3400px) {
+    header{
+        padding: 2rem 75rem; 
+    }
+}
+@media (min-width: 3600px) {
+    header{
+        padding: 2rem 80rem; 
+    }
+}
+@media (min-width: 3800px) {
+    header{
+        padding: 2rem 85rem; 
+    }
+}
+@media (min-width: 4000px) {
+    header{
+        padding: 2rem 90rem; 
+    }
+}
+@media (min-width: 4200px) {
+    header{
+        padding: 2rem 95rem; 
+    }
+}
+@media (min-width: 4400px) {
+    header{
+        padding: 2rem 100rem; 
+    }
+}
+@media (min-width: 4600px) {
+    header{
+        padding: 2rem 110rem; 
+    }
+}
+@media (min-width: 4800px) {
+    header{
+        padding: 2rem 120rem; 
+    }
+}
+@media (min-width: 5000px) {
+    header{
+        padding: 2rem 125rem; 
+}
 }

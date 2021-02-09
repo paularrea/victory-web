@@ -1,5 +1,5 @@
 import React from "react";
-import "./formAbout.css"
+import "./formAbout.css";
 import FormAboutImg from "./formAboutImg";
 
 export default class ContactForm extends React.Component {
@@ -15,9 +15,9 @@ export default class ContactForm extends React.Component {
     const { status } = this.state;
 
     return (
-      <div className='contact_container'>
-        <div className='flex_form'>
-          <div className='img_container'>
+      <div className="contact_container">
+        <div className="flex_form">
+          <div className="img_container">
             <FormAboutImg />
           </div>
           <div>
@@ -87,14 +87,14 @@ export default class ContactForm extends React.Component {
                   data-sal="slide-up"
                   data-sal-delay="250"
                   data-sal-duration="1000"
-                  className='btn_container'
+                  className="btn_container"
                 >
                   <button
                     data-sal="slide-up"
                     data-sal-delay="400"
                     data-sal-duration="1000"
                     type="submit"
-                    className='about_contact_btn'
+                    className="about_contact_btn"
                   >
                     ABSENDEN
                   </button>
@@ -103,7 +103,7 @@ export default class ContactForm extends React.Component {
                     data-sal-delay="400"
                     data-sal-duration="1000"
                     type="submit"
-                    className='about_contact_btn'
+                    className="about_contact_btn"
                   >
                     WIR RUFEN SIE
                   </button>

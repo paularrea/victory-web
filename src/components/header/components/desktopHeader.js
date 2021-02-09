@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import styles from "../../../styles/header.module.scss";
 import Logo from "./logo";
+import GoTopButton from "../../../images/svg/go_top_icon.svg";
 
 const DesktopHeader = () => {
+  const [goTopApear, setGoTopApear] = useState(false);
   //   const [selectedHome, setSelectedHome] = useState(false)
   //   const [selectedServices, setSelectedServices] = useState(false)
   //   const [selectedAbout, setSelectedAbout] = useState(false)
@@ -13,6 +15,21 @@ const DesktopHeader = () => {
   //   const homeLink = selectedHome ? styles.active : styles.disabled
   //   const servicesLink = selectedServices ? styles.active : styles.disabled
   //   const aboutLink = selectedAbout ? styles.active : styles.disabled
+
+  useEffect(() => {
+    const getGoTopButton = () => {
+      if (window.scrollY < (30 * window.innerHeight) / 100) {
+        setGoTopApear(false);
+      } else {
+        setGoTopApear(true);
+      }
+    };
+    window.addEventListener("scroll", getGoTopButton);
+  }, []);
+
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <header>
@@ -78,6 +95,13 @@ const DesktopHeader = () => {
               VICTORY SHOP
             </a>
           </button>
+        </div>
+        <div
+          className={
+            goTopApear ? styles.go_top_button : styles.go_top_button_disabled
+          }
+        >
+          <GoTopButton className={styles.svg} onClick={scrollTop} />
         </div>
       </div>
     </header>

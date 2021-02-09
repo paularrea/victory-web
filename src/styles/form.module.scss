@@ -1,8 +1,12 @@
 
 .container{
         background-color: #F8F9FA;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
     }
-    
+
 @media (max-width: 800px) {
         .container{
             padding: 4rem 2rem; 
@@ -29,7 +33,7 @@
 @media (min-width: 870px) {
         .container{
             padding: 4rem 2rem; 
-            padding-bottom: 0;
+            padding-bottom: 0 !important;
             background-color: #FFFFFF;
             h3{
                 font-size: 24px;
@@ -50,10 +54,9 @@
             margin-top: 2rem;
             margin-left: .2rem;
         }
-
         .hr{
             width: 100%;
-            margin-top: 10vh !important;
+            margin-top: 6rem !important;
             display: block; height: 1px;
             border: 0; border-top: .1px solid #0000001e;
             margin: 0; padding: 0;
@@ -89,4 +92,95 @@
             padding: 6rem 20rem; 
             padding-bottom: 0;
         }
+    }
+    @media (min-width: 1800px) {
+        .container{
+            padding: 6rem 25rem; 
+        }
+    }
+    @media (min-width: 2000px) {
+        .container{
+            padding: 6rem 30rem; 
+        }
+    }
+    @media (min-width: 2200px) {
+        .container{
+            padding: 6rem 35rem; 
+        }
+    }
+    @media (min-width: 2400px) {
+        .container{
+            padding: 6rem 40rem; 
+        }
+    }
+    @media (min-width: 2600px) {
+        .container{
+            padding: 6rem 50rem; 
+        }
+    }
+    @media (min-width: 2800px) {
+        .container{
+            padding: 6rem 60rem; 
+        }
+    }
+    @media (min-width: 3000px) {
+        .container{
+            padding: 6rem 65rem; 
+        }
+    }
+    @media (min-width: 3200px) {
+        .container{
+            padding: 10rem 70rem; 
+        }
+    }
+    @media (min-width: 3400px) {
+        .container{
+            padding: 10rem 75rem; 
+        }
+    }
+    @media (min-width: 3600px) {
+        .container{
+            padding: 10rem 80rem; 
+        }
+    }
+    @media (min-width: 3800px) {
+        .container{
+            padding: 10rem 85rem; 
+        }
+    }
+    @media (min-width: 4000px) {
+        .container{
+            padding: 10rem 90rem; 
+        }
+    }
+    @media (min-width: 4200px) {
+        .container{
+            padding: 10rem 95rem; 
+        }
+    }
+    @media (min-width: 4400px) {
+        .container{
+            padding: 10rem 100rem; 
+        }
+    }
+    @media (min-width: 4600px) {
+        .container{
+            padding: 10rem 110rem; 
+        }
+    }
+    @media (min-width: 4800px) {
+        .container{
+            padding: 10rem 120rem; 
+        }
+    }
+    @media (min-width: 5000px) {
+        .container{
+            padding: 10rem 125rem; 
+            .flex_container{
+                justify-content:flex-start;
+                div{
+                    max-width: 600px;
+                }
+        }
+    }
     }
