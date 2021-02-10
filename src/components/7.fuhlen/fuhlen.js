@@ -41,15 +41,13 @@ const Fuhlen = () => {
               Produkten in einem einzigen Warenkorb. Sie benötigen nur ein paar
               Klicks.
             </h5>
-            <button>
-              <a
-                href="https://www.victoryshop.ch/en/"
-                rel="noreferrer"
-                target="_blank"
-              >
-                VICTORY SHOP
-              </a>
-            </button>
+            <a
+            href="https://www.victoryshop.ch/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <button>VICTORY SHOP</button>
+          </a>
           </div>
         </div>
       </MediaQuery>

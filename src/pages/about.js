@@ -7,16 +7,16 @@ import DesktopImage from "../components/about/DesktopImage";
 import styles from "../styles/about.module.scss";
 import TeamList from "../components/about/team";
 import ContactAbout from "../components/about/contactAbout";
-// import VideoComponent from "../components/about/video";
+import VideoComponent from "../components/about/video";
 import BlogAbout from "../components/9.Blog/blogAbout";
 
 const About = () => {
   return (
     <Layout>
       <SEO title="About" />
-      {/* <div className={styles.video}>
+      <div className={styles.video}>
            <VideoComponent />
-      </div> */}
+      </div>
       <div className={styles.big_container}>
       <div id="id" className={styles.container}>
         <div

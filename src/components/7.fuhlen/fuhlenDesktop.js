@@ -46,15 +46,15 @@ const FuhlenDesktop = () => {
             Produkten in einem einzigen Warenkorb. Sie benötigen nur ein paar
             Klicks.
           </p>
-          <button>
-            <a
-              href="https://www.victoryshop.ch/en/"
-              rel="noreferrer"
-              target="_blank"
-            >
-              VICTORY SHOP
-            </a>
-          </button>
+          <div>
+          <a
+            href="https://www.victoryshop.ch/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <button>VICTORY SHOP</button>
+          </a>
+        </div>
         </div>
       </div>
     </div>

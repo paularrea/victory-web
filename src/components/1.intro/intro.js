@@ -1,8 +1,8 @@
-import React from "react"
-import HomeOne from "./homeOne"
-import styles from "../../styles/intro.module.scss"
-import MediaQuery from "react-responsive"
-import DesktopIntro from "./desktopIntro"
+import React from "react";
+import HomeOne from "./homeOne";
+import styles from "../../styles/intro.module.scss";
+import MediaQuery from "react-responsive";
+import DesktopIntro from "./desktopIntro";
 
 const Intro = () => {
   return (
@@ -26,8 +26,25 @@ const Intro = () => {
               data-sal-duration="1000"
               className={styles.btn_container}
             >
-              <button>RUFEN SIE UNS AN</button>
-              <button>DEN SHOP BESUCHEN</button>
+              <div>
+                <a
+                  href="https://www.victoryshop.ch/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <button>RUFEN SIE UNS AN</button>
+                </a>
+              </div>
+
+              <div>
+                <a
+                  href="https://www.victoryshop.ch/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <button>DEN SHOP BESUCHEN</button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -36,7 +53,7 @@ const Intro = () => {
         <DesktopIntro />
       </MediaQuery>
     </>
-  )
-}
+  );
+};
 
-export default Intro
+export default Intro;

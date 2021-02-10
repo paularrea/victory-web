@@ -100,15 +100,13 @@ const DesktopHeader = () => {
           </Link>
         </nav>
         <div>
-          <button>
-            <a
-              href="https://www.victoryshop.ch/en/"
-              rel="noreferrer"
-              target="_blank"
-            >
-              VICTORY SHOP
-            </a>
-          </button>
+          <a
+            href="https://www.victoryshop.ch/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <button>VICTORY SHOP</button>
+          </a>
         </div>
         <div
           className={
