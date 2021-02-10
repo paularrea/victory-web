@@ -17,6 +17,11 @@ const Layout = ({ children }) => {
     }
   `);
 
+  if (typeof window !== "undefined") {
+    // eslint-disable-next-line global-require
+    require("smooth-scroll")('a[href*="#"]')
+  }
+  
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />

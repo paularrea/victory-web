@@ -1,20 +1,33 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
-
+import { Link } from "gatsby";
 import styles from "../../../styles/header.module.scss";
 import Logo from "./logo";
 import GoTopButton from "../../../images/svg/go_top_icon.svg";
 
 const DesktopHeader = () => {
   const [goTopApear, setGoTopApear] = useState(false);
-  //   const [selectedHome, setSelectedHome] = useState(false)
-  //   const [selectedServices, setSelectedServices] = useState(false)
-  //   const [selectedAbout, setSelectedAbout] = useState(false)
+  const [homeActive, setHomeActive] = useState(false);
+  const [servicesActive, setServicesActive] = useState(false);
 
-  //   const homeLink = selectedHome ? styles.active : styles.disabled
-  //   const servicesLink = selectedServices ? styles.active : styles.disabled
-  //   const aboutLink = selectedAbout ? styles.active : styles.disabled
+  useEffect(() => {
+    const setActiveStyle = () => {
+      if (window.location.href.indexOf("/about") === -1) {
+        if (window.scrollY < (75 * window.innerHeight) / 100) {
+          setHomeActive(true);
+          setServicesActive(false);
+        } else if (window.scrollY > (75 * window.innerHeight) / 100) {
+          setHomeActive(false);
+          setServicesActive(true);
+        }
+      } else if (window.location.href.indexOf("/about") > -1) {
+        setHomeActive(false);
+        setServicesActive(false);
+      }
+    };
+    window.addEventListener("scroll", setActiveStyle);
+  }, []);
 
   useEffect(() => {
     const getGoTopButton = () => {
@@ -40,13 +53,13 @@ const DesktopHeader = () => {
           </AnchorLink>
           <AnchorLink
             // className={homeLink}
-            // onAnchorLinkClick={
+            // onLinkClick={
             //   (() => setSelectedHome(true),
             //   setSelectedServices(false),
             //   setSelectedAbout(false))
             // }
-            id="home"
             to="/#home"
+            className={homeActive ? styles.active : styles.disabled}
           >
             HAUS
           </AnchorLink>
@@ -59,12 +72,12 @@ const DesktopHeader = () => {
               //   setSelectedAbout(false))
               // }
               id="services"
-              to="/#services"
-              className={styles.drop_btn}
+              to="/#produktDesign"
+              className={servicesActive ? styles.active : styles.disabled}
             >
               + SERVICES
             </AnchorLink>
-            <div class={styles.drop_down_content}>
+            <div className={styles.drop_down_content}>
               <AnchorLink to="/#produktDesign">PRODUKTDESIGN</AnchorLink>
               <AnchorLink to="/#produktion">PRODUKTION</AnchorLink>
               <AnchorLink to="/#importieren">IMPORTIEREN</AnchorLink>
@@ -72,7 +85,7 @@ const DesktopHeader = () => {
             </div>
           </div>
 
-          <AnchorLink
+          <Link
             // className={aboutLink}
             // onAnchorLinkClick={
             //   (() => setSelectedHome(false),
@@ -81,9 +94,10 @@ const DesktopHeader = () => {
             // }
             id="about"
             to="/about"
+            activeStyle={{ color: "white" }}
           >
             ÜBER UNS
-          </AnchorLink>
+          </Link>
         </nav>
         <div>
           <button>

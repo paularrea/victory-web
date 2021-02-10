@@ -9,9 +9,9 @@ import YoutubeIcon from "../../images/svg/Youtube_icon.svg";
 import TwitterIcon from "../../images/svg/Twitter_icon.svg";
 import InstagramIcon from "../../images/svg/Instagram_icon.svg";
 
-import LocationIcon from "../icons/contact-icons/locationIcon";
-import MailIcon from "../icons/contact-icons/mailIcon";
-import PhoneIcon from "../icons/contact-icons/phoneIcon";
+import LocationIcon from "../../images/svg/LOCATION.svg";
+import MailIcon from "../../images/svg/MAIL.svg";
+import PhoneIcon from "../../images/svg/PHONE.svg";
 
 const FooterDesktop = () => {
   return (

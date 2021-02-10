@@ -4,14 +4,16 @@ import MediaQuery from "react-responsive";
 
 import styles from "../../styles/footer.module.scss";
 
-import LinkedInIcon from "../icons/media-icons/linkedinIcon";
-import FacebookIcon from "../icons/media-icons/fbIcon";
-import YoutubeIcon from "../icons/media-icons/youtubeIcon";
-import TwitterIcon from "../icons/media-icons/twitterIcon";
-import InstagramIcon from "../icons/media-icons/instaIcon";
-import LocationIcon from "../icons/contact-icons/locationIcon";
-import MailIcon from "../icons/contact-icons/mailIcon";
-import PhoneIcon from "../icons/contact-icons/phoneIcon";
+import LinkedInIcon from "../../images/svg/Linkedin_icon.svg";
+import FacebookIcon from "../../images/svg/Facebook_icon.svg";
+import YoutubeIcon from "../../images/svg/Youtube_icon.svg";
+import TwitterIcon from "../../images/svg/Twitter_icon.svg";
+import InstagramIcon from "../../images/svg/Instagram_icon.svg";
+
+import LocationIcon from "../../images/svg/LOCATION.svg";
+import MailIcon from "../../images/svg/MAIL.svg";
+import PhoneIcon from "../../images/svg/PHONE.svg";
+
 import FooterDesktop from "./footerDesktop";
 
 const Footer = () => {
