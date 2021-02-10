@@ -61,26 +61,29 @@ header{
             position: relative;
             display: inline-block;
             &:hover .drop_down_content{
-            max-height: 500px;
-            transition: max-height 0.5s ease-in;
+                max-height: 500px;
+                opacity: 1;
+                transition: opacity 0.5s ease-in;
             }
-           .drop_down_content{
+            .drop_down_content{
+            padding: 0.5rem;
             position: absolute;
-            background-color: #FFFFFF;
+            background-color: #1D1F2A;
             min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
             max-height: 0;
-            transition: max-height 0.35s ease-out;
+            opacity: 0;
+            transition: opacity 0.35s ease-out;
             overflow: hidden;
             a{
-                color: #1D1F2A;
+                color: #FBD872;
                 width: 100%;
-                padding: 12px 16px;
+                padding: 0;
+                padding-top: 1rem;
                 text-decoration: none;
                 display: block;
                 &:hover{
-                    background-color: #ddd;
+                    color: white;
                 }
             }
         } 
@@ -89,16 +92,12 @@ header{
 }
 .go_top_button{
     position: absolute;
-    cursor: pointer;
     top: 60vh;
     right: 3vw;
+    cursor: pointer;
     svg:hover{
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
+        filter:brightness(0) invert(1);
     }
-}
-.svg:hover{
-    fill: white !important;
 }
 .go_top_button_disabled{
     display: none;

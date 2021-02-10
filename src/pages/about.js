@@ -17,6 +17,7 @@ const About = () => {
       {/* <div className={styles.video}>
            <VideoComponent />
       </div> */}
+      <div className={styles.big_container}>
       <div id="id" className={styles.container}>
         <div
           data-sal="fade"
@@ -69,6 +70,7 @@ const About = () => {
       <TeamList />
       <ContactAbout />
       <BlogAbout />
+      </div>
     </Layout>
   );
 };

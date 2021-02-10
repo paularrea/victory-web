@@ -5,6 +5,7 @@ import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 const ProduktionDesktop = () => {
   return (
+    <div className={styles.big_container}>
     <div id='produktion' className={styles.container}>
       <div data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
         <h2>PRODUKTION</h2>
@@ -55,6 +56,7 @@ const ProduktionDesktop = () => {
           <ProduktionImg />
         </div>
       </div>
+    </div>
     </div>
   )
 }

@@ -16,6 +16,7 @@ const FuhlenDesktop = () => {
         <h1>FÜHLEN DEN SIEG</h1>
       </div>
       </div>
+      <div className={styles.big_container}>
       <div className={styles.container}>
         <div
           className={styles.img_container}
@@ -56,6 +57,7 @@ const FuhlenDesktop = () => {
           </button>
         </div>
       </div>
+    </div>
     </div>
   );
 };

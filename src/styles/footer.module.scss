@@ -28,6 +28,7 @@
         .contact_icons{
             color:#FBD872;
             margin-right: 2rem;
+            cursor: pointer;
             div{
                 width: .9rem;
                 height: auto;
@@ -74,6 +75,7 @@
         text-align: center;
         &:hover{
             transform: scale(1.05);
+            filter:brightness(0) invert(1);
         }
     }
 }

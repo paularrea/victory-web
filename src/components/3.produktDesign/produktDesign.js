@@ -7,6 +7,7 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const ProduktDesign = () => {
   return (
+    <div  className={styles.big_container}>
     <div id="produktDesign" className={styles.container}>
       <div data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
         <h2>PRODUKTDESIGN</h2>
@@ -62,6 +63,7 @@ const ProduktDesign = () => {
           </AnchorLink>
         </div>
       </div>
+    </div>
     </div>
   );
 };

@@ -5,6 +5,7 @@ import Form from "./form";
 const ContactForm = () => {
   return (
     <>
+      <div className={styles.big_container}>
       <div id="contact" className={styles.container}>
         <div data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
           <h3>
@@ -18,6 +19,7 @@ const ContactForm = () => {
         </div>
         <Form />
         <hr className={styles.hr} />
+      </div>
       </div>
     </>
   );

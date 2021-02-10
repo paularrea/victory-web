@@ -4,6 +4,7 @@ import styles from "../../styles/intro.module.scss"
 
 const DesktopIntro = () => {
   return (
+    <div className={styles.big_container}>
     <div id="home" className={styles.container}>
       <div
         data-sal="slide-up"
@@ -26,6 +27,7 @@ const DesktopIntro = () => {
       <div data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
         <HomeImgDesktop />
       </div>
+    </div>
     </div>
   )
 }

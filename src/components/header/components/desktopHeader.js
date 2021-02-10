@@ -62,13 +62,13 @@ const DesktopHeader = () => {
               to="/#services"
               className={styles.drop_btn}
             >
-              SERVICES
+              + SERVICES
             </AnchorLink>
             <div class={styles.drop_down_content}>
-              <AnchorLink to="/#produktDesign">Produktdesign</AnchorLink>
-              <AnchorLink to="/#produktion">Produktion</AnchorLink>
-              <AnchorLink to="/#importieren">Importieren</AnchorLink>
-              <AnchorLink to="/#logistik">Logistik</AnchorLink>
+              <AnchorLink to="/#produktDesign">PRODUKTDESIGN</AnchorLink>
+              <AnchorLink to="/#produktion">PRODUKTION</AnchorLink>
+              <AnchorLink to="/#importieren">IMPORTIEREN</AnchorLink>
+              <AnchorLink to="/#logistik">LOGISTIK</AnchorLink>
             </div>
           </div>
 

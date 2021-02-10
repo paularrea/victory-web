@@ -5,6 +5,7 @@ import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 const Importieren = () => {
   return (
+    <div className={styles.big_container}>
     <div id='importieren' className={styles.container}>
       <div data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
         <h2>IMPORTIEREN</h2>
@@ -44,6 +45,7 @@ const Importieren = () => {
           </AnchorLink>
         </div>
       </div>
+    </div>
     </div>
   )
 }

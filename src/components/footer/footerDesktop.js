@@ -3,11 +3,11 @@ import Logo from "../header/components/logo";
 
 import styles from "../../styles/footer.module.scss";
 
-import LinkedInIcon from "../icons/media-icons/linkedinIcon";
-import FacebookIcon from "../icons/media-icons/fbIcon";
-import YoutubeIcon from "../icons/media-icons/youtubeIcon";
-import TwitterIcon from "../icons/media-icons/twitterIcon";
-import InstagramIcon from "../icons/media-icons/instaIcon";
+import LinkedInIcon from "../../images/svg/Linkedin_icon.svg";
+import FacebookIcon from "../../images/svg/Facebook_icon.svg";
+import YoutubeIcon from "../../images/svg/Youtube_icon.svg";
+import TwitterIcon from "../../images/svg/Twitter_icon.svg";
+import InstagramIcon from "../../images/svg/Instagram_icon.svg";
 
 import LocationIcon from "../icons/contact-icons/locationIcon";
 import MailIcon from "../icons/contact-icons/mailIcon";
@@ -15,6 +15,7 @@ import PhoneIcon from "../icons/contact-icons/phoneIcon";
 
 const FooterDesktop = () => {
   return (
+    <div className={styles.big_container}>
     <div className={styles.container}>
       <div className={styles.flex_container}>
         <div className={styles.logo_text}>
@@ -123,6 +124,7 @@ const FooterDesktop = () => {
           <p>© Alle Rechte vorbehalten</p>
         </div>
       </div>
+    </div>
     </div>
   );
 };

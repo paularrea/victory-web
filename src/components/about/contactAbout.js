@@ -15,6 +15,7 @@ export default class ContactForm extends React.Component {
     const { status } = this.state;
 
     return (
+      <div className="big_container">
       <div className="contact_container">
         <div className="flex_form">
           <div className="img_container">
@@ -114,6 +115,7 @@ export default class ContactForm extends React.Component {
             </form>
           </div>
         </div>
+      </div>
       </div>
     );
   }
