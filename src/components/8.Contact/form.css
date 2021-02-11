@@ -20,16 +20,18 @@
 .message-container{
     width: 30px;
     background-color: white;
-    padding: 2rem;
+    padding: 2rem 4rem;
 }
 .message-container h1{
     font-size: 24px;
     color: #1D252D;
+    margin: 0;
 }
-
 .message-container p{
+    padding-top: 1rem;
     font-size: 16px;
     color: #1D252D;
+    margin: 0;
 }
 
 @media (min-width: 870px) {

@@ -59,8 +59,8 @@ const Form = () => {
         data-sal-delay="300"
         data-sal-duration="1000"
         className="input"
-        name="e-mail"
-        type="text"
+        name="email"
+        type="email"
         placeholder="e-mail"
       />
       <button
