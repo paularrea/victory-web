@@ -6,8 +6,8 @@ const Form = () => {
   const [callMeButton, setCallMeButton] = useState(false);
 
   const onClickCallMe = () => {
-    setCallMeButton(true)
-  }
+    setCallMeButton(true);
+  };
 
   return (
     <form
@@ -18,6 +18,9 @@ const Form = () => {
       data-netlify-honeypot="bot-field"
       // data-netlify-recaptcha="true"
     >
+      {callMeButton && (
+        <input id="call-me" name="call-me" type="hidden" value="CALL ME" />
+      )}
       <input
         data-sal="slide-up"
         data-sal-delay="100"
