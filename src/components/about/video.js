@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import styles from "../../styles/about.module.scss";
-import BackGroundVideoImg from "./BackgroundVideoImg";
-import BackGroundImgMobile from "./BackgroundImgMobile";
-import MediaQuery from "react-responsive";
+// import BackGroundVideoImg from "./BackgroundVideoImg";
+// import BackGroundImgMobile from "./BackgroundImgMobile";
+// import MediaQuery from "react-responsive";
 import video from "../../components/video/JOSIE.mp4";
 import PlayIcon from "../../images/svg/play_video.svg";
 
@@ -25,14 +25,14 @@ const VideoComponent = () => {
         </div>
       ) : (
         <div className={styles.video_window_img}>
-          <div className={styles.background_img}>
+          {/* <div className={styles.background_img}>
             <MediaQuery maxWidth={700}>
               <BackGroundImgMobile />
             </MediaQuery>
             <MediaQuery minWidth={700}>
               <BackGroundVideoImg />
             </MediaQuery>
-          </div>
+          </div> */}
           <div className={styles.video_container}>
             <div className={styles.flex_video_container}>
               <div className={styles.video_text}>
