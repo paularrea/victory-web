@@ -63,6 +63,15 @@ const Form = () => {
         type="email"
         placeholder="email"
       />
+            <input
+        data-sal="slide-up"
+        data-sal-delay="300"
+        data-sal-duration="1000"
+        className="input"
+        name="email"
+        type="email"
+        placeholder="email"
+      />
       <br />
       <button
         data-sal="slide-up"
