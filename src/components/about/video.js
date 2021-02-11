@@ -14,7 +14,7 @@ const VideoComponent = () => {
   };
 
   return (
-    <div style={{ position: "relative", backgroundColor: "transparent" }}>
+    <div style={{ position: "relative", backgroundColor: "#1D1F2A" }}>
       {playVideo ? (
         <div className={styles.video_window}>
           <video controls autoPlay className={styles.video} >
