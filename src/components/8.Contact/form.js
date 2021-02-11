@@ -50,19 +50,20 @@ const Form = () => {
         data-sal-delay="300"
         data-sal-duration="1000"
         className="input"
-        name="telefon"
-        type="text"
-        placeholder="Telefon"
+        name="email"
+        type="email"
+        placeholder="email"
       />
       <input
         data-sal="slide-up"
         data-sal-delay="300"
         data-sal-duration="1000"
         className="input"
-        name="email"
-        type="email"
-        placeholder="e-mail"
+        name="telefon"
+        type="text"
+        placeholder="Telefon"
       />
+      <br />
       <button
         data-sal="slide-up"
         data-sal-delay="400"

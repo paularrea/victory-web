@@ -1,5 +1,5 @@
 import React from "react";
-import "./form.css";
+import "../components/8.Contact/form.css";
 import {Link} from 'gatsby'
 
 const Thankyou = () => {
