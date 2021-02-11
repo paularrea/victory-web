@@ -25,15 +25,6 @@ const VideoComponent = () => {
         </div>
       ) : (
         <div className={styles.video_window_img}>
-          {/* <div className={styles.background_img}>
-            <MediaQuery maxWidth={700}>
-              <BackGroundImgMobile />
-            </MediaQuery>
-            <MediaQuery minWidth={700}>
-              <BackGroundVideoImg />
-            </MediaQuery>
-          </div> */}
-          <div className={styles.video_container}>
             <div className={styles.flex_video_container}>
               <div className={styles.video_text}>
                 <h2>WIR VERKAUFEN KUNDENSPEZIFISCHE B2B-LÖSUNGEN.</h2>
@@ -43,7 +34,6 @@ const VideoComponent = () => {
                 <PlayIcon className={styles.play_icon} onClick={clickToPlay} />
               </div>
             </div>
-          </div>
         </div>
       )}
     </div>

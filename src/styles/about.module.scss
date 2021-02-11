@@ -124,16 +124,12 @@
     }
 }
 .video_window_img{
+    background-image: url('../images/BackgroundVideo.jpg');
+    background-size: cover;
+    padding: 4rem 2rem;
+    padding-bottom: 0;
+    z-index: 999;
     height: 60vh;
-    background-color: #1D1F2A;
-    .video_container{
-        background-image: url('../images/BackgroundVideo.jpg');
-        background-size: cover;
-        padding: 4rem 2rem;
-        padding-bottom: 0;
-        z-index: 999;
-        height: 60vh;
-        opacity: 81%;
         .flex_video_container{
             height: 100%;
             display: flex;
@@ -169,7 +165,6 @@
                 }       
             }
         }
-    }
 }
 
 @media (max-width: 350px) {
@@ -283,12 +278,9 @@
     height: 60vh;
 }
 .video_window_img{
+    padding: 4rem 2rem;
+    padding-bottom: 0;
     height: 60vh;
-    .video_container{
-        padding: 4rem 2rem;
-        padding-bottom: 0;
-        height: 60vh;
-        opacity: 81%;
         .flex_video_container{
             display: flex;
             width: 100%;
@@ -317,12 +309,11 @@
                     }  
             }
         }
-    }
 }
 
 }
 @media (min-width: 900px) {
-    .contact_container{
+    .contact_container, .video_window_img{
         padding: 4rem 4rem; 
     }
     .video_container{
@@ -336,10 +327,10 @@
     }
 }
 @media (min-width: 950px) {
-    .contact_container{
+    .contact_container, .video_window_img{
         padding: 2rem 6rem; 
     }
-    .video_window_img .video_container{
+    .video_window_img{
         padding: 4rem 6rem; 
     }
     .container, .flex_container{
@@ -350,7 +341,7 @@
     }
 }
 @media (min-width: 1100px) {
-    .contact_container{
+    .contact_container, .video_window_img{
         padding: 2rem 10rem; 
     }
     .container, .flex_container{
@@ -370,7 +361,7 @@
     .container{
         padding-bottom: 0;
     }
-    .contact_container, .video_window_img .video_container{
+    .contact_container, .video_window_img{
         padding: 4rem 15rem; 
     }
     .video_container{
@@ -384,7 +375,7 @@
     .container{
         padding-bottom: 0;
     }
-    .contact_container, .video_window_img .video_container{
+    .contact_container, .video_window_img{
         padding: 4rem 20rem; 
     }
     .video_container{
@@ -395,7 +386,7 @@
     .container, .flex_container{
     padding: 6rem 25rem; 
     }
-    .contact_container, .video_window_img .video_container{
+    .contact_container, .video_window_img{
     padding: 6rem 25rem; 
     }
       .container{
@@ -406,7 +397,7 @@
     .container, .flex_container{
     padding: 6rem 30rem; 
     }
-    .contact_container, .video_window_img .video_container{
+    .contact_container, .video_window_img{
     padding: 6rem 30rem; 
     }
       .container{
@@ -417,7 +408,7 @@
     .container, .flex_container{
     padding: 6rem 35rem; 
     }
-    .contact_container, .video_window_img .video_container{
+    .contact_container, .video_window_img{
     padding: 6rem 35rem; 
     }
       .container{
@@ -428,7 +419,7 @@
     .container, .flex_container{
     padding: 6rem 40rem; 
     } 
-    .contact_container, .video_window_img .video_container{
+    .contact_container, .video_window_img{
     padding: 6rem 40rem; 
     }
       .container{
@@ -439,7 +430,7 @@
     .container, .flex_container{
     padding: 6rem 50rem; 
     }
-    .contact_container, .video_window_img .video_container{
+    .contact_container, .video_window_img{
     padding: 6rem 50rem; 
     }
       .container{
@@ -450,7 +441,7 @@
     .container, .flex_container{
     padding: 6rem 60rem; 
     }
-    .contact_container, .video_window_img .video_container{
+    .contact_container, .video_window_img{
     padding: 6rem 60rem; 
     }
       .container{
@@ -461,7 +452,7 @@
     .container, .flex_container{
     padding: 6rem 65rem; 
     }
-    .contact_container, .video_window_img .video_container{
+    .contact_container, .video_window_img{
     padding: 6rem 65rem; 
     }
       .container{
@@ -472,7 +463,7 @@
     .container, .flex_container{
     padding: 10rem 70rem; 
     }
-    .contact_container, .video_window_img .video_container{
+    .contact_container, .video_window_img{
     padding: 10rem 70rem; 
     }
       .container{
@@ -483,7 +474,7 @@
     .container, .flex_container{
     padding: 10rem 75rem; 
     }
-    .contact_container, .video_window_img .video_container{
+    .contact_container, .video_window_img{
     padding: 10rem 75rem; 
     }
       .container{
@@ -494,7 +485,7 @@
     .container, .flex_container{
     padding: 10rem 80rem; 
     }
-    .contact_container, .video_window_img .video_container{
+    .contact_container, .video_window_img{
     padding: 10rem 80rem; 
     }
       .container{
@@ -505,7 +496,7 @@
     .container, .flex_container{
     padding: 10rem 85rem; 
     }
-    .contact_container, .video_window_img .video_container{
+    .contact_container, .video_window_img{
     padding: 10rem 85rem; 
     }
       .container{
@@ -516,7 +507,7 @@
     .container, .flex_container{
     padding: 10rem 90rem; 
     }
-    .contact_container, .video_window_img .video_container{
+    .contact_container, .video_window_img{
     padding: 10rem 90rem; 
     }
       .container{
@@ -527,7 +518,7 @@
     .container, .flex_container{
     padding: 10rem 95rem; 
     }
-    .contact_container, .video_window_img .video_container{
+    .contact_container, .video_window_img{
     padding: 10rem 95rem; 
     }
       .container{
@@ -538,7 +529,7 @@
     .container, .flex_container{
     padding: 10rem 100rem; 
     }
-    .contact_container, .video_window_img .video_container{
+    .contact_container, .video_window_img{
     padding: 10rem 100rem; 
     }
       .container{
@@ -549,7 +540,7 @@
     .container, .flex_container{
     padding: 10rem 110rem; 
     }
-    .contact_container, .video_window_img .video_container{
+    .contact_container, .video_window_img{
     padding: 10rem 110rem; 
     }
       .container{
@@ -571,7 +562,7 @@
     .container, .flex_container{
     padding: 10rem 125rem; 
     }
-    .contact_container, .video_window_img .video_container{
+    .contact_container, .video_window_img{
     padding: 10rem 125rem; 
     }
     .container{
