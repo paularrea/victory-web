@@ -8,6 +8,30 @@
     color: #1D252D;
 }
 
+/* Thank you message */
+.bg-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #1d1f2a9b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.message-container{
+    width: 30px;
+    background-color: white;
+    padding: 2rem;
+}
+.message-container h1{
+    font-size: 24px;
+    color: #1D252D;
+}
+
+.message-container p{
+    font-size: 16px;
+    color: #1D252D;
+}
+
 @media (min-width: 870px) {
     .input{
         width: 48% !important;

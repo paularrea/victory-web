@@ -51,7 +51,7 @@ const Form = () => {
         data-sal-duration="1000"
         className="input"
         name="telefon"
-        type="number"
+        type="text"
         placeholder="Telefon"
       />
       <input
@@ -60,8 +60,8 @@ const Form = () => {
         data-sal-duration="1000"
         className="input"
         name="e-mail"
-        type="email"
-        placeholder="E-mail"
+        type="text"
+        placeholder="e-mail"
       />
       <button
         data-sal="slide-up"
