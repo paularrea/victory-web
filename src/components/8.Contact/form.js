@@ -1,13 +1,16 @@
 import React from "react";
 import "./form.css";
+// import ReCAPTCHA from "react-google-recaptcha";
 
 const Form = () => {
   return (
     <form
+      action="/thankyou"
       name="contact-form"
       method="post"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
+      // data-netlify-recaptcha="true"
     >
       <input
         data-sal="slide-up"
@@ -50,6 +53,15 @@ const Form = () => {
         data-sal-delay="300"
         data-sal-duration="1000"
         className="input"
+        name="email"
+        type="email"
+        placeholder="email"
+      />
+      <input
+        data-sal="slide-up"
+        data-sal-delay="300"
+        data-sal-duration="1000"
+        className="input"
         name="telefon"
         type="text"
         placeholder="Telefon"
@@ -63,23 +75,15 @@ const Form = () => {
         type="email"
         placeholder="email"
       />
-            <input
-        data-sal="slide-up"
-        data-sal-delay="300"
-        data-sal-duration="1000"
-        className="input"
-        name="email"
-        type="email"
-        placeholder="email"
-      />
       <br />
+      {/* <ReCAPTCHA sitekey={process.env.GATSBY_RECAPTCHA_KEY} /> */}
       <button
         data-sal="slide-up"
         data-sal-delay="400"
         data-sal-duration="1000"
         type="submit"
       >
-        SEND FORM
+        FORMULAR SENDEN
       </button>
     </form>
   );

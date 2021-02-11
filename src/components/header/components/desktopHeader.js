@@ -52,12 +52,6 @@ const DesktopHeader = () => {
             <Logo />
           </AnchorLink>
           <AnchorLink
-            // className={homeLink}
-            // onLinkClick={
-            //   (() => setSelectedHome(true),
-            //   setSelectedServices(false),
-            //   setSelectedAbout(false))
-            // }
             to="/#home"
             className={homeActive ? styles.active : styles.disabled}
           >
@@ -65,12 +59,6 @@ const DesktopHeader = () => {
           </AnchorLink>
           <div className={styles.drop_down}>
             <AnchorLink
-              // className={servicesLink}
-              // onAnchorLinkClick={
-              //   (() => setSelectedHome(false),
-              //   setSelectedServices(true),
-              //   setSelectedAbout(false))
-              // }
               id="services"
               to="/#produktDesign"
               className={servicesActive ? styles.active : styles.disabled}
@@ -86,12 +74,6 @@ const DesktopHeader = () => {
           </div>
 
           <Link
-            // className={aboutLink}
-            // onAnchorLinkClick={
-            //   (() => setSelectedHome(false),
-            //   setSelectedServices(false),
-            //   setSelectedAbout(true))
-            // }
             id="about"
             to="/about"
             activeStyle={{ color: "white" }}
