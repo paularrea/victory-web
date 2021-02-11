@@ -125,15 +125,14 @@
 }
 .video_window_img{
     height: 60vh;
-    z-index: -1;
-    background-image: url('../images/BackgroundVideo.jpg');
-    background-size: cover;
+    background-color: #1D1F2A;
     .video_container{
+        background-image: url('../images/BackgroundVideo.jpg');
+        background-size: cover;
         padding: 4rem 2rem;
         padding-bottom: 0;
         z-index: 999;
         height: 60vh;
-        background-color: #1D1F2A;
         opacity: 81%;
         .flex_video_container{
             height: 100%;
@@ -144,6 +143,11 @@
             .play_icon{
                 padding-top: 1rem;
                 cursor: pointer;
+                transition: all .4s ease-out;
+                &:hover{
+                    transform: scale(1.05);
+                    opacity: 1;
+                }
             }
             .video_text{
                 width: 100%;
@@ -284,7 +288,6 @@
         padding: 4rem 2rem;
         padding-bottom: 0;
         height: 60vh;
-        background-color: #1D1F2A;
         opacity: 81%;
         .flex_video_container{
             display: flex;
@@ -300,7 +303,7 @@
             .video_text{
                 width: 100%;
                 h2{
-                    width: 80%;
+                    width: 85%;
                     font-size: 44px;
                     color: #FFFFFF;
                     line-height: 48px;
