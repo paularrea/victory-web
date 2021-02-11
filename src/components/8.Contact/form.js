@@ -1,13 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import "./form.css";
 // import ReCAPTCHA from "react-google-recaptcha";
 
 const Form = () => {
-  const [callMeButton, setCallMeButton] = useState(false);
-
-  const onClickCallMe = () => {
-    setCallMeButton(true);
-  };
 
   return (
     <form
@@ -18,9 +13,6 @@ const Form = () => {
       data-netlify-honeypot="bot-field"
       // data-netlify-recaptcha="true"
     >
-      {callMeButton && (
-        <input id="call-me" name="call-me" type="hidden" value="CALL ME" />
-      )}
       <input
         data-sal="slide-up"
         data-sal-delay="100"
@@ -62,17 +54,8 @@ const Form = () => {
         data-sal-delay="300"
         data-sal-duration="1000"
         className="input"
-        name="email"
-        type="email"
-        placeholder="email"
-      />
-      <input
-        data-sal="slide-up"
-        data-sal-delay="300"
-        data-sal-duration="1000"
-        className="input"
         name="telefon"
-        type="text"
+        type="number"
         placeholder="Telefon"
       />
       <input
@@ -80,9 +63,9 @@ const Form = () => {
         data-sal-delay="300"
         data-sal-duration="1000"
         className="input"
-        name="email"
+        name="e-mail"
         type="email"
-        placeholder="email"
+        placeholder="E-mail"
       />
       <br />
       {/* <ReCAPTCHA sitekey={process.env.GATSBY_RECAPTCHA_KEY} /> */}
@@ -91,7 +74,6 @@ const Form = () => {
         data-sal-delay="400"
         data-sal-duration="1000"
         type="submit"
-        onClick={onClickCallMe}
       >
         FORMULAR SENDEN
       </button>
