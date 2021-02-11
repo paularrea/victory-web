@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./form.css";
 // import ReCAPTCHA from "react-google-recaptcha";
 
 const Form = () => {
+  const [callMeButton, setCallMeButton] = useState(false);
+
+  const onClickCallMe = () => {
+    setCallMeButton(true)
+  }
+
   return (
     <form
       action="/thankyou"
@@ -82,6 +88,7 @@ const Form = () => {
         data-sal-delay="400"
         data-sal-duration="1000"
         type="submit"
+        onClick={onClickCallMe}
       >
         FORMULAR SENDEN
       </button>
