@@ -6,25 +6,25 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // const form = e.target
     fetch('/', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      // body: encode({
-      //   'form-name': form.getAttribute('name'),
-      // }),
     })
-    .then(() => alert('success'))
+    .then(() =>  fetch('/', {
+      action="/thankyou"
+    }))
     .catch((error) => alert(error))
   }
 
   const onClickCallMe = () => {
-    let form = document.getElementById('form');
-    let callMe = document.createElement("INPUT");
-    callMe.setAttribute("type", "hidden");
-    callMe.setAttribute("value", "CALL ME");
-    form.appendChild(callMe);
-    handleSubmit();
+    e.preventDefault()
+    .then(() =>  {
+      let form = document.getElementById('form');
+      let callMe = document.createElement("INPUT");
+      callMe.setAttribute("type", "hidden");
+      callMe.setAttribute("value", "CALL ME");
+      form.appendChild(callMe);
+    })
+    .then(() =>  handleSubmit())
   }
 
   return (
@@ -38,7 +38,6 @@ const ContactForm = () => {
             <form
               action="/thankyou"
               name="contact-about-form"
-              method="post"
               onSubmit={handleSubmit}
               data-netlify="true"
               data-netlify-honeypot="bot-field"
