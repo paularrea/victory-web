@@ -13,6 +13,7 @@ const Form = () => {
       data-netlify-honeypot="bot-field"
       // data-netlify-recaptcha="true"
     >
+      <input type="hidden" name="contact-form" value="contact-form" />
       <input
         data-sal="slide-up"
         data-sal-delay="100"
