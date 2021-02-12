@@ -10,12 +10,12 @@ const ContactForm = () => {
       method: 'POST',
     })
     .then(() =>  fetch('/', {
-      action="/thankyou"
+      action: "/thankyou"
     }))
     .catch((error) => alert(error))
   }
 
-  const onClickCallMe = () => {
+  const onClickCallMe = (e) => {
     e.preventDefault()
     .then(() =>  {
       let form = document.getElementById('form');

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 
 import Layout from "../components/layout/layout";
 import SEO from "../components/seo";
@@ -13,9 +13,27 @@ import Logistik from "../components/6.logistik/logistik";
 import Fulhen from "../components/7.fuhlen/fuhlen";
 import ContactForm from "../components/8.Contact/contact";
 import Blog from "../components/9.Blog/blog";
+import Logo from "../images/logo.png"
 
-const IndexPage = () => (
+const IndexPage = () => {
+  const [lateEntry, setLateEntry] = useState(false);
+
+  useEffect(() => {
+    const entry = setTimeout(() => {
+      setLateEntry(true)
+    }, 2000)
+    return () => clearTimeout(entry)
+  }, [lateEntry])
+
+  return(
   <div className={styles.website}>
+      {!lateEntry && (
+        <div className={styles.on_load}>
+          <div className={styles.animation}>
+            <img src={Logo} alt="Logo intro" />
+          </div>
+        </div>
+      )}
     <Layout>
       <SEO title="Home" />
       <div>
@@ -46,7 +64,7 @@ const IndexPage = () => (
         <Blog />
       </div>
     </Layout>
-  </div>
-);
+  </div>)
+};
 
 export default IndexPage;
