@@ -13,7 +13,19 @@
         margin: 0;
         padding: 2rem 3rem;
        }
-    
+    .img_container{
+        width: 100vw;
+        position: relative;
+        .logo{
+            width: 20%;
+            position: absolute;
+            top: 5%;
+            left: 2rem;
+        }
+        img{
+            width: 100%;
+        }
+    }
     .container{
        padding: 2rem; 
        h2{
@@ -29,16 +41,18 @@
         color: #1D1F2A;
         margin: 0;
        }
+       
     }
 }
 @media (min-width: 870px) {
-   
     .fulhen_container{
         background-color: #F5F6FC;
+        background-color: #EFF0F8; 
         .img_bg_container{
             width: 100vw;
-            background-color: #EFF0F8; 
             position: relative; 
+            max-width: 1360px;
+            margin: 0 auto;
             .img_desktop{
             max-width: 1360px;
             margin: 0 auto;  
@@ -66,7 +80,7 @@
         .container{
             display: flex;
             background-color: #E6E7F4;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             padding: 4rem 2rem; 
             div{
@@ -77,6 +91,9 @@
                 img{
                     width: 100%;
                 }
+            }
+            .text_container{
+                padding-left: 4rem;
             }
             .img_container{
                 position: relative;

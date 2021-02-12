@@ -20,6 +20,9 @@ input[type=number] {
     padding-bottom: 2rem;
     padding-right: 2rem;
 }
+.img_container svg{
+    width: 100%;
+}
 .input_about{
     width: 100%;
     padding: .75rem 1rem;

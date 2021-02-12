@@ -123,6 +123,11 @@
         height: 100%;
     }
 }
+.video_window_show{
+    height: 40vh;
+    transition: height 1s ease;
+}
+
 .video_window_img{
     background-image: url('../images/BackgroundVideo.jpg');
     background-size: cover;
@@ -277,6 +282,12 @@
 // Video Component
 .video_window{
     height: 70vh;
+    max-width: 1280px;
+    max-height: 1280px;
+    transition: height 1s ease;
+}
+.video_window_show{
+    height: 90vh;
 }
 .video_window_img{
     padding: 4rem 2rem;

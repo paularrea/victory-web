@@ -1,10 +1,11 @@
-import React from "react"
-import styles from "../../styles/fuhlen.module.scss"
-import MediaQuery from "react-responsive"
+import React from "react";
+import styles from "../../styles/fuhlen.module.scss";
+import MediaQuery from "react-responsive";
 
-import FuhlenDesktop from "./fuhlenDesktop"
-import FuhlenImg from "./fuhlenImg"
-import FuhlenImgTwo from "./fuhlenImgTwo"
+import FuhlenDesktop from "./fuhlenDesktop";
+import FuhlenImg from "./fuhlenImg";
+import FuhlenLogo from "./fuhlenLogo";
+import gif from "../../gif/victory.gif";
 
 const Fuhlen = () => {
   return (
@@ -21,8 +22,16 @@ const Fuhlen = () => {
           >
             <h1>FÜHLEN DEN SIEG</h1>
           </div>
-          <div data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
-            <FuhlenImgTwo />
+          <div
+            className={styles.img_container}
+            data-sal="fade"
+            data-sal-delay="100"
+            data-sal-duration="1000"
+          >
+            <div className={styles.logo}>
+              <FuhlenLogo />
+            </div>
+            <img src={gif} alt="macbook gif" />
           </div>
           <div
             data-sal="slide-up"
@@ -42,12 +51,12 @@ const Fuhlen = () => {
               Klicks.
             </h5>
             <a
-            href="https://www.victoryshop.ch/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <button>VICTORY SHOP</button>
-          </a>
+              href="https://www.victoryshop.ch/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <button>VICTORY SHOP</button>
+            </a>
           </div>
         </div>
       </MediaQuery>
@@ -55,7 +64,7 @@ const Fuhlen = () => {
         <FuhlenDesktop />
       </MediaQuery>
     </>
-  )
-}
+  );
+};
 
-export default Fuhlen
+export default Fuhlen;

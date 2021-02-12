@@ -55,6 +55,9 @@
        width: 2.4rem;
    }
    .button{
+       button{
+           margin: 0;
+       }
        display: flex;
        justify-content: center;
        align-items: center;

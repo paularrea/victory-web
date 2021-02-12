@@ -5,6 +5,7 @@ import styles from "../../styles/about.module.scss";
 // import MediaQuery from "react-responsive";
 import video from "../../components/video/presentation.mp4";
 import PlayIcon from "../../images/svg/play_video.svg";
+import classNames from 'classnames';
 
 const VideoComponent = () => {
   const [playVideo, setPlayVideo] = useState(false);
@@ -21,7 +22,12 @@ const VideoComponent = () => {
       style={{ position: "relative", backgroundColor: "#1D1F2A" }}
     >
       {playVideo ? (
-        <div className={styles.video_window}>
+        <div
+          className={classNames(
+            styles.video_window,
+            styles.video_window_show
+          )}
+        >
           <video controls autoPlay className={styles.video}>
             <source src={video} type="video/mp4" />
             <source src={video} type="video/ogg" />

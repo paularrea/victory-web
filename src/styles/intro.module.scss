@@ -32,7 +32,7 @@
       padding: 4rem 2rem; 
       padding-bottom: 0;
       justify-content: space-between;
-      align-items: flex-end;
+      align-items: center;
       div{
         width: 50%;
         div{
@@ -41,7 +41,6 @@
     }
       .intro_container{
         padding: 0;
-        padding-bottom: 6rem;
         padding-right: 4rem;
         h2{
           font-size: 44px;
@@ -95,9 +94,6 @@
   .container{
       padding: 6rem 20rem; 
       padding-bottom: 0 !important;
-      .intro_container{
-        padding-bottom: 8rem;
-      }
   }
 }
 @media (min-width: 1800px) {

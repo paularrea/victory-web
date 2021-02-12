@@ -1,11 +1,9 @@
-/* Position and sizing of burger button */
 .bm-burger-button {
     padding-top: 1rem;
     position: relative;
     width: 1.5rem !important;
     height: 1.5rem !important;
   }
-
 .hideBar{
     background-color: #1D1F2A;
     position: absolute;
@@ -14,51 +12,37 @@
     width: 1.6rem;
     z-index: 1100;
 }
-
 .logo-menu{
   position: absolute;
   top: 1.5rem;
   left: 2rem;
   outline: none;
 }
-  /* Color/shape of burger icon bars */
   .bm-burger-bars {
     background: #FBD872;
     border-radius: 2px;
     height: 2px !important;
   }
-   
-  /* Color/shape of burger icon bars on hover*/
   .bm-burger-bars-hover {
     background: var(--btn-hover);
   }
-   
-  /* Position and sizing of clickable cross button */
   .bm-cross-button {
     position: absolute;
     top: 3rem !important;
     right: 2.5rem !important;
   }
-   
-  /* Color/shape of close button cross */
   .bm-cross {
     background: #FBD872;
     border-radius: 2px;
     width: 20px !important;
     height: 2px !important;
   }
-
   #react-burger-cross-btn{
     top: -10px !important;
     left: 5px !important;
     width: 2rem !important;
     height: 2rem !important;
   }
-
-  /*
-  Sidebar wrapper styles
-  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
-  */
   .bm-menu-wrap {
     position: fixed;
     width: 100vw !important;
@@ -66,7 +50,6 @@
     top: 0 !important;
     background:  #1D1F2A;
   }
-   
   /* General sidebar styles */
   .bm-menu {
     display: flex;
@@ -75,19 +58,16 @@
     width: auto;
     height: fit-content !important;
   }
-  
   /* Wrapper for item list */
   .bm-item-list {
     padding: 1rem 0;
   }
-
   hr{
     width: 18.2rem;
     display: block; height: 1px;
     border: 0; border-top: .1px solid #fed8802f;
     margin: 0; padding: 0;
   }
-
   .bm-item-list a{
     outline: none !important;
     outline-color: transparent;
@@ -97,7 +77,6 @@
     color: #FED880 !important;
     font-size: 24px;
   }
-
   .anchor-div{
     margin-top: 1rem !important;
     margin-bottom: 1.5rem !important;
@@ -114,7 +93,9 @@
   .follow-container{
     position: absolute;
     width: 60vw;
-    bottom: 10vh;
+    text-decoration: none;
+    outline: 0 none;
+    bottom: 10%;
   }
   .follow-container h3{
     color: white;
@@ -135,11 +116,8 @@
     padding: .3rem;
     width: 36px;
     height: 36px;
-    text-align: center;
-
-    
+    text-align: center; 
   }
-  /* Styling of overlay */
-  .bm-overlay {
+  .bm-overlay{
    display: none;
   }
