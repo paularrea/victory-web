@@ -21,7 +21,7 @@ const Form = () => {
         className="input"
         name="name"
         type="text"
-        placeholder="Name"
+        placeholder="Name "
       />
       <input
         data-sal="slide-up"
