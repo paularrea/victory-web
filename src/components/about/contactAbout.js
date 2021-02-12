@@ -1,6 +1,6 @@
 import React from "react";
 import "./formAbout.css";
-import FormAboutImg from "./formAboutImg";
+import FormAboutImg from "../../images/svg/map_bern.svg";
 
 const ContactForm = () => {
   const handleSubmit = (e) => {
