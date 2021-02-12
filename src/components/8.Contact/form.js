@@ -3,7 +3,6 @@ import "./form.css";
 // import ReCAPTCHA from "react-google-recaptcha";
 
 const Form = () => {
-
   return (
     <form
       action="/thankyou"
@@ -13,7 +12,7 @@ const Form = () => {
       data-netlify-honeypot="bot-field"
       // data-netlify-recaptcha="true"
     >
-      <input type="hidden" name="contact-form" value="contact-form" />
+      <input type="hidden" name="form-name" value="contact-form" />
       <input
         data-sal="slide-up"
         data-sal-delay="100"
