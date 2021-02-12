@@ -1,12 +1,30 @@
-import React, { useState } from "react";
+import React from "react";
 import "./formAbout.css";
 import FormAboutImg from "./formAboutImg";
 
 const ContactForm = () => {
-  const [callMeButton, setCallMeButton] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    // const form = e.target
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      // body: encode({
+      //   'form-name': form.getAttribute('name'),
+      // }),
+    })
+    .then(() => alert('success'))
+    .catch((error) => alert(error))
+  }
 
   const onClickCallMe = () => {
-    setCallMeButton(true)
+    let form = document.getElementById('form');
+    let callMe = document.createElement("INPUT");
+    callMe.setAttribute("type", "hidden");
+    callMe.setAttribute("value", "CALL ME");
+    form.appendChild(callMe);
+    handleSubmit();
   }
 
   return (
@@ -21,17 +39,12 @@ const ContactForm = () => {
               action="/thankyou"
               name="contact-about-form"
               method="post"
+              onSubmit={handleSubmit}
               data-netlify="true"
               data-netlify-honeypot="bot-field"
+              id='form'
             >
-              {callMeButton && (
-                <input
-                  id="call-me"
-                  name="call-me"
-                  type="hidden"
-                  value="CALL ME"
-                />
-              )}
+              <input type="hidden" name="form-name" value="contact-about-form" />
               <input
                 data-sal="slide-up"
                 data-sal-delay="100"
@@ -105,7 +118,7 @@ const ContactForm = () => {
                   data-sal="slide-up"
                   data-sal-delay="400"
                   data-sal-duration="1000"
-                  type="submit"
+                  type="button"
                   onClick={onClickCallMe}
                   className="about_contact_btn"
                 >

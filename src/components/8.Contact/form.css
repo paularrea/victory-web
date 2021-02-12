@@ -8,6 +8,20 @@
     color: #1D252D;
 }
 
+input:focus, input[type]:focus, .uneditable-input:focus {   
+    border-color: #1D1F2A;
+    outline: 0 none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 /* Thank you message */
 .bg-container{
     width: 100vw;
