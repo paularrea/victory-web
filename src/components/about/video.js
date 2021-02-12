@@ -21,12 +21,7 @@ const VideoComponent = () => {
       style={{ position: "relative", backgroundColor: "#1D1F2A" }}
     >
       {playVideo ? (
-        <div
-          data-sal="fade"
-          data-sal-delay="100"
-          data-sal-duration="1000"
-          className={styles.video_window}
-        >
+        <div className={styles.video_window}>
           <video controls autoPlay className={styles.video}>
             <source src={video} type="video/mp4" />
             <source src={video} type="video/ogg" />
