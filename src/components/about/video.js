@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import styles from "../../styles/about.module.scss";
-// import BackGroundVideoImg from "./BackgroundVideoImg";
-// import BackGroundImgMobile from "./BackgroundImgMobile";
-// import MediaQuery from "react-responsive";
-import video from "../../components/video/presentationVideo.mp4";
+import video from "../../video/presentation.mp4"
 import PlayIcon from "../../images/svg/play_video.svg";
 import classNames from 'classnames';
 
