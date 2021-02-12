@@ -7,7 +7,7 @@ const FuhlenImgDesktop = () => {
     query {
       placeholderImage: file(relativePath: { eq: "fuhlenDesktop.png" }) {
         childImageSharp {
-          fluid{
+          fluid(maxWidth: 1360, quality: 90, webpQuality: 90){
             ...GatsbyImageSharpFluid
           }
         }

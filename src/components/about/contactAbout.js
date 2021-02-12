@@ -3,7 +3,6 @@ import "./formAbout.css";
 import FormAboutImg from "./formAboutImg";
 
 const ContactForm = () => {
-
   const handleSubmit = (e) => {
     e.preventDefault()
     fetch('/', {

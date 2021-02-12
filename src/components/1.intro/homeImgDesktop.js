@@ -7,7 +7,7 @@ const HomeImgDesktop = () => {
     query {
       placeholderImage: file(relativePath: { eq: "introImg.png" }) {
         childImageSharp {
-          fluid{
+          fluid(maxWidth: 1360, quality: 90, webpQuality: 90){
             ...GatsbyImageSharpFluid
           }
         }
