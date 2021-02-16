@@ -8,6 +8,7 @@ import GoTopButton from "../../../images/svg/go_top_icon.svg";
 
 const DesktopHeader = () => {
   const [goTopApear, setGoTopApear] = useState(false);
+  const [hover, setHover] = useState(false);
   const [homeActive, setHomeActive] = useState(false);
   const [servicesActive, setServicesActive] = useState(false);
 
@@ -73,11 +74,7 @@ const DesktopHeader = () => {
             </div>
           </div>
 
-          <Link
-            id="about"
-            to="/about"
-            activeStyle={{ color: "white" }}
-          >
+          <Link id="about" to="/about" activeStyle={{ color: "white" }}>
             ÜBER UNS
           </Link>
         </nav>
@@ -93,9 +90,19 @@ const DesktopHeader = () => {
         <div
           className={
             goTopApear ? styles.go_top_button : styles.go_top_button_disabled
-          }
+          }   
+          role='button'
+          tabIndex={0}
+          onMouseEnter={() => setHover(true)}
+          onFocus={() => setHover(true)}
+          onMouseLeave={() => setHover(false)}
+          onBlur={() => setHover(false)}
         >
-          <GoTopButton className={styles.svg} onClick={scrollTop} />
+            {hover ? (
+              <GoTopButton className={styles.svg}  onClick={scrollTop} />
+            ) : (
+              <GoTopButton className={styles.svg} onClick={scrollTop} />
+            )}
         </div>
       </div>
     </header>

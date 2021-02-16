@@ -3,28 +3,28 @@ import "./formAbout.css";
 import FormAboutImg from "../../images/svg/map_bern.svg";
 
 const ContactForm = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    fetch('/', {
-      method: 'POST',
-    })
-    .then(() =>  fetch('/', {
-      action: "/thankyou"
-    }))
-    .catch((error) => alert(error))
-  }
+  // const handleSubmit = (e) => {
+  //   e.preventDefault()
+  //   fetch('/', {
+  //     method: 'POST',
+  //   })
+  //   .then(() =>  fetch('/', {
+  //     action: "/thankyou"
+  //   }))
+  //   .catch((error) => alert(error))
+  // }
 
-  const onClickCallMe = (e) => {
-    e.preventDefault()
-    .then(() =>  {
-      let form = document.getElementById('form');
-      let callMe = document.createElement("INPUT");
-      callMe.setAttribute("type", "hidden");
-      callMe.setAttribute("value", "CALL ME");
-      form.appendChild(callMe);
-    })
-    .then(() =>  handleSubmit())
-  }
+  // const onClickCallMe = (e) => {
+  //   e.preventDefault()
+  //   .then(() =>  {
+  //     let form = document.getElementById('form-about');
+  //     let callMe = document.createElement("INPUT");
+  //     callMe.setAttribute("type", "hidden");
+  //     callMe.setAttribute("value", "CALL ME");
+  //     form.appendChild(callMe);
+  //   })
+  //   .then(() =>  handleSubmit())
+  // }
 
   return (
     <div className="big_container">
@@ -35,12 +35,12 @@ const ContactForm = () => {
           </div>
           <div>
             <form
-              action="/thankyou"
-              name="contact-about-form"
-              onSubmit={handleSubmit}
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
-              id='form'
+               action="/thankyou"
+               name="contact-about-form"
+               method="post"
+               data-netlify="true"
+               data-netlify-honeypot="bot-field"
+                id='form-about'
             >
               <input type="hidden" name="form-name" value="contact-about-form" />
               <input
@@ -116,8 +116,9 @@ const ContactForm = () => {
                   data-sal="slide-up"
                   data-sal-delay="400"
                   data-sal-duration="1000"
-                  type="button"
-                  onClick={onClickCallMe}
+                  type="submit"
+                  // type='button'
+                  // onClick={onClickCallMe}
                   className="about_contact_btn"
                 >
                   WIR RUFEN SIE
