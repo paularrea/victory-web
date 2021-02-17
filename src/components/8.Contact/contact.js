@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../../styles/form.module.scss";
+import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 import Form from "./form";
 
 const ContactForm = () => {
@@ -9,12 +10,10 @@ const ContactForm = () => {
       <div id="contact" className={styles.container}>
         <div data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
           <h3>
-            Registrieren Sie sich für weitere Informationen über unsere
-            Preislisten
+          <FormattedMessage id="contact.title" />
           </h3>
           <h5>
-            Wir werden Ihre Anfrage bearbeiten und so schnell wie möglich
-            kontaktieren wir Sie
+          <FormattedMessage id="contact.subtitle" />
           </h5>
         </div>
         <Form />
@@ -25,4 +24,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default injectIntl(ContactForm);

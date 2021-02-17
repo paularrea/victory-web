@@ -3,6 +3,7 @@ import React, {useState, useEffect} from "react";
 import Layout from "../components/layout/layout";
 import SEO from "../components/seo";
 import styles from "../styles/index.module.scss";
+import { injectIntl } from "gatsby-plugin-intl"
 
 import Intro from "../components/1.intro/intro";
 import Infography from "../components/2.Infography/infography";
@@ -15,7 +16,7 @@ import ContactForm from "../components/8.Contact/contact";
 import Blog from "../components/9.Blog/blog";
 import Logo from "../images/logo.png"
 
-const IndexPage = () => {
+const IndexPage = ({intl}) => {
   const [lateEntry, setLateEntry] = useState(false);
 
   useEffect(() => {
@@ -35,7 +36,9 @@ const IndexPage = () => {
         </div>
       )}
     <Layout>
-      <SEO title="Home" />
+    <SEO
+        title={intl.formatMessage({ id: "title" })}
+      />
       <div>
         <Intro />
       </div>
@@ -67,4 +70,4 @@ const IndexPage = () => {
   </div>)
 };
 
-export default IndexPage;
+export default injectIntl(IndexPage);

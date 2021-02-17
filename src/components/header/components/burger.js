@@ -1,25 +1,27 @@
-import React, { useState } from "react"
-import { fallDown as Menu } from "react-burger-menu"
-import "./burger.css"
-import Logo from "./logo"
-import { AnchorLink } from "gatsby-plugin-anchor-links"
+import React, { useState } from "react";
+import { fallDown as Menu } from "react-burger-menu";
+import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
+import "./burger.css";
+import Logo from "./logo";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
+import Language from "../../language";
 
-import LinkedInIcon from "../../../images/svg/Linkedin_icon.svg"
-import FacebookIcon from "../../../images/svg/Facebook_icon.svg"
-import YoutubeIcon from "../../../images/svg/Youtube_icon.svg"
-import TwitterIcon from "../../../images/svg/Twitter_icon.svg"
-import InstagramIcon from "../../../images/svg/Instagram_icon.svg"
+import LinkedInIcon from "../../../images/svg/Linkedin_icon.svg";
+import FacebookIcon from "../../../images/svg/Facebook_icon.svg";
+import YoutubeIcon from "../../../images/svg/Youtube_icon.svg";
+import TwitterIcon from "../../../images/svg/Twitter_icon.svg";
+import InstagramIcon from "../../../images/svg/Instagram_icon.svg";
 
 const Burger = () => {
-  const [menuOpen, setMenuOpen] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  const handleStateChange = state => {
-    setMenuOpen(state.isOpen)
-  }
+  const handleStateChange = (state) => {
+    setMenuOpen(state.isOpen);
+  };
 
   const closeMenu = () => {
-    setMenuOpen(false)
-  }
+    setMenuOpen(false);
+  };
 
   return (
     <>
@@ -27,7 +29,7 @@ const Burger = () => {
       <Menu
         right
         isOpen={menuOpen}
-        onStateChange={state => handleStateChange(state)}
+        onStateChange={(state) => handleStateChange(state)}
       >
         <div className="logo-menu">
           <Logo />
@@ -37,15 +39,15 @@ const Burger = () => {
             role="link"
             className="anchor-div"
             onClick={() => {
-              closeMenu()
+              closeMenu();
             }}
             onKeyDown={() => {
-              closeMenu()
+              closeMenu();
             }}
             tabIndex={0}
           >
             {" "}
-            HAUS
+            <FormattedMessage id="nav.home" />
           </div>
         </AnchorLink>
         <hr />
@@ -54,15 +56,15 @@ const Burger = () => {
             role="link"
             className="anchor-div"
             onClick={() => {
-              closeMenu()
+              closeMenu();
             }}
             onKeyDown={() => {
-              closeMenu()
+              closeMenu();
             }}
             tabIndex={0}
           >
             {" "}
-            SERVICES
+            <FormattedMessage id="nav.services" />
           </div>
         </AnchorLink>
         <hr />
@@ -71,71 +73,75 @@ const Burger = () => {
             role="link"
             className="anchor-div"
             onClick={() => {
-              closeMenu()
+              closeMenu();
             }}
             onKeyDown={() => {
-              closeMenu()
+              closeMenu();
             }}
             tabIndex={0}
           >
             {" "}
-            ÜBER UNS
+            <FormattedMessage id="nav.about" />
           </div>
         </AnchorLink>
+        <hr />
+        <div>
+          <Language />
+        </div>
         <div className="follow-container">
           <hr />
           <h3>Folge uns</h3>
           <ul className="media-list">
-          <li>
-                <a
-                  href="https://www.instagram.com/victoryswitzerland/?hl=es"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <InstagramIcon />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.facebook.com/victoryswitzerland/"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <FacebookIcon />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.youtube.com/channel/UCl7cknUnSR8FcsinGHRok9Q"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <YoutubeIcon />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://twitter.com/VICTORYSWITZER1"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <TwitterIcon />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/company/victory-switzerland/"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <LinkedInIcon />
-                </a>
-              </li>
+            <li>
+              <a
+                href="https://www.instagram.com/victoryswitzerland/?hl=es"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <InstagramIcon />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/victoryswitzerland/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <FacebookIcon />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCl7cknUnSR8FcsinGHRok9Q"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <YoutubeIcon />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/VICTORYSWITZER1"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <TwitterIcon />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/victory-switzerland/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <LinkedInIcon />
+              </a>
+            </li>
           </ul>
         </div>
       </Menu>
     </>
-  )
-}
+  );
+};
 
-export default Burger
+export default injectIntl(Burger);

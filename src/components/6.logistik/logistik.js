@@ -1,15 +1,16 @@
-import React from "react"
-import styles from "../../styles/logistik.module.scss"
-import LogistikImg from "./logistikImg"
-import MediaQuery from "react-responsive"
-import { AnchorLink } from "gatsby-plugin-anchor-links"
+import React from "react";
+import styles from "../../styles/logistik.module.scss";
+import LogistikImg from "./logistikImg";
+import MediaQuery from "react-responsive";
+import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
-import LogistikOne from "../icons/logistic-icons/logistikOne"
-import LogistikTwo from "../icons/logistic-icons/logistikTwo"
-import LogistikThree from "../icons/logistic-icons/logistikThree"
-import LogistikFour from "../icons/logistic-icons/logistikFour"
-import LogistikFive from "../icons/logistic-icons/logistikFive"
-import LogistikDesktop from "./logistikDesktop"
+import LogistikOne from "../icons/logistic-icons/logistikOne";
+import LogistikTwo from "../icons/logistic-icons/logistikTwo";
+import LogistikThree from "../icons/logistic-icons/logistikThree";
+import LogistikFour from "../icons/logistic-icons/logistikFour";
+import LogistikFive from "../icons/logistic-icons/logistikFive";
+import LogistikDesktop from "./logistikDesktop";
 
 const Logistik = () => {
   return (
@@ -17,17 +18,17 @@ const Logistik = () => {
       <MediaQuery maxWidth={800}>
         <div className={styles.container}>
           <div data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
-            <h2>LOGISTIK</h2>
+            <h2>
+              <FormattedMessage id="logistic.title" />
+            </h2>
             <h5>
-              Wir bieten logistische Dienstleistungen immer mit der Garantie und
-              Qualität an. Unser Team stellt sich auf Ihre Bedürfnisse ein und
-              bietet Ihnen massgeschneiderte Angebote zum besten Preis. Unsere
-              Arbeit ist beendet, wenn unser Kunde seine Ware erhält und fühlt
-              den Sieg!
+              <FormattedMessage id="logistic.subtitle" />
             </h5>
           </div>
           <div data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
-            <h4>Unser Team Garantiert:</h4>
+            <h4>
+              <FormattedMessage id="logistic.container.title" />
+            </h4>
           </div>
           <div className={styles.bullet_container}>
             <div
@@ -37,10 +38,11 @@ const Logistik = () => {
               className={styles.bullet}
             >
               <LogistikOne />
-              <h5>Konservierung der Produkte</h5>
+              <h5>
+                <FormattedMessage id="logistic.container.bullet1.title" />
+              </h5>
               <p>
-                In der Zwischenzeit wird die Übertragung und Lagerung der
-                Produkte fortgesetzt.
+                <FormattedMessage id="logistic.container.bullet1.description" />
               </p>
             </div>
             <div
@@ -50,12 +52,11 @@ const Logistik = () => {
               className={styles.bullet}
             >
               <LogistikTwo />
-              <h5>Kennzeichnung</h5>
+              <h5>
+                <FormattedMessage id="logistic.container.bullet2.title" />
+              </h5>
               <p>
-                Sie vermittelt relevante Daten über die Eigenschaften oder
-                Qualitäten des Produkts und die Art und Weise, wie es gehandhabt
-                wird, und verringert so die Möglichkeit von Verschleiß oder
-                Verlust.
+                <FormattedMessage id="logistic.container.bullet2.description" />
               </p>
             </div>
             <div
@@ -65,10 +66,11 @@ const Logistik = () => {
               className={styles.bullet}
             >
               <LogistikThree />
-              <h5>Handhabung des Produkts</h5>
+              <h5>
+                <FormattedMessage id="logistic.container.bullet3.title" />
+              </h5>
               <p>
-                Erleichtert das Zählen, Verteilen und Transportieren von
-                Verpackungsmaterialien und Packstücken.
+                <FormattedMessage id="logistic.container.bullet3.description" />
               </p>
             </div>
             <div
@@ -78,11 +80,11 @@ const Logistik = () => {
               className={styles.bullet}
             >
               <LogistikFour />
-              <h5>Lagerverwaltung</h5>
+              <h5>
+                <FormattedMessage id="logistic.container.bullet4.title" />
+              </h5>
               <p>
-                Wir haben Lagerhäuser, in denen wir Ihre Bestände aufbewahren
-                und organisieren. Dieses Management wird je nach Bedarf mit
-                unserem Kunden verhandelt.
+                <FormattedMessage id="logistic.container.bullet4.description" />
               </p>
             </div>
             <div
@@ -92,11 +94,11 @@ const Logistik = () => {
               className={styles.bullet}
             >
               <LogistikFive />
-              <h5>Effizienter Versorgungskreislauf</h5>
+              <h5>
+                <FormattedMessage id="logistic.container.bullet5.title" />
+              </h5>
               <p>
-                Sie führt zu einem preiswerten Angebot, dass den Endprodukt
-                Preis und den Verbraucher positiv beeinflusst. Unser Team wird
-                Ihnen gerne eine massgeschneiderte Lösung anbieten.
+                <FormattedMessage id="logistic.container.bullet5.description" />
               </p>
             </div>
           </div>
@@ -110,7 +112,9 @@ const Logistik = () => {
           </div>
           <div className={styles.button}>
             <AnchorLink to="/#contact">
-              <button>BERATUNG EINHOLEN</button>
+              <button>
+                <FormattedMessage id="logistic.button" />
+              </button>
             </AnchorLink>
           </div>
         </div>
@@ -119,7 +123,7 @@ const Logistik = () => {
         <LogistikDesktop />
       </MediaQuery>
     </>
-  )
-}
+  );
+};
 
-export default Logistik
+export default injectIntl(Logistik);

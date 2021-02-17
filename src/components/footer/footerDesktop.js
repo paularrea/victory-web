@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../header/components/logo";
 import { Link } from "gatsby";
 import styles from "../../styles/footer.module.scss";
+import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 
 import LinkedInIcon from "../../images/svg/Linkedin_icon.svg";
 import FacebookIcon from "../../images/svg/Facebook_icon.svg";
@@ -12,11 +13,11 @@ import InstagramIcon from "../../images/svg/Instagram_icon.svg";
 import LocationIcon from "../../images/svg/LOCATION.svg";
 import MailIcon from "../../images/svg/MAIL.svg";
 import PhoneIcon from "../../images/svg/PHONE.svg";
+import Language from "../language";
 
 const FooterDesktop = () => {
   if (typeof window !== "undefined") {
-    // eslint-disable-next-line global-require
-    require("smooth-scroll")('a[href*="#"]')
+    require("smooth-scroll")('a[href*="#"]');
   }
   return (
     <div className={styles.big_container}>
@@ -27,15 +28,13 @@ const FooterDesktop = () => {
               <Logo />
             </Link>
             <p>
-              Victory Switzerland GmbH has been active as an import / wholesaler
-              since it was founded in 2012 and makes worldwide purchases for its
-              customers. Due to the diversity of our customers, our range is
-              constantly being expanded; We import over 1000 new items every
-              year.
+              <FormattedMessage id="footer.text" />
             </p>
           </div>
           <div className={styles.contact}>
-            <h3>Haben Sie Fragen?</h3>
+            <h3>
+              <FormattedMessage id="footer.title" />
+            </h3>
             <div className={styles.contact_div}>
               <div className={styles.contact_icons}>
                 <LocationIcon />
@@ -127,8 +126,11 @@ const FooterDesktop = () => {
               </li>
             </ul>
           </div>
-          <div className={styles.copyright}>
-            <p>© Alle Rechte vorbehalten</p>
+          <div className={styles.flex_footer_lang}>
+            <Language />
+            <div className={styles.copyright}>
+              <p>© Alle Rechte vorbehalten</p>
+            </div>
           </div>
         </div>
       </div>
@@ -136,4 +138,4 @@ const FooterDesktop = () => {
   );
 };
 
-export default FooterDesktop;
+export default injectIntl(FooterDesktop);

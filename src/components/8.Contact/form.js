@@ -1,5 +1,6 @@
 import React from "react";
 import "./form.css";
+import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 // import ReCAPTCHA from "react-google-recaptcha";
 
 const Form = () => {
@@ -20,7 +21,7 @@ const Form = () => {
         className="input"
         name="name"
         type="text"
-        placeholder="Name "
+        placeholder={<FormattedMessage id="contact.name" />}
       />
       <input
         data-sal="slide-up"
@@ -29,7 +30,7 @@ const Form = () => {
         className="input"
         name="vorname"
         type="text"
-        placeholder="Vorname"
+        placeholder={<FormattedMessage id="contact.surname" />}
       />
       <input
         data-sal="slide-up"
@@ -38,7 +39,7 @@ const Form = () => {
         className="input"
         name="unternehmen"
         type="text"
-        placeholder="Unternehmen"
+        placeholder={<FormattedMessage id="contact.company" />}
       />
       <input
         data-sal="slide-up"
@@ -47,7 +48,7 @@ const Form = () => {
         className="input"
         name="industrie"
         type="text"
-        placeholder="Industrie"
+        placeholder={<FormattedMessage id="contact.industry" />}
       />
       <input
         data-sal="slide-up"
@@ -56,7 +57,7 @@ const Form = () => {
         className="input"
         name="telefon"
         type="number"
-        placeholder="Telefon"
+        placeholder={<FormattedMessage id="contact.phone" />}
       />
       <input
         data-sal="slide-up"
@@ -65,7 +66,7 @@ const Form = () => {
         className="input"
         name="e-mail"
         type="email"
-        placeholder="E-mail"
+        placeholder={<FormattedMessage id="contact.email" />}
       />
       <br />
       {/* <ReCAPTCHA sitekey={process.env.GATSBY_RECAPTCHA_KEY} /> */}
@@ -81,4 +82,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default injectIntl(Form);

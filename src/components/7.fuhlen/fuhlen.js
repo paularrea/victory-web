@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../../styles/fuhlen.module.scss";
 import MediaQuery from "react-responsive";
+import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 
 import FuhlenDesktop from "./fuhlenDesktop";
 import FuhlenImg from "./fuhlenImg";
@@ -20,7 +21,9 @@ const Fuhlen = () => {
             data-sal-delay="100"
             data-sal-duration="1000"
           >
-            <h1>FÜHLEN DEN SIEG</h1>
+            <h1>
+              <FormattedMessage id="fuhlen.title" />
+            </h1>
           </div>
           <div
             className={styles.img_container}
@@ -39,23 +42,23 @@ const Fuhlen = () => {
             data-sal-duration="1000"
             className={styles.container}
           >
-            <h2>DAS KRONJUWEL</h2>
+            <h2>
+              <FormattedMessage id="fuhlen.title2" />
+            </h2>
             <h5>
-              Für Kunden, die keine eigenen Kollektionen entwickeln wollen,
-              haben wir ebenfalls eine Lösung.
+              <FormattedMessage id="fuhlen.subtitle" />
             </h5>
             <h5 style={{ color: "#1D1F2AB3", paddingTop: 0 }}>
-              Victory Shop ist eine digitale Zentrale, in der die wichtigsten
-              europäischen Grosshändlernzusammenleben. Das Beste aus ihren
-              Produkten in einem einzigen Warenkorb. Sie benötigen nur ein paar
-              Klicks.
+              <FormattedMessage id="fuhlen.text1" />
             </h5>
             <a
               href="https://www.victoryshop.ch/"
               rel="noreferrer"
               target="_blank"
             >
-              <button>VICTORY SHOP</button>
+              <button>
+                <FormattedMessage id="fuhlen.button" />
+              </button>
             </a>
           </div>
         </div>
@@ -67,4 +70,4 @@ const Fuhlen = () => {
   );
 };
 
-export default Fuhlen;
+export default injectIntl(Fuhlen);

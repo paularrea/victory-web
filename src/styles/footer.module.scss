@@ -63,6 +63,7 @@
     width: 100%;
     padding: 1rem 0;
     margin: 0;
+    padding-top: 0;
     display: flex;
     justify-content: space-around;
     color: #FBD872;
@@ -79,14 +80,24 @@
         }
     }
 }
-.copyright{
-    padding-top: 2rem;
-    p{
-        color: #FFFFFF;
-        margin: 0;
-        padding: 0;
-    }
+.flex_footer_lang{
+    padding-top: .7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 420px;
+    .copyright{
+        p{
+            color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+        }
 }
+    
+}
+
+
+
 
 @media (min-width: 870px) {
     .container{

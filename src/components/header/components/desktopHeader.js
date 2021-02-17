@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
+import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 import { Link } from "gatsby";
 import styles from "../../../styles/header.module.scss";
 import Logo from "./logo";
@@ -56,7 +57,7 @@ const DesktopHeader = () => {
             to="/#home"
             className={homeActive ? styles.active : styles.disabled}
           >
-            HAUS
+            <FormattedMessage id="nav.home" />
           </AnchorLink>
           <div className={styles.drop_down}>
             <AnchorLink
@@ -64,18 +65,30 @@ const DesktopHeader = () => {
               to="/#produktDesign"
               className={servicesActive ? styles.active : styles.disabled}
             >
-              + SERVICES
+              <FormattedMessage id="nav.services" />
             </AnchorLink>
             <div className={styles.drop_down_content}>
-              <AnchorLink to="/#produktDesign">PRODUKTDESIGN</AnchorLink>
-              <AnchorLink to="/#produktion">PRODUKTION</AnchorLink>
-              <AnchorLink to="/#importieren">IMPORTIEREN</AnchorLink>
-              <AnchorLink to="/#logistik">LOGISTIK</AnchorLink>
+              <AnchorLink to="/#produktDesign">
+                {" "}
+                <FormattedMessage id="nav.productDesign" />
+              </AnchorLink>
+              <AnchorLink to="/#produktion">
+                {" "}
+                <FormattedMessage id="nav.production" />
+              </AnchorLink>
+              <AnchorLink to="/#importieren">
+                {" "}
+                <FormattedMessage id="nav.import" />
+              </AnchorLink>
+              <AnchorLink to="/#logistik">
+                {" "}
+                <FormattedMessage id="nav.logistic" />
+              </AnchorLink>
             </div>
           </div>
 
           <Link id="about" to="/about" activeStyle={{ color: "white" }}>
-            ÜBER UNS
+            <FormattedMessage id="nav.about" />
           </Link>
         </nav>
         <div>
@@ -84,25 +97,28 @@ const DesktopHeader = () => {
             rel="noreferrer"
             target="_blank"
           >
-            <button>VICTORY SHOP</button>
+            <button>
+              {" "}
+              <FormattedMessage id="nav.shop" />
+            </button>
           </a>
         </div>
         <div
           className={
             goTopApear ? styles.go_top_button : styles.go_top_button_disabled
-          }   
-          role='button'
+          }
+          role="button"
           tabIndex={0}
           onMouseEnter={() => setHover(true)}
           onFocus={() => setHover(true)}
           onMouseLeave={() => setHover(false)}
           onBlur={() => setHover(false)}
         >
-            {hover ? (
-              <GoTopButton className={styles.svg}  onClick={scrollTop} />
-            ) : (
-              <GoTopButton className={styles.svg} onClick={scrollTop} />
-            )}
+          {hover ? (
+            <GoTopButton className={styles.svg} onClick={scrollTop} />
+          ) : (
+            <GoTopButton className={styles.svg} onClick={scrollTop} />
+          )}
         </div>
       </div>
     </header>
@@ -113,4 +129,4 @@ DesktopHeader.propTypes = {
   siteTitle: PropTypes.string,
 };
 
-export default DesktopHeader;
+export default injectIntl(DesktopHeader);

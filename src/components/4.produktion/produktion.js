@@ -1,9 +1,10 @@
-import React from "react"
-import styles from "../../styles/produktion.module.scss"
-import MediaQuery from "react-responsive"
-import ProduktionImg from "./productionImg"
-import ProduktionDesktop from "./productionDesktop"
-import { AnchorLink } from "gatsby-plugin-anchor-links"
+import React from "react";
+import styles from "../../styles/produktion.module.scss";
+import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
+import MediaQuery from "react-responsive";
+import ProduktionImg from "./productionImg";
+import ProduktionDesktop from "./productionDesktop";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const Produktion = () => {
   return (
@@ -11,10 +12,11 @@ const Produktion = () => {
       <MediaQuery maxWidth={800}>
         <div className={styles.container}>
           <div data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
-            <h2>PRODUKTION</h2>
+            <h2>
+              <FormattedMessage id="production.title" />
+            </h2>
             <h5>
-              Das perfekte Produkt herzustellen ist eine Herausforderung die wir
-              schätzen, weil wir alles tun, um sie zu erfüllen.
+              <FormattedMessage id="production.subtitle" />
             </h5>
           </div>
           <div
@@ -33,26 +35,21 @@ const Produktion = () => {
             className={styles.text_container}
           >
             <p>
-              Wir finden die richtige Fabrik aus einer weltweiten Auswahl und
-              nutzen unsere Erfahrung und unseren Einfluss, um Ihnen einen
-              besseren Preis zu bieten, als Ihr Unternehmen allein erzielen
-              könnte.
+              <FormattedMessage id="production.text1" />
             </p>
             <br />
             <p>
-              Wenn Sie in unsere Dienstleistungen investieren, sparen Sie Zeit
-              und Geld. Ihr CFO wird uns lieben.
+              <FormattedMessage id="production.text2" />
             </p>
             <br />
             <br />
             <p style={{ color: "#FFFFFFB3", opacity: "60%" }}>
-              Heute haben Sie Zugang zu noch nie dagewesenen Möglichkeiten, ein
-              neues Produkt zu dem Preis, in der Qualität und in dem Umfang
-              herzustellen, den Sie benötigen. Das Angebot ist so gross, dass
-              man sich verlaufen kann. Ein weiterer Grund, mit uns zu arbeiten.
+              <FormattedMessage id="production.text3" />
             </p>
             <AnchorLink to="/#contact">
-              <button>PRODUKTION STARTEN</button>
+              <button>
+                <FormattedMessage id="production.button" />
+              </button>
             </AnchorLink>
           </div>
         </div>
@@ -61,7 +58,7 @@ const Produktion = () => {
         <ProduktionDesktop />
       </MediaQuery>
     </>
-  )
-}
+  );
+};
 
-export default Produktion
+export default injectIntl(Produktion);

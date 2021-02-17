@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../header/components/logo";
 import MediaQuery from "react-responsive";
+import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 
 import styles from "../../styles/footer.module.scss";
 
@@ -23,13 +24,10 @@ const Footer = () => {
         <div className={styles.container}>
           <Logo />
           <p>
-            Victory Switzerland GmbH has been active as an import / wholesaler
-            since it was founded in 2012 and makes worldwide purchases for its
-            customers. Due to the diversity of our customers, our range is
-            constantly being expanded; We import over 1000 new items every year.
+          <FormattedMessage id="footer.text" />
           </p>
           <div className={styles.contact}>
-            <h3>Haben Sie Fragen?</h3>
+            <h3><FormattedMessage id="footer.title" /></h3>
             <div className={styles.contact_div}>
               <div className={styles.contact_icons}>
                 <LocationIcon />
@@ -132,4 +130,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default injectIntl(Footer);

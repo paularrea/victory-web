@@ -1,5 +1,6 @@
 import React from "react";
 import HomeOne from "./homeOne";
+import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 import styles from "../../styles/intro.module.scss";
 import MediaQuery from "react-responsive";
 import DesktopIntro from "./desktopIntro";
@@ -18,8 +19,14 @@ const Intro = () => {
             data-sal-duration="1000"
             className={styles.intro_container}
           >
-            <h2>B2B Unternehmen auf dem schweizer Markt</h2>
-            <h4>Wir verkaufen spezifische Lösungen.</h4>
+            <h2>
+              {" "}
+              <FormattedMessage id="intro.title" />
+            </h2>
+            <h4>
+              {" "}
+              <FormattedMessage id="intro.subtitle" />
+            </h4>
             <div
               data-sal="slide-up"
               data-sal-delay="250"
@@ -32,7 +39,10 @@ const Intro = () => {
                   rel="noreferrer"
                   target="_blank"
                 >
-                  <button>RUFEN SIE UNS AN</button>
+                  <button>
+                    {" "}
+                    <FormattedMessage id="intro.button1" />
+                  </button>
                 </a>
               </div>
 
@@ -42,7 +52,10 @@ const Intro = () => {
                   rel="noreferrer"
                   target="_blank"
                 >
-                  <button>DEN SHOP BESUCHEN</button>
+                  <button>
+                    {" "}
+                    <FormattedMessage id="intro.button2" />
+                  </button>
                 </a>
               </div>
             </div>
@@ -56,4 +69,4 @@ const Intro = () => {
   );
 };
 
-export default Intro;
+export default injectIntl(Intro);

@@ -1,5 +1,6 @@
 import React from "react";
 import HomeImgDesktop from "./homeImgDesktop";
+import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 import styles from "../../styles/intro.module.scss";
 
 const DesktopIntro = () => {
@@ -12,8 +13,13 @@ const DesktopIntro = () => {
           data-sal-duration="1000"
           className={styles.intro_container}
         >
-          <h2>B2B Unternehmen auf dem schweizer Markt</h2>
-          <h4>Wir verkaufen spezifische Lösungen.</h4>
+          <h2>
+            {" "}
+            <FormattedMessage id="intro.title" />
+          </h2>
+          <h4>
+            <FormattedMessage id="intro.subtitle" />
+          </h4>
           <div
             data-sal="slide-up"
             data-sal-delay="250"
@@ -26,7 +32,9 @@ const DesktopIntro = () => {
                 rel="noreferrer"
                 target="_blank"
               >
-                <button>RUFEN SIE UNS AN</button>
+                <button>
+                  <FormattedMessage id="intro.button1" />
+                </button>
               </a>
             </div>
 
@@ -36,7 +44,9 @@ const DesktopIntro = () => {
                 rel="noreferrer"
                 target="_blank"
               >
-                <button>DEN SHOP BESUCHEN</button>
+                <button>
+                  <FormattedMessage id="intro.button2" />
+                </button>
               </a>
             </div>
           </div>
@@ -49,4 +59,4 @@ const DesktopIntro = () => {
   );
 };
 
-export default DesktopIntro;
+export default injectIntl(DesktopIntro);
