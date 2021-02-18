@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 import styles from "../../styles/about.module.scss";
-import video from "../../video/presentation.mp4"
+import video from "../../video/presentation.mp4";
 import PlayIcon from "../../images/svg/play_video.svg";
-import classNames from 'classnames';
+import classNames from "classnames";
 
 const VideoComponent = () => {
   const [playVideo, setPlayVideo] = useState(false);
@@ -20,10 +21,7 @@ const VideoComponent = () => {
     >
       {playVideo ? (
         <div
-          className={classNames(
-            styles.video_window,
-            styles.video_window_show
-          )}
+          className={classNames(styles.video_window, styles.video_window_show)}
         >
           <video controls autoPlay className={styles.video}>
             <source src={video} type="video/mp4" />
@@ -45,8 +43,12 @@ const VideoComponent = () => {
               data-sal-duration="1000"
               className={styles.video_text}
             >
-              <h2>WIR VERKAUFEN KUNDENSPEZIFISCHE B2B-LÖSUNGEN.</h2>
-              <h5>Lassen Sie Ihr Unternehmen wachsen.</h5>
+              <h2>
+                <FormattedMessage id="about.videoText" />
+              </h2>
+              <h5>
+                <FormattedMessage id="about.videoSubtext" />
+              </h5>
             </div>
             <div>
               <PlayIcon className={styles.play_icon} onClick={clickToPlay} />
@@ -58,4 +60,4 @@ const VideoComponent = () => {
   );
 };
 
-export default VideoComponent;
+export default injectIntl(VideoComponent);

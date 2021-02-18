@@ -1,19 +1,26 @@
 import React from "react";
 import "./form.css";
-import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
+import { injectIntl } from "gatsby-plugin-intl";
 // import ReCAPTCHA from "react-google-recaptcha";
 
-const Form = () => {
+const Form = ({ intl }) => {
+  const namePlaceholder = intl.formatMessage({ id: "contact.name" });
+  const surnamePlaceholder = intl.formatMessage({ id: "contact.surname" });
+  const companyPlaceholder = intl.formatMessage({ id: "contact.company" });
+  const industryPlaceholder = intl.formatMessage({ id: "contact.industry" });
+  const phonePlaceholder = intl.formatMessage({ id: "contact.phone" });
+  const emailPlaceholder = intl.formatMessage({ id: "contact.email" });
   return (
     <form
+    subject="CONTACT"
       action="/thankyou"
-      name="contact-form"
+      name="CONTACT"
       method="post"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       // data-netlify-recaptcha="true"
     >
-      <input type="hidden" name="form-name" value="contact-form" />
+      <input type="hidden" name="form-name" value="CONTACT" />
       <input
         data-sal="slide-up"
         data-sal-delay="100"
@@ -21,7 +28,8 @@ const Form = () => {
         className="input"
         name="name"
         type="text"
-        placeholder={<FormattedMessage id="contact.name" />}
+        required
+        placeholder={namePlaceholder}
       />
       <input
         data-sal="slide-up"
@@ -30,7 +38,8 @@ const Form = () => {
         className="input"
         name="vorname"
         type="text"
-        placeholder={<FormattedMessage id="contact.surname" />}
+        required
+        placeholder={surnamePlaceholder}
       />
       <input
         data-sal="slide-up"
@@ -39,7 +48,8 @@ const Form = () => {
         className="input"
         name="unternehmen"
         type="text"
-        placeholder={<FormattedMessage id="contact.company" />}
+        required
+        placeholder={companyPlaceholder}
       />
       <input
         data-sal="slide-up"
@@ -48,7 +58,8 @@ const Form = () => {
         className="input"
         name="industrie"
         type="text"
-        placeholder={<FormattedMessage id="contact.industry" />}
+        required
+        placeholder={industryPlaceholder}
       />
       <input
         data-sal="slide-up"
@@ -57,7 +68,8 @@ const Form = () => {
         className="input"
         name="telefon"
         type="number"
-        placeholder={<FormattedMessage id="contact.phone" />}
+        required
+        placeholder={phonePlaceholder}
       />
       <input
         data-sal="slide-up"
@@ -66,7 +78,8 @@ const Form = () => {
         className="input"
         name="e-mail"
         type="email"
-        placeholder={<FormattedMessage id="contact.email" />}
+        required
+        placeholder={emailPlaceholder}
       />
       <br />
       {/* <ReCAPTCHA sitekey={process.env.GATSBY_RECAPTCHA_KEY} /> */}

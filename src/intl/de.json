@@ -108,9 +108,20 @@
         "title" : "Haben Sie Fragen?"
     },
     "about": {
+        "videoText" : "WIR VERKAUFEN KUNDENSPEZIFISCHE B2B-LÖSUNGEN.",
+        "videoSubtext" : "Lassen Sie Ihr Unternehmen wachsen.",
         "title": "ÜBER UNS",
         "subtitle" : "Sehr geehrte Kunden möchten wir Ihnen einen Überblick über unsere Aktivitäten und unser Leistungsspektrum geben.",
         "text1" : "Victory Switzerland GmbH ist seit ihrer Gründung im Jahr 2012 als Importeur / Grosshändler tätig und kauft weltweit für ihre Kunden ein. Aufgrund der Vielfalt unserer Kunden wird unser Sortiment ständig erweitert.",
-        "text2" : "Wir sind ein internationales Team, in dem verschiedene Kulturen zusammenfallen, die unseren Arbeitsprozess bereichern. Wir bekennen uns zu den ethischen und moralischen Werten, die unsere Arbeits- und Lebensphilosophie bestimmen."
+        "text2" : "Wir sind ein internationales Team, in dem verschiedene Kulturen zusammenfallen, die unseren Arbeitsprozess bereichern. Wir bekennen uns zu den ethischen und moralischen Werten, die unsere Arbeits- und Lebensphilosophie bestimmen.",
+        "position1" : "CEO FOUNDER",
+        "position2" : "CFO",
+        "position3" : "IT",
+        "position4" : "Verkäuf - Marketing",
+        "position5" : "Verkäuf",
+        "position6" : "Admin - Lager",
+        "position7" : "Verkäuf",
+        "position8" : "Verkäuf",
+        "contactBtn" : "WIR RUFFEN SIE"
     }
 }

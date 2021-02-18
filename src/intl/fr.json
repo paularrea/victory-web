@@ -87,13 +87,13 @@
     "contact": {
         "title": "Registrieren Sie sich für weitere Informationen über unsere Preislisten",
         "subtitle" : "Wir werden Ihre Anfrage bearbeiten und so schnell wie möglich kontaktieren wir Sie",
-        "name" : "Name" ,
-        "surname" : "Vorname",
-        "company" : "Unternehmen",
+        "name" : "Nom" ,
+        "surname" : "Prénom",
+        "company" : "Entreprise",
         "industry" : "Industrie",
-        "phone" : "Telefon",
+        "phone" : "Téléphone",
         "email" : "E-mail",
-        "button" : "FORMULAR SENDEN"
+        "button" : "ENVOYER LE FORMULAIRE"
     },
     "blog": {
         "title": "VIKTOR BLOG",
@@ -108,9 +108,20 @@
         "title" : "Haben Sie Fragen?"
     },
     "about": {
+        "videoText" : "NOUS VENDONS DES SOLUTIONS B2B PERSONNALISÉES.",
+        "videoSubtext" : "Laissez votre entreprise se développer.",
         "title": "NOUS CONNAÎTRE",
         "subtitle" : "Sehr geehrte Kunden möchten wir Ihnen einen Überblick über unsere Aktivitäten und unser Leistungsspektrum geben.",
         "text1" : "Victory Switzerland GmbH ist seit ihrer Gründung im Jahr 2012 als Importeur / Grosshändler tätig und kauft weltweit für ihre Kunden ein. Aufgrund der Vielfalt unserer Kunden wird unser Sortiment ständig erweitert.",
-        "text2" : "Wir sind ein internationales Team, in dem verschiedene Kulturen zusammenfallen, die unseren Arbeitsprozess bereichern. Wir bekennen uns zu den ethischen und moralischen Werten, die unsere Arbeits- und Lebensphilosophie bestimmen."
+        "text2" : "Wir sind ein internationales Team, in dem verschiedene Kulturen zusammenfallen, die unseren Arbeitsprozess bereichern. Wir bekennen uns zu den ethischen und moralischen Werten, die unsere Arbeits- und Lebensphilosophie bestimmen.",
+        "position1" : "CEO FONDATEUR",
+        "position2" : "CFO",
+        "position3" : "IT",
+        "position4" : "Ventes - Commercialisation",
+        "position5" : "Ventes",
+        "position6" : "Administration",
+        "position7" : "Ventes",
+        "position8" : "Ventes",
+        "contactBtn" : "NOUS VOUS APPELONS"
     }
 }

@@ -1,14 +1,15 @@
-import React from "react"
-import styles from "../../styles/about.module.scss"
+import React from "react";
+import styles from "../../styles/about.module.scss";
+import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 
-import DanielImg from "./teamImages/daniel"
-import ChristinaImg from "./teamImages/christina"
-import OsmelImg from "./teamImages/osmel"
-import IsalineImg from "./teamImages/isaline"
-import NehatImg from "./teamImages/nehat"
-import SivanImg from "./teamImages/sivan"
-import YanickImg from "./teamImages/yanick"
-import BrunoImg from "./teamImages/bruno"
+import DanielImg from "./teamImages/daniel";
+import ChristinaImg from "./teamImages/christina";
+import OsmelImg from "./teamImages/osmel";
+import IsalineImg from "./teamImages/isaline";
+import NehatImg from "./teamImages/nehat";
+import SivanImg from "./teamImages/sivan";
+import YanickImg from "./teamImages/yanick";
+import BrunoImg from "./teamImages/bruno";
 
 const TeamList = () => {
   return (
@@ -22,7 +23,9 @@ const TeamList = () => {
         >
           <DanielImg />
           <h4>Daniel Gerber Sommer</h4>
-          <p>CEO FOUNDER</p>
+          <p>
+            <FormattedMessage id="about.position1" />
+          </p>
         </div>
         <div
           data-sal="slide-up"
@@ -32,7 +35,9 @@ const TeamList = () => {
         >
           <ChristinaImg />
           <h4>Christina Stuerchler</h4>
-          <p>CFO</p>
+          <p>
+            <FormattedMessage id="about.position2" />
+          </p>
         </div>
         <div
           data-sal="slide-up"
@@ -42,11 +47,13 @@ const TeamList = () => {
         >
           <OsmelImg />
           <h4>Osmel Teran</h4>
-          <p>IT</p>
+          <p>
+            <FormattedMessage id="about.position3" />
+          </p>
         </div>
       </div>
       <div className={styles.flex_list}>
-      <div
+        <div
           data-sal="slide-up"
           data-sal-delay="400"
           data-sal-duration="1000"
@@ -54,7 +61,9 @@ const TeamList = () => {
         >
           <IsalineImg />
           <h4>Isaline Salomon</h4>
-          <p>Verkauf - Marketing</p>
+          <p>
+            <FormattedMessage id="about.position4" />
+          </p>
         </div>
         <div
           data-sal="slide-up"
@@ -64,7 +73,9 @@ const TeamList = () => {
         >
           <NehatImg />
           <h4>Nehat Shalaku</h4>
-          <p>Verkäufer</p>
+          <p>
+            <FormattedMessage id="about.position5" />
+          </p>
         </div>
         <div
           data-sal="slide-up"
@@ -74,11 +85,13 @@ const TeamList = () => {
         >
           <SivanImg />
           <h4>Sivan Sanjayanan</h4>
-          <p>Admin-Lager</p>
+          <p>
+            <FormattedMessage id="about.position6" />
+          </p>
         </div>
       </div>
       <div className={styles.flex_list}>
-      <div
+        <div
           data-sal="slide-up"
           data-sal-delay="700"
           data-sal-duration="1000"
@@ -86,7 +99,9 @@ const TeamList = () => {
         >
           <YanickImg />
           <h4>Yanick Zahnd</h4>
-          <p>Verkäufer</p>
+          <p>
+            <FormattedMessage id="about.position7" />
+          </p>
         </div>
         <div
           data-sal="slide-up"
@@ -96,12 +111,14 @@ const TeamList = () => {
         >
           <BrunoImg />
           <h4>Bruno</h4>
-          <p>Verkäufer</p>
+          <p>
+            <FormattedMessage id="about.position8" />
+          </p>
         </div>
         <div className={styles.team_member_none}></div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default TeamList
+export default injectIntl(TeamList);
