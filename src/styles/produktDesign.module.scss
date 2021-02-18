@@ -89,16 +89,20 @@
         }
         .text_container{
             padding: 0;
-            padding-left: 6rem;
             .big_p{
+                padding-left: 6rem;
                 font-size: 24px;
                 color: #1D1F2A;
                 margin: 0;
                 line-height: 32px;
             }
             p{
+                padding-left: 6rem;
                 font-size: 16px;
                 line-height: 21px;
+            }
+            button{
+                margin-left: 6rem;
             }
         }
          hr{
