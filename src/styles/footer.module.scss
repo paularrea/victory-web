@@ -51,7 +51,7 @@
 
 }
 .follow_container{
-    padding-top: 1rem;
+    padding-top: 2rem;
     width: 60vw;
     h3{
         color: white;
@@ -63,14 +63,13 @@
     width: 100%;
     padding: 1rem 0;
     margin: 0;
-    padding-top: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     color: #FBD872;
     list-style-type: none;
     li{
         transition: all .4s ease-out;
-        padding: .3rem;
+        margin-right: .5rem;
         width: 36px;
         height: 36px;
         text-align: center;

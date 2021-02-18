@@ -3,29 +3,6 @@ import "./formAbout.css";
 import FormAboutImg from "../../images/svg/map_bern.svg";
 
 const ContactForm = () => {
-  // const handleSubmit = (e) => {
-  //   e.preventDefault()
-  //   fetch('/', {
-  //     method: 'POST',
-  //   })
-  //   .then(() =>  fetch('/', {
-  //     action: "/thankyou"
-  //   }))
-  //   .catch((error) => alert(error))
-  // }
-
-  // const onClickCallMe = (e) => {
-  //   e.preventDefault()
-  //   .then(() =>  {
-  //     let form = document.getElementById('form-about');
-  //     let callMe = document.createElement("INPUT");
-  //     callMe.setAttribute("type", "hidden");
-  //     callMe.setAttribute("value", "CALL ME");
-  //     form.appendChild(callMe);
-  //   })
-  //   .then(() =>  handleSubmit())
-  // }
-
   return (
     <div className="big_container">
       <div className="contact_container">
@@ -36,13 +13,13 @@ const ContactForm = () => {
           <div>
             <form
                action="/thankyou"
-               name="contact-about-form"
+               name="CALL ME FORM"
                method="post"
                data-netlify="true"
                data-netlify-honeypot="bot-field"
                 id='form-about'
             >
-              <input type="hidden" name="form-name" value="contact-about-form" />
+              <input type="hidden" name="form-name" value="CALL ME FORM" />
               <input
                 data-sal="slide-up"
                 data-sal-delay="100"
@@ -108,17 +85,6 @@ const ContactForm = () => {
                   data-sal-delay="400"
                   data-sal-duration="1000"
                   type="submit"
-                  className="about_contact_btn"
-                >
-                  ABSENDEN
-                </button>
-                <button
-                  data-sal="slide-up"
-                  data-sal-delay="400"
-                  data-sal-duration="1000"
-                  type="submit"
-                  // type='button'
-                  // onClick={onClickCallMe}
                   className="about_contact_btn"
                 >
                   WIR RUFEN SIE

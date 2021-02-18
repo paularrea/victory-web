@@ -54,19 +54,20 @@
   .bm-menu {
     display: flex;
     margin: 0 2.5rem;
-    margin-top: 25vh;
+    margin-top: 15vh;
     width: auto;
     height: fit-content !important;
   }
   /* Wrapper for item list */
-  .bm-item-list {
-    padding: 1rem 0;
-  }
   hr{
-    width: 18.2rem;
+    width: 100%;
     display: block; height: 1px;
     border: 0; border-top: .1px solid #fed8802f;
     margin: 0; padding: 0;
+  }
+  .bm-item-list{
+    width: 100%;
+    height: auto;
   }
   .bm-item-list a{
     outline: none !important;
@@ -74,7 +75,7 @@
     text-decoration: none;
     font-weight: 100;
     width: fit-content;
-    color: #FED880 !important;
+    color: #FED880;
     font-size: 24px;
   }
   .anchor-div{
@@ -89,35 +90,68 @@
     font-size: 1.5rem;
     margin-bottom: .5rem;
   }
+  /* language */
+  .language-container{
+    width: 100%;
+    outline: none !important;
+    margin-top: 1vh;
+  }
+  .contact-flex{
+    margin-top: 1vh;
+    display: flex;
+    justify-content: flex-start;
+    width: auto;
+    align-items: center;
+  }
+  .contact-flex p {
+    color: white;
+    font-size: 14px;
+    font-weight: 100;
+  }
+  .contact-flex svg {
+    margin: 0 .7rem;
+  }
   /* follow and media  */
   .follow-container{
     position: absolute;
-    width: 60vw;
+    padding-right: 5rem;
+    width: 100%;
     text-decoration: none;
-    outline: 0 none;
-    bottom: 10%;
+    outline: none !important;
+    bottom: 10vh;
   }
   .follow-container h3{
     color: white;
-    padding-top: 1rem;
+    padding-top: 2rem;
     margin: 0;
     font-size: 18px;
   }
   .media-list{
-    width: 100%;
+    width: 80%;
     padding: 1rem 0;
+    padding-bottom: 0;
     margin: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     color: #FBD872;
     list-style-type: none;
   }
   .media-list li{
-    padding: .3rem;
+    margin-right: .5rem;
     width: 36px;
     height: 36px;
     text-align: center; 
   }
   .bm-overlay{
    display: none;
+  }
+
+
+  @media (max-height:600px) and (max-width:370px) {
+    .follow-container{
+      bottom: 5vh;
+    }
+    .follow-container h3{
+      padding-top: 1rem;
+    }
   }

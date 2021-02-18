@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
+import Link from "../../Link"
 import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
-import { Link } from "gatsby";
 import styles from "../../../styles/header.module.scss";
 import Logo from "./logo";
 import GoTopButton from "../../../images/svg/go_top_icon.svg";
@@ -50,40 +49,36 @@ const DesktopHeader = () => {
     <header>
       <div className={styles.navBar}>
         <nav className={styles.logo_nav_container}>
-          <AnchorLink id="logo" to="/#home">
+          <Link id="logo" to="/#home">
             <Logo />
-          </AnchorLink>
-          <AnchorLink
+          </Link>
+          <Link
             to="/#home"
             className={homeActive ? styles.active : styles.disabled}
           >
             <FormattedMessage id="nav.home" />
-          </AnchorLink>
+          </Link>
           <div className={styles.drop_down}>
-            <AnchorLink
+            <Link
               id="services"
               to="/#produktDesign"
               className={servicesActive ? styles.active : styles.disabled}
             >
               <FormattedMessage id="nav.services" />
-            </AnchorLink>
+            </Link>
             <div className={styles.drop_down_content}>
-              <AnchorLink to="/#produktDesign">
-                {" "}
+              <Link to="/#produktDesign">
                 <FormattedMessage id="nav.productDesign" />
-              </AnchorLink>
-              <AnchorLink to="/#produktion">
-                {" "}
+              </Link>
+              <Link to="/#produktion">
                 <FormattedMessage id="nav.production" />
-              </AnchorLink>
-              <AnchorLink to="/#importieren">
-                {" "}
+              </Link>
+              <Link to="/#importieren">
                 <FormattedMessage id="nav.import" />
-              </AnchorLink>
-              <AnchorLink to="/#logistik">
-                {" "}
+              </Link>
+              <Link to="/#logistik">
                 <FormattedMessage id="nav.logistic" />
-              </AnchorLink>
+              </Link>
             </div>
           </div>
 

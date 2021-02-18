@@ -110,7 +110,7 @@ const LogistikDesktop = () => {
               <LogistikImg />
               <div className={styles.button}>
                 <AnchorLink to="/#contact">
-                  <button><FormattedMessage id="logistic.button" /></button>
+                  <button aria-label='logistic button'><FormattedMessage id="logistic.button" /></button>
                 </AnchorLink>
               </div>
             </div>

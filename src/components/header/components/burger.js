@@ -6,6 +6,7 @@ import Logo from "./logo";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import Language from "../../language";
 
+import PhoneIcon from "../../../images/svg/PHONE.svg";
 import LinkedInIcon from "../../../images/svg/Linkedin_icon.svg";
 import FacebookIcon from "../../../images/svg/Facebook_icon.svg";
 import YoutubeIcon from "../../../images/svg/Youtube_icon.svg";
@@ -34,60 +35,68 @@ const Burger = () => {
         <div className="logo-menu">
           <Logo />
         </div>
-        <AnchorLink id="home" className="menu-item" to="/#home">
-          <div
-            role="link"
-            className="anchor-div"
-            onClick={() => {
-              closeMenu();
-            }}
-            onKeyDown={() => {
-              closeMenu();
-            }}
-            tabIndex={0}
-          >
-            {" "}
-            <FormattedMessage id="nav.home" />
-          </div>
-        </AnchorLink>
-        <hr />
-        <AnchorLink className="menu-item" to="/#produktDesign">
-          <div
-            role="link"
-            className="anchor-div"
-            onClick={() => {
-              closeMenu();
-            }}
-            onKeyDown={() => {
-              closeMenu();
-            }}
-            tabIndex={0}
-          >
-            {" "}
-            <FormattedMessage id="nav.services" />
-          </div>
-        </AnchorLink>
-        <hr />
-        <AnchorLink id="about" className="menu-item" to="/about">
-          <div
-            role="link"
-            className="anchor-div"
-            onClick={() => {
-              closeMenu();
-            }}
-            onKeyDown={() => {
-              closeMenu();
-            }}
-            tabIndex={0}
-          >
-            {" "}
-            <FormattedMessage id="nav.about" />
-          </div>
-        </AnchorLink>
-        <hr />
-        <div>
+        <nav className="bm-item-list">
+          <AnchorLink id="home" className="menu-item" to="/#home">
+            <div
+              role="link"
+              className="anchor-div"
+              onClick={() => {
+                closeMenu();
+              }}
+              onKeyDown={() => {
+                closeMenu();
+              }}
+              tabIndex={0}
+            >
+              {" "}
+              <FormattedMessage id="nav.home" />
+            </div>
+          </AnchorLink>
+          <hr />
+          <AnchorLink className="menu-item" to="/#produktDesign">
+            <div
+              role="link"
+              className="anchor-div"
+              onClick={() => {
+                closeMenu();
+              }}
+              onKeyDown={() => {
+                closeMenu();
+              }}
+              tabIndex={0}
+            >
+              {" "}
+              <FormattedMessage id="nav.services" />
+            </div>
+          </AnchorLink>
+          <hr />
+          <AnchorLink id="about" className="menu-item" to="/about">
+            <div
+              role="link"
+              className="anchor-div"
+              onClick={() => {
+                closeMenu();
+              }}
+              onKeyDown={() => {
+                closeMenu();
+              }}
+              tabIndex={0}
+            >
+              {" "}
+              <FormattedMessage id="nav.about" />
+            </div>
+          </AnchorLink>
+          <hr />
+        </nav>
+
+        <div className="language-container">
           <Language />
+          <div className="contact-flex">
+            <PhoneIcon />
+            <p>+41 31 301 94 39</p>
+          </div>
         </div>
+        
         <div className="follow-container">
           <hr />
           <h3>Folge uns</h3>
