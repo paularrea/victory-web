@@ -123,5 +123,16 @@
         "position7" : "Ventes",
         "position8" : "Ventes",
         "contactBtn" : "NOUS VOUS APPELONS"
+    },
+    "submission" : {
+        "thankyou" : {
+            "title" : "Contacter",
+            "text" : "Merci pour votre soumission!"
+        },
+        "callyou" : {
+            "title" : "Contacter",
+            "text" : "Merci pour votre soumission! Nous vous rappellerons."
+        },
+        "button" : "RETOUR AU SITE"
     }
 }

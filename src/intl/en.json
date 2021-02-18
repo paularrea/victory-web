@@ -123,6 +123,16 @@
         "position7" : "Sales",
         "position8" : "Sales",
         "contactBtn" : "WE CALL YOU"
+    },
+    "submission" : {
+        "thankyou" : {
+            "title" : "Contact",
+            "text" : "Thank you for your submission!"
+        },
+        "callyou" : {
+            "title" : "Contact",
+            "text" : "Thank you for your submission! We'll call you back."
+        },
+        "button" : "BACK TO SITE"
     }
-
 }

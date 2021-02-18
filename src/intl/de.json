@@ -1,127 +1,138 @@
 {
     "title": "Victory Switzerland",
-    "seo":{
-        "home":"Haus",
-        "services":"Services",
-        "productDesign":"Produktdesign",
-        "production":"Produktion",
-        "import":"Importieren",
-        "logistic":"Logistik",
-        "about":"Über uns"
+    "seo": {
+        "home": "Haus",
+        "services": "Services",
+        "productDesign": "Produktdesign",
+        "production": "Produktion",
+        "import": "Importieren",
+        "logistic": "Logistik",
+        "about": "Über uns"
     },
     "nav": {
-        "home":"HAUS",
-        "services":"+ SERVICES",
-        "productDesign":"PRODUKTDESIGN",
-        "production":"PRODUKTION",
-        "import":"IMPORTIEREN",
-        "logistic":"LOGISTIK",
-        "about":"ÜBER UNS",
-        "shop" : "VICTORY SHOP"
+        "home": "HAUS",
+        "services": "+ SERVICES",
+        "productDesign": "PRODUKTDESIGN",
+        "production": "PRODUKTION",
+        "import": "IMPORTIEREN",
+        "logistic": "LOGISTIK",
+        "about": "ÜBER UNS",
+        "shop": "VICTORY SHOP"
     },
     "intro": {
         "title": "B2B UNTERNEHMEN AUF DEM SCHWEIZER MARKT",
-        "subtitle" : "Wir verkaufen spezifische Lösungen.",
-        "button1" : "RUFFEN SIE UNS AN",
-        "button2" : "DEN SHOP BESUCHEN"  
+        "subtitle": "Wir verkaufen spezifische Lösungen.",
+        "button1": "RUFFEN SIE UNS AN",
+        "button2": "DEN SHOP BESUCHEN"
     },
     "productDesign": {
         "title": "PRODUKTDESIGN",
-        "subtitle" : "Non-Food Konzept",
-        "subtitle2" : "Ein erfolgreicher Verkauf beginnt mit einem guten Design. Victory Switzerland bringt Ihr Produkt direkt zum Markt.",
-        "bigText" : "Wir begleiten Sie von A bis Z und verwandeln Ihre Idee in ein handfestes Produkt. Folgen Sie dem Prozess Schritt für Schritt. Sie bringen den Wahnsinn, wir bringen die Technik.",
-        "text1" : "Unsere Designer-Community ist in der Lage, aus einer Idee, die einem einfachen Stück Papier entspringt, oder aus einem tiefer gehenden Konzept ein Produkt zu entwickeln." ,
-        "text2" : "Haben Sie ein trendiges Produkt auf dem Markt entdeckt? Machen Sie es besser und überflügeln Sie Ihr Konkurrent.",
-        "button" : "PLANUNG STARTEN"
+        "subtitle": "Non-Food Konzept",
+        "subtitle2": "Ein erfolgreicher Verkauf beginnt mit einem guten Design. Victory Switzerland bringt Ihr Produkt direkt zum Markt.",
+        "bigText": "Wir begleiten Sie von A bis Z und verwandeln Ihre Idee in ein handfestes Produkt. Folgen Sie dem Prozess Schritt für Schritt. Sie bringen den Wahnsinn, wir bringen die Technik.",
+        "text1": "Unsere Designer-Community ist in der Lage, aus einer Idee, die einem einfachen Stück Papier entspringt, oder aus einem tiefer gehenden Konzept ein Produkt zu entwickeln.",
+        "text2": "Haben Sie ein trendiges Produkt auf dem Markt entdeckt? Machen Sie es besser und überflügeln Sie Ihr Konkurrent.",
+        "button": "PLANUNG STARTEN"
     },
     "production": {
         "title": "PRODUKTION",
-        "subtitle" : "Das perfekte Produkt herzustellen ist eine Herausforderung die wir schätzen, weil wir alles tun, um sie zu erfüllen.",
-        "text1" : "Wir finden die richtige Fabrik aus einer weltweiten Auswahl und nutzen unsere Erfahrung und unseren Einfluss, um Ihnen einen besseren Preis zu bieten, als Ihr Unternehmen allein erzielen könnte." ,
-        "text2" : "Wenn Sie in unsere Dienstleistungen investieren, sparen Sie Zeit und Geld. Ihr CFO wird uns lieben.",
-        "text3" : "Heute haben Sie Zugang zu noch nie dagewesenen Möglichkeiten, ein neues Produkt zu dem Preis, in der Qualität und in dem Umfang herzustellen, den Sie benötigen. Das Angebot ist so gross, dass man sich verlaufen kann. Ein weiterer Grund, mit uns zu arbeiten.",
-        "button" : "PRODUKTION STARTEN"
+        "subtitle": "Das perfekte Produkt herzustellen ist eine Herausforderung die wir schätzen, weil wir alles tun, um sie zu erfüllen.",
+        "text1": "Wir finden die richtige Fabrik aus einer weltweiten Auswahl und nutzen unsere Erfahrung und unseren Einfluss, um Ihnen einen besseren Preis zu bieten, als Ihr Unternehmen allein erzielen könnte.",
+        "text2": "Wenn Sie in unsere Dienstleistungen investieren, sparen Sie Zeit und Geld. Ihr CFO wird uns lieben.",
+        "text3": "Heute haben Sie Zugang zu noch nie dagewesenen Möglichkeiten, ein neues Produkt zu dem Preis, in der Qualität und in dem Umfang herzustellen, den Sie benötigen. Das Angebot ist so gross, dass man sich verlaufen kann. Ein weiterer Grund, mit uns zu arbeiten.",
+        "button": "PRODUKTION STARTEN"
     },
     "import": {
         "title": "IMPORTIEREN",
-        "subtitle" : "Es gibt viele Möglichkeiten, Ihr Produkt von Punkt A nach Punkt B zu transportieren. Die echte Frage ist, ob Ihr Spediteur dies effizient tut. Wir tun, was nötig ist, um jede Lieferung zu optimieren.",
-        "text1" : "Wenn Sie in die Schweiz oder ein anderes Land importieren, muss Ihr Produkt bestimmten Vorschriften entsprechen." ,
-        "text2" : "Es besteht das Risiko, dass die Ware beim Zoll verbleibt. Um dies zu vermeiden, stellen wir vor dem Verladen sicher, dass es alle Konformitätsanforderungen erfüllt.",
-        "button" : "IMPORT VERWALTEN"
+        "subtitle": "Es gibt viele Möglichkeiten, Ihr Produkt von Punkt A nach Punkt B zu transportieren. Die echte Frage ist, ob Ihr Spediteur dies effizient tut. Wir tun, was nötig ist, um jede Lieferung zu optimieren.",
+        "text1": "Wenn Sie in die Schweiz oder ein anderes Land importieren, muss Ihr Produkt bestimmten Vorschriften entsprechen.",
+        "text2": "Es besteht das Risiko, dass die Ware beim Zoll verbleibt. Um dies zu vermeiden, stellen wir vor dem Verladen sicher, dass es alle Konformitätsanforderungen erfüllt.",
+        "button": "IMPORT VERWALTEN"
     },
     "logistic": {
         "title": "LOGISTIK",
-        "subtitle" : "Wir bieten logistische Dienstleistungen immer mit der Garantie und Qualität an. Unser Team stellt sich auf Ihre Bedürfnisse ein und bietet Ihnen massgeschneiderte Angebote zum besten Preis. Unsere Arbeit ist beendet, wenn unser Kunde seine Ware erhält und fühlt den Sieg!",
-        "container" : {
-            "title" : "Unser Team Garantiert:" ,
-            "bullet1" : {
-                "title" : "Konservierung der Produkte",
-                "description" : "In der Zwischenzeit wird die Übertragung und Lagerung der Produkte fortgesetzt."
+        "subtitle": "Wir bieten logistische Dienstleistungen immer mit der Garantie und Qualität an. Unser Team stellt sich auf Ihre Bedürfnisse ein und bietet Ihnen massgeschneiderte Angebote zum besten Preis. Unsere Arbeit ist beendet, wenn unser Kunde seine Ware erhält und fühlt den Sieg!",
+        "container": {
+            "title": "Unser Team Garantiert:",
+            "bullet1": {
+                "title": "Konservierung der Produkte",
+                "description": "In der Zwischenzeit wird die Übertragung und Lagerung der Produkte fortgesetzt."
             },
-            "bullet2" : {
-                "title" : "Kennzeichnung",
-                "description" : "Sie vermittelt relevante Daten über die Eigenschaften oder Qualitäten des Produkts und die Art und Weise, wie es gehandhabt wird, und verringert so die Möglichkeit von Verschleiß oder Verlust."
+            "bullet2": {
+                "title": "Kennzeichnung",
+                "description": "Sie vermittelt relevante Daten über die Eigenschaften oder Qualitäten des Produkts und die Art und Weise, wie es gehandhabt wird, und verringert so die Möglichkeit von Verschleiß oder Verlust."
             },
-            "bullet3" : {
-                "title" : "Handhabung des Produkts",
-                "description" : "Erleichtert das Zählen, Verteilen und Transportieren von Verpackungsmaterialien und Packstücken."
+            "bullet3": {
+                "title": "Handhabung des Produkts",
+                "description": "Erleichtert das Zählen, Verteilen und Transportieren von Verpackungsmaterialien und Packstücken."
             },
-            "bullet4" : {
-                "title" : "Lagerverwaltung",
-                "description" : "Wir haben Lagerhäuser, in denen wir Ihre Bestände aufbewahren und organisieren. Dieses Management wird je nach Bedarf mit unserem Kunden verhandelt."
+            "bullet4": {
+                "title": "Lagerverwaltung",
+                "description": "Wir haben Lagerhäuser, in denen wir Ihre Bestände aufbewahren und organisieren. Dieses Management wird je nach Bedarf mit unserem Kunden verhandelt."
             },
-            "bullet5" : {
-                "title" : "Effizienter Versorgungskreislauf",
-                "description" : "Sie führt zu einem preiswerten Angebot, dass den Endprodukt Preis und den Verbraucher positiv beeinflusst. Unser Team wird Ihnen gerne eine massgeschneiderte Lösung anbieten."
+            "bullet5": {
+                "title": "Effizienter Versorgungskreislauf",
+                "description": "Sie führt zu einem preiswerten Angebot, dass den Endprodukt Preis und den Verbraucher positiv beeinflusst. Unser Team wird Ihnen gerne eine massgeschneiderte Lösung anbieten."
             }
         },
-        "button" : "BERATUNG EINHOLEN"
+        "button": "BERATUNG EINHOLEN"
     },
     "fuhlen": {
         "title": "FÜHLEN DEN SIEG",
-        "title2" : "DAS KRONJUWEL",
-        "subtitle" : "Für Kunden, die keine eigenen Kollektionen entwickeln wollen, haben wir ebenfalls eine Lösung." ,
-        "text1" : "Victory Shop ist eine digitale Zentrale, in der die wichtigsten europäischen Grosshändlernzusammenleben. Das Beste aus ihren Produkten in einem einzigen Warenkorb. Sie benötigen nur ein paar Klicks.",
-        "button" : "VICTORY SHOP"
+        "title2": "DAS KRONJUWEL",
+        "subtitle": "Für Kunden, die keine eigenen Kollektionen entwickeln wollen, haben wir ebenfalls eine Lösung.",
+        "text1": "Victory Shop ist eine digitale Zentrale, in der die wichtigsten europäischen Grosshändlernzusammenleben. Das Beste aus ihren Produkten in einem einzigen Warenkorb. Sie benötigen nur ein paar Klicks.",
+        "button": "VICTORY SHOP"
     },
     "contact": {
         "title": "Registrieren Sie sich für weitere Informationen über unsere Preislisten",
-        "subtitle" : "Wir werden Ihre Anfrage bearbeiten und so schnell wie möglich kontaktieren wir Sie",
-        "name" : "Name" ,
-        "surname" : "Vorname",
-        "company" : "Unternehmen",
-        "industry" : "Industrie",
-        "phone" : "Telefon",
-        "email" : "E-mail",
-        "button" : "FORMULAR SENDEN"
+        "subtitle": "Wir werden Ihre Anfrage bearbeiten und so schnell wie möglich kontaktieren wir Sie",
+        "name": "Name",
+        "surname": "Vorname",
+        "company": "Unternehmen",
+        "industry": "Industrie",
+        "phone": "Telefon",
+        "email": "E-mail",
+        "button": "FORMULAR SENDEN"
     },
     "blog": {
         "title": "VIKTOR BLOG",
-        "subtitle" : "",
-        "text1" : "" ,
-        "text2" : "",
-        "text3" : "",
-        "button" : ""
+        "subtitle": "",
+        "text1": "",
+        "text2": "",
+        "text3": "",
+        "button": ""
     },
     "footer": {
         "text": "Victory Switzerland GmbH has been active as an import / wholesaler since it was founded in 2012 and makes worldwide purchases for its customers. Due to the diversity of our customers, our range is constantly being expanded; We import over 1000 new items every year.",
-        "title" : "Haben Sie Fragen?"
+        "title": "Haben Sie Fragen?"
     },
     "about": {
-        "videoText" : "WIR VERKAUFEN KUNDENSPEZIFISCHE B2B-LÖSUNGEN.",
-        "videoSubtext" : "Lassen Sie Ihr Unternehmen wachsen.",
+        "videoText": "WIR VERKAUFEN KUNDENSPEZIFISCHE B2B-LÖSUNGEN.",
+        "videoSubtext": "Lassen Sie Ihr Unternehmen wachsen.",
         "title": "ÜBER UNS",
-        "subtitle" : "Sehr geehrte Kunden möchten wir Ihnen einen Überblick über unsere Aktivitäten und unser Leistungsspektrum geben.",
-        "text1" : "Victory Switzerland GmbH ist seit ihrer Gründung im Jahr 2012 als Importeur / Grosshändler tätig und kauft weltweit für ihre Kunden ein. Aufgrund der Vielfalt unserer Kunden wird unser Sortiment ständig erweitert.",
-        "text2" : "Wir sind ein internationales Team, in dem verschiedene Kulturen zusammenfallen, die unseren Arbeitsprozess bereichern. Wir bekennen uns zu den ethischen und moralischen Werten, die unsere Arbeits- und Lebensphilosophie bestimmen.",
-        "position1" : "CEO FOUNDER",
-        "position2" : "CFO",
-        "position3" : "IT",
-        "position4" : "Verkäuf - Marketing",
-        "position5" : "Verkäuf",
-        "position6" : "Admin - Lager",
-        "position7" : "Verkäuf",
-        "position8" : "Verkäuf",
-        "contactBtn" : "WIR RUFFEN SIE"
+        "subtitle": "Sehr geehrte Kunden möchten wir Ihnen einen Überblick über unsere Aktivitäten und unser Leistungsspektrum geben.",
+        "text1": "Victory Switzerland GmbH ist seit ihrer Gründung im Jahr 2012 als Importeur / Grosshändler tätig und kauft weltweit für ihre Kunden ein. Aufgrund der Vielfalt unserer Kunden wird unser Sortiment ständig erweitert.",
+        "text2": "Wir sind ein internationales Team, in dem verschiedene Kulturen zusammenfallen, die unseren Arbeitsprozess bereichern. Wir bekennen uns zu den ethischen und moralischen Werten, die unsere Arbeits- und Lebensphilosophie bestimmen.",
+        "position1": "CEO FOUNDER",
+        "position2": "CFO",
+        "position3": "IT",
+        "position4": "Verkäuf - Marketing",
+        "position5": "Verkäuf",
+        "position6": "Admin - Lager",
+        "position7": "Verkäuf",
+        "position8": "Verkäuf",
+        "contactBtn": "WIR RUFFEN SIE"
+    },
+    "submission": {
+        "thankyou": {
+            "title": "Kontakt",
+            "text": "Vielen Dank für Ihre Einreichung!"
+        },
+        "callyou": {
+            "title": "Kontakt",
+            "text": "Vielen Dank für Ihre Einreichung! Wir rufen Sie zurück."
+        },
+        "button": "ZURÜCK ZUR WEBSITE"
     }
 }

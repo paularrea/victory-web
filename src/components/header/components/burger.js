@@ -3,7 +3,7 @@ import { fallDown as Menu } from "react-burger-menu";
 import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 import "./burger.css";
 import Logo from "./logo";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
+import Link from "../../Link";
 import Language from "../../language";
 
 import PhoneIcon from "../../../images/svg/PHONE.svg";
@@ -36,7 +36,7 @@ const Burger = () => {
           <Logo />
         </div>
         <nav className="bm-item-list">
-          <AnchorLink id="home" className="menu-item" to="/#home">
+          <Link id="home" className="menu-item" to="/#home">
             <div
               role="link"
               className="anchor-div"
@@ -51,9 +51,9 @@ const Burger = () => {
               {" "}
               <FormattedMessage id="nav.home" />
             </div>
-          </AnchorLink>
+          </Link>
           <hr />
-          <AnchorLink className="menu-item" to="/#produktDesign">
+          <Link className="menu-item" to="/#produktDesign">
             <div
               role="link"
               className="anchor-div"
@@ -68,9 +68,9 @@ const Burger = () => {
               {" "}
               <FormattedMessage id="nav.services" />
             </div>
-          </AnchorLink>
+          </Link>
           <hr />
-          <AnchorLink id="about" className="menu-item" to="/about">
+          <Link id="about" className="menu-item" to="/about">
             <div
               role="link"
               className="anchor-div"
@@ -85,7 +85,7 @@ const Burger = () => {
               {" "}
               <FormattedMessage id="nav.about" />
             </div>
-          </AnchorLink>
+          </Link>
           <hr />
         </nav>
 

@@ -4,7 +4,7 @@ import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 import Layout from "../components/layout/layout";
 import { Link } from "gatsby";
 
-const Thankyou = () => {
+const Callyou = () => {
   return (
     <Layout>
       <div id="thankyou" className="bg-container">
@@ -15,13 +15,16 @@ const Thankyou = () => {
           className="message-container"
         >
           <h1>
-            <FormattedMessage id="submission.thankyou.title" />
+            {" "}
+            <FormattedMessage id="submission.callyou.title" />
           </h1>
           <p>
-            <FormattedMessage id="submission.thankyou.text" />
+            {" "}
+            <FormattedMessage id="submission.callyou.text" />
           </p>
           <Link to="/">
             <button>
+              {" "}
               <FormattedMessage id="submission.button" />
             </button>
           </Link>
@@ -31,4 +34,4 @@ const Thankyou = () => {
   );
 };
 
-export default injectIntl(Thankyou);
+export default injectIntl(Callyou);
