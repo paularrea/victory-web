@@ -16,6 +16,7 @@ import MailIcon from "../../images/svg/MAIL.svg";
 import PhoneIcon from "../../images/svg/PHONE.svg";
 
 import FooterDesktop from "./footerDesktop";
+import Language from "../language";
 
 const Footer = () => {
   return (
@@ -24,10 +25,12 @@ const Footer = () => {
         <div className={styles.container}>
           <Logo />
           <p>
-          <FormattedMessage id="footer.text" />
+            <FormattedMessage id="footer.text" />
           </p>
           <div className={styles.contact}>
-            <h3><FormattedMessage id="footer.title" /></h3>
+            <h3>
+              <FormattedMessage id="footer.title" />
+            </h3>
             <div className={styles.contact_div}>
               <div className={styles.contact_icons}>
                 <LocationIcon />
@@ -66,6 +69,10 @@ const Footer = () => {
                 </a>
               </div>
             </div>
+          </div>
+          <hr />
+          <div style={{paddingBottom:'2rem'}}>
+            <Language />
           </div>
           <hr />
           <div className={styles.follow_container}>

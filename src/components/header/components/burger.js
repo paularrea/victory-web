@@ -66,7 +66,7 @@ const Burger = () => {
               tabIndex={0}
             >
               {" "}
-              <FormattedMessage id="nav.services" />
+              <FormattedMessage id="nav.mobileServices" />
             </div>
           </Link>
           <hr />
@@ -93,7 +93,7 @@ const Burger = () => {
           <Language />
           <div className="contact-flex">
             <PhoneIcon />
-            <p>+41 31 301 94 39</p>
+            <a href="tel:+41313019439" rel="noreferrer" target="_blank">+41 31 301 94 39</a>
           </div>
         </div>
         

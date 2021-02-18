@@ -97,13 +97,13 @@
     margin-top: 1vh;
   }
   .contact-flex{
-    margin-top: 1vh;
+    margin-top: 2vh;
     display: flex;
     justify-content: flex-start;
     width: auto;
     align-items: center;
   }
-  .contact-flex p {
+  .contact-flex a {
     color: white;
     font-size: 14px;
     font-weight: 100;
