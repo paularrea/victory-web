@@ -4,7 +4,7 @@ import PDImg from "./pdImg";
 import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 import MediaQuery from "react-responsive";
 import PDDesktopImg from "./pdDesktopImg";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
+import Link from "../Link";
 
 const ProduktDesign = () => {
   return (
@@ -58,11 +58,11 @@ const ProduktDesign = () => {
             <p>
               <FormattedMessage id="productDesign.text2" />
             </p>
-            <AnchorLink to="/#contact">
+            <Link to="/#contact">
               <button>
                 <FormattedMessage id="productDesign.button" />
               </button>
-            </AnchorLink>
+            </Link>
           </div>
         </div>
       </div>

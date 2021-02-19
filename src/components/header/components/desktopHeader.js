@@ -5,6 +5,8 @@ import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 import styles from "../../../styles/header.module.scss";
 import Logo from "./logo";
 import GoTopButton from "../../../images/svg/go_top_icon.svg";
+import GoTopHover from "../../../images/svg/gototop2.svg";
+
 
 const DesktopHeader = () => {
   const [goTopApear, setGoTopApear] = useState(false);
@@ -110,7 +112,7 @@ const DesktopHeader = () => {
           onBlur={() => setHover(false)}
         >
           {hover ? (
-            <GoTopButton className={styles.svg} onClick={scrollTop} />
+            <GoTopHover className={styles.svg} onClick={scrollTop} />
           ) : (
             <GoTopButton className={styles.svg} onClick={scrollTop} />
           )}

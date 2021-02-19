@@ -4,7 +4,7 @@ import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 import MediaQuery from "react-responsive";
 import ProduktionImg from "./productionImg";
 import ProduktionDesktop from "./productionDesktop";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
+import Link from "../Link";
 
 const Produktion = () => {
   return (
@@ -46,11 +46,11 @@ const Produktion = () => {
             <p style={{ color: "#FFFFFFB3", opacity: "60%" }}>
               <FormattedMessage id="production.text3" />
             </p>
-            <AnchorLink to="/#contact">
+            <Link to="/#contact">
               <button>
                 <FormattedMessage id="production.button" />
               </button>
-            </AnchorLink>
+            </Link>
           </div>
         </div>
       </MediaQuery>

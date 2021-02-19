@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../../styles/importieren.module.scss";
 import ImportierenImg from "./importierenImg";
 import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
+import Link from "../Link";
 
 const Importieren = () => {
   return (
@@ -38,11 +38,11 @@ const Importieren = () => {
             <p>
               <FormattedMessage id="import.text2" />
             </p>
-            <AnchorLink to="/#contact">
+            <Link to="/#contact">
               <button>
                 <FormattedMessage id="import.button" />
               </button>
-            </AnchorLink>
+            </Link>
           </div>
         </div>
       </div>

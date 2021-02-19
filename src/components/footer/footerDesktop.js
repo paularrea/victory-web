@@ -129,7 +129,7 @@ const FooterDesktop = () => {
           <div className={styles.flex_footer_lang}>
             <Language />
             <div className={styles.copyright}>
-              <p>© Alle Rechte vorbehalten</p>
+              <p><FormattedMessage id="footer.copyright" /></p>
             </div>
           </div>
         </div>

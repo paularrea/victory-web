@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../../styles/logistik.module.scss";
 import LogistikImg from "./logistikImg";
 import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
+import Link from "../Link";
 
 import Masonry from "react-masonry-css";
 import "./masonry.css";
@@ -109,9 +109,9 @@ const LogistikDesktop = () => {
             >
               <LogistikImg />
               <div className={styles.button}>
-                <AnchorLink to="/#contact">
+                <Link to="/#contact">
                   <button aria-label='logistic button'><FormattedMessage id="logistic.button" /></button>
-                </AnchorLink>
+                </Link>
               </div>
             </div>
           </Masonry>

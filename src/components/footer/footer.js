@@ -76,7 +76,7 @@ const Footer = () => {
           </div>
           <hr />
           <div className={styles.follow_container}>
-            <h3>Folge uns</h3>
+            <h3><FormattedMessage id="footer.media" /></h3>
             <ul className={styles.media_list}>
               <li>
                 <a

@@ -101,12 +101,11 @@ header{
     top: 60vh;
     right: 3vw;
     cursor: pointer;
+    outline: none;
     opacity: 0.7;
     transition: all .4s ease-out;
     svg:hover{
         transform: scale(1.05);
-        opacity: 1;
-        filter:brightness(0) invert(1);
     }
 }
 .go_top_button_disabled{

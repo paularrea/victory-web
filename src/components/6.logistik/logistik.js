@@ -3,7 +3,7 @@ import styles from "../../styles/logistik.module.scss";
 import LogistikImg from "./logistikImg";
 import MediaQuery from "react-responsive";
 import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
+import Link from "../Link";
 
 import LogistikOne from "../icons/logistic-icons/logistikOne";
 import LogistikTwo from "../icons/logistic-icons/logistikTwo";
@@ -111,11 +111,11 @@ const Logistik = () => {
             <LogistikImg />
           </div>
           <div className={styles.button}>
-            <AnchorLink to="/#contact">
+            <Link to="/#contact">
               <button>
                 <FormattedMessage id="logistic.button" />
               </button>
-            </AnchorLink>
+            </Link>
           </div>
         </div>
       </MediaQuery>

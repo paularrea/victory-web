@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../../styles/produktion.module.scss";
 import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 import ProduktionImg from "./productionImg";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
+import Link from "../Link";
 
 const ProduktionDesktop = () => {
   return (
@@ -37,11 +37,11 @@ const ProduktionDesktop = () => {
             <p style={{ color: "#FFFFFFB3", opacity: "60%" }}>
               <FormattedMessage id="production.text3" />
             </p>
-            <AnchorLink to="/#contact">
+            <Link to="/#contact">
               <button>
                 <FormattedMessage id="production.button" />
               </button>
-            </AnchorLink>
+            </Link>
           </div>
           <div
             data-sal="fade"

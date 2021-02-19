@@ -14,10 +14,10 @@ button{
   background-color: #FBD872;
   text-transform: uppercase;
   padding: 7px 15px 9px 15px;
+  outline: none;
   cursor: pointer;
   border: none;
   margin: 0;
-  outline-color: #FBD872;
   &:hover{
     transform: scale(1.05);
     box-shadow: 0px 6px 25px .3px #69696950;

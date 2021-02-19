@@ -7,6 +7,7 @@
         "production": "Produktion",
         "import": "Importieren",
         "logistic": "Logistik",
+        "success" : "Entreprise à succès",
         "about": "Über uns"
     },
     "nav": {
@@ -86,8 +87,8 @@
         "button": "VICTORY SHOP"
     },
     "contact": {
-        "title": "Registrieren Sie sich für weitere Informationen über unsere Preislisten",
-        "subtitle": "Wir werden Ihre Anfrage bearbeiten und so schnell wie möglich kontaktieren wir Sie",
+        "title": "Registrieren Sie sich für weitere Informationen über unsere Preislisten.",
+        "subtitle": "Wir werden Ihre Anfrage bearbeiten und so schnell wie möglich kontaktieren wir Sie.",
         "name": "Name",
         "surname": "Vorname",
         "company": "Unternehmen",
@@ -106,7 +107,9 @@
     },
     "footer": {
         "text": "Victory Switzerland GmbH has been active as an import / wholesaler since it was founded in 2012 and makes worldwide purchases for its customers. Due to the diversity of our customers, our range is constantly being expanded; We import over 1000 new items every year.",
-        "title": "Haben Sie Fragen?"
+        "title": "Haben Sie Fragen?",
+        "copyright" : "© Alle Rechte vorbehalten",
+        "media" : "folge uns"
     },
     "about": {
         "videoText": "WIR VERKAUFEN KUNDENSPEZIFISCHE B2B-LÖSUNGEN.",

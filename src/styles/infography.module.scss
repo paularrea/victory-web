@@ -17,8 +17,64 @@
   width: 100vw;
   background-color: white;
   .infography_img{
-    padding: 2rem;
+    padding: 2rem 3rem;
     max-width: 1360px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .grey_container{
+      height: 77px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #EDF0F8;
+      width: 945px;
+      padding-right:.5rem;
+      .logo_flex{
+        padding: .5rem;
+        width: 200px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        img{
+          width: 60px;
+          height: auto;
+        }
+        p{
+          margin: 0;
+          font-size: 16px;
+          line-height: 21px;
+          color: #1D1F2AB3;
+        }
+      }
+    }
+    .orange_container{
+      height: 77px;
+      background-color: #FFEEC7;
+      width: 205px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .logo_flex{
+        margin: 0 auto;
+        padding: .5rem;
+        width: 180px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img{
+          width: 60px;
+          height: auto;
+        }
+        p{
+          width: min-content;
+          margin: 0;
+          line-height: 21px;
+          font-size: 16px;
+          color: #1D1F2A;
+        }
+      }
+    }
   }
 }
