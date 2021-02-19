@@ -88,16 +88,17 @@ const Burger = () => {
           </Link>
           <hr />
         </nav>
+        <div className="follow-container">
 
         <div className="language-container">
           <Language />
+          <hr />
           <div className="contact-flex">
             <PhoneIcon />
             <a href="tel:+41313019439" rel="noreferrer" target="_blank">+41 31 301 94 39</a>
           </div>
         </div>
         
-        <div className="follow-container">
           <hr />
           <h3>Folge uns</h3>
           <ul className="media-list">

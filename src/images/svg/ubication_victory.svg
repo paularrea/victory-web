@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="81" height="99.163" viewBox="0 0 81 99.163">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="4.944" gradientTransform="translate(0.449 5.955) scale(0.101 0.101)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-opacity="0.6"/>
+      <stop offset="0.756" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="Grupo_898" data-name="Grupo 898" transform="translate(-764.55 -194.447)">
+    <path id="Trazado_347" data-name="Trazado 347" d="M833.223,258.61a37.8,37.8,0,1,0-54.144,0l27.072,30.676Z" transform="translate(-1.101 0)" fill="#1d1f2a"/>
+    <path id="Trazado_348" data-name="Trazado 348" d="M821.693,222.872l-3.938,23.8c-.384,2.091-.627,4.216-.836,6.341-.07.975-.278,2.02-.278,3.065h-.1a28.534,28.534,0,0,0-.313-3.065c-.209-2.126-.453-4.25-.836-6.341l-4.355-23.8H803.61l8.223,37.1H821.1l8.013-37.1Z" transform="translate(-11.312 -8.232)" fill="#fbd872"/>
+    <ellipse id="Elipse_60" data-name="Elipse 60" cx="40.5" cy="4.096" rx="40.5" ry="4.096" transform="translate(764.55 285.418)" opacity="0.52" fill="url(#radial-gradient)"/>
+  </g>
+</svg>

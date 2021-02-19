@@ -16,12 +16,19 @@ input[type=number] {
     background-color: white;
     padding: 2rem; 
 }
-.img_container{
-    padding-bottom: 2rem;
-    padding-right: 2rem;
-}
 .img_container svg{
     width: 100%;
+}
+.img_container{
+    position: relative;
+    padding-bottom: 0;
+}
+.img_location{
+    position: absolute;
+    width: 60px;
+    top: 5rem;
+    right: 10rem;
+    z-index: 9999;
 }
 .input_about{
     width: 100%;
@@ -46,7 +53,14 @@ input[type=number] {
         padding: 2rem; 
     }
     .img_container{
+        position: relative;
         padding-bottom: 0;
+    }
+    .img_location{
+        position: absolute;
+        top: 5rem;
+        right: 3rem;
+        z-index: 9999;
     }
     .flex_form{
         width: 100%;

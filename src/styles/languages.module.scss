@@ -1,7 +1,7 @@
 .translation_flex{
     display: flex;
-    width: 110px;
-    justify-content: space-around;
+    width: 125px;
+    justify-content: space-between;
     .translation_item{
         color: #FBD872;
         font-size: 14px;
@@ -33,6 +33,6 @@
 
 @media (max-width:870px){
     .translation_flex{
-        padding-top: 2rem;
+        padding: 2rem 0;
     }
 }

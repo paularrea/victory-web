@@ -4,6 +4,7 @@ import Layout from "../components/layout/layout";
 import SEO from "../components/seo";
 import styles from "../styles/index.module.scss";
 import { injectIntl } from "gatsby-plugin-intl"
+import Logo from "../gif/animation.gif"
 
 import Intro from "../components/1.intro/intro";
 import Infography from "../components/2.Infography/infography";
@@ -13,8 +14,7 @@ import Importieren from "../components/5.importieren/importieren";
 import Logistik from "../components/6.logistik/logistik";
 import Fulhen from "../components/7.fuhlen/fuhlen";
 import ContactForm from "../components/8.Contact/contact";
-import Blog from "../components/9.Blog/blog";
-import Logo from "../images/logo.png"
+// import Blog from "../components/9.Blog/blog";
 
 const IndexPage = ({intl}) => {
   const [lateEntry, setLateEntry] = useState(false);
@@ -22,7 +22,7 @@ const IndexPage = ({intl}) => {
   useEffect(() => {
     const entry = setTimeout(() => {
       setLateEntry(true)
-    }, 2000)
+    }, 3000)
     return () => clearTimeout(entry)
   }, [lateEntry])
 
@@ -63,9 +63,9 @@ const IndexPage = ({intl}) => {
       <div>
         <ContactForm />
       </div>
-      <div>
+      {/* <div>
         <Blog />
-      </div>
+      </div> */}
     </Layout>
   </div>)
 };

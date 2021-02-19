@@ -18,7 +18,7 @@ const Header = () => (
               <Logo />
             </Link>
           </div>
-          <div>
+          <div className={styles.burger}>
             <Burger />
           </div>
         </div>

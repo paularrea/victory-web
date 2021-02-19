@@ -1,11 +1,13 @@
 import React from "react";
 import styles from "../../styles/infography.module.scss";
+import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 
 import ProduktDesignIcon from "../../gif/Produktdesign.gif";
 import ProduktionIcon from "../../gif/Produktion.gif";
 import LogistikIcon from "../../gif/Logistik.gif";
 import ImportationIcon from "../../gif/Importation.gif";
 import ErfolgreichesIcon from "../../gif/Erfolgreiches.gif";
+import Separador from "../../images/svg/flechas.svg";
 
 const InfographyDesktop = () => {
   return (
@@ -19,30 +21,45 @@ const InfographyDesktop = () => {
       <div className={styles.infography_img}>
         <div className={styles.grey_container}>
           <div className={styles.logo_flex}>
-            <img src={ProduktDesignIcon} alt="Produktdesign icon" />
-            <p>Produktdesign</p>
+            <img src={ProduktDesignIcon} alt="product design icon" />
+            <p>
+              {" "}
+              <FormattedMessage id="seo.productDesign" />
+            </p>
           </div>
-          f
+          <Separador />
           <div className={styles.logo_flex}>
-            <img src={ProduktionIcon} alt="Produktdesign icon" />
-            <p>Produktion</p>
+            <img src={ProduktionIcon} alt="production icon" />
+            <p>
+              {" "}
+              <FormattedMessage id="seo.production" />
+            </p>
           </div>
-          f
+          <Separador />
           <div className={styles.logo_flex}>
-            <img src={ImportationIcon} alt="Produktdesign icon" />
-            <p>Importieren</p>
+            <img src={ImportationIcon} alt="importation icon" />
+            <p>
+              {" "}
+              <FormattedMessage id="seo.import" />
+            </p>
           </div>
-          f
+          <Separador />
           <div className={styles.logo_flex}>
-            <img src={LogistikIcon} alt="Produktdesign icon" />
-            <p>Logistik-Dienste</p>
+            <img src={LogistikIcon} alt="logistic icon" />
+            <p>
+              {" "}
+              <FormattedMessage id="seo.logistic" />
+            </p>
           </div>
         </div>
-        <p>f</p>
+        <Separador />
         <div className={styles.orange_container}>
           <div className={styles.logo_flex}>
             <img src={ErfolgreichesIcon} alt="Produktdesign icon" />
-            <p>Erfolgreiches Unternehmen</p>
+            <p>
+              {" "}
+              <FormattedMessage id="seo.success" />
+            </p>
           </div>
         </div>
       </div>
@@ -50,4 +67,4 @@ const InfographyDesktop = () => {
   );
 };
 
-export default InfographyDesktop;
+export default injectIntl(InfographyDesktop);

@@ -9,7 +9,7 @@ import styles from "../styles/about.module.scss";
 import TeamList from "../components/about/team";
 import ContactAbout from "../components/about/contactAbout";
 import VideoComponent from "../components/about/video";
-import BlogAbout from "../components/9.Blog/blogAbout";
+// import BlogAbout from "../components/9.Blog/blogAbout";
 
 const About = () => {
   return (
@@ -65,7 +65,7 @@ const About = () => {
         </div>
         <TeamList />
         <ContactAbout />
-        <BlogAbout />
+        {/* <BlogAbout /> */}
       </div>
     </Layout>
   );

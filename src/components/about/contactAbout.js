@@ -1,7 +1,8 @@
 import React from "react";
 import "./formAbout.css";
-import { injectIntl } from "gatsby-plugin-intl";
+import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 import FormAboutImg from "../../images/svg/map_bern.svg";
+import Location from "../../images/svg/ubication_victory.svg";
 
 const ContactForm = ({ intl }) => {
   const namePlaceholder = intl.formatMessage({ id: "contact.name" });
@@ -16,16 +17,25 @@ const ContactForm = ({ intl }) => {
         <div className="flex_form">
           <div className="img_container">
             <FormAboutImg />
+            <div className="img_location">
+              <a
+                href="https://www.google.com/maps/dir//Solothurnstrasse+24C,+3422+Kirchberg,+Suiza/@47.088762,7.5803751,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x478e2e8fb3298e67:0xc936accc2ffb169a!2m2!1d7.5825638!2d47.088762!3e0"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <Location />
+              </a>
+            </div>
           </div>
           <div>
             <form
               subject="CALL ME"
-               action="/thankyou"
-               name="CALL ME"
-               method="post"
-               data-netlify="true"
-               data-netlify-honeypot="bot-field"
-                id='form-about'
+              action="/thankyou"
+              name="CALL ME"
+              method="post"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              id="form-about"
             >
               <input type="hidden" name="form-name" value="CALL ME" />
               <input
@@ -101,7 +111,7 @@ const ContactForm = ({ intl }) => {
                   type="submit"
                   className="about_contact_btn"
                 >
-                  WIR RUFEN SIE
+                  <FormattedMessage id="about.contactBtn" />
                 </button>
               </div>
             </form>

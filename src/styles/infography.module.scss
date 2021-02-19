@@ -1,7 +1,6 @@
 .container{
-  background-color: #F5F6FC;
+  background-color: #FFFFFF;
   margin: 0 auto;
-  padding: 2rem 1rem;
   .infography_container{
     background-color: #FFFFFF;
     top: 620px;
@@ -13,36 +12,54 @@
     opacity: 1;
   }
 }
-.infography_img_container{
-  width: 100vw;
-  background-color: white;
-  .infography_img{
-    padding: 2rem 3rem;
-    max-width: 1360px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     .grey_container{
-      height: 77px;
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      background-color: #EDF0F8;
-      width: 945px;
-      padding-right:.5rem;
-      .logo_flex{
-        padding: .5rem;
-        width: 200px;
+      background-color: #fafafa;
+      width: auto;
+      .logo_flex_last{
+        margin: 2rem 0;
+        padding: .5rem 0;
+        width: 302px;
         display: flex;
-        justify-content: space-around;
+        background-color: #FFEEC7;
+        div{
+          margin: 0 auto;
+          padding: 0 1rem;
+          width: 230px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          img{
+          width: 65px;
+          height: auto;
+          }
+          p{
+          width: min-content;
+          margin: 0;
+          padding-left: 1rem;
+          font-size: 16px;
+          line-height: 21px;
+          color: #1D1F2AB3;
+        }
+        }
+        
+      }
+      .logo_flex{
+        padding: 1rem;
+        width: 230px;
+        display: flex;
+        justify-content: flex-start;
         align-items: center;
         img{
-          width: 60px;
+          width: 65px;
           height: auto;
         }
         p{
           margin: 0;
+          padding-left: 1rem;
           font-size: 16px;
           line-height: 21px;
           color: #1D1F2AB3;
@@ -73,6 +90,99 @@
           line-height: 21px;
           font-size: 16px;
           color: #1D1F2A;
+        }
+      }
+    }
+
+@media (max-width : 350px) and (max-height:660px) {
+svg{
+  width: 80%;
+}
+.grey_container{
+  .logo_flex_last{
+    width: 80%;
+}
+}
+}
+
+@media (min-width : 870px) {
+  .container{
+    background-color: #F5F6FC;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    .infography_container{
+      background-color: #FFFFFF;
+      top: 620px;
+      left: 16px;
+      width: auto;
+      height: auto;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      box-shadow: 0px 0px 30px #0000000D;
+      opacity: 1;
+    }
+  }
+  .infography_img_container{
+    width: 100vw;
+    background-color: white;
+    .infography_img{
+      padding: 2rem 3rem;
+      max-width: 1360px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .grey_container{
+        height: 77px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #EDF0F8;
+        width: 945px;
+        padding-right:.5rem;
+        .logo_flex{
+          padding: .5rem;
+          width: 200px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          img{
+            width: 60px;
+            height: auto;
+          }
+          p{
+            margin: 0;
+            font-size: 16px;
+            line-height: 21px;
+            color: #1D1F2AB3;
+          }
+        }
+      }
+      .orange_container{
+        height: 77px;
+        background-color: #FFEEC7;
+        width: 205px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .logo_flex{
+          margin: 0 auto;
+          padding: .5rem;
+          width: 180px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          img{
+            width: 60px;
+            height: auto;
+          }
+          p{
+            width: min-content;
+            margin: 0;
+            line-height: 21px;
+            font-size: 16px;
+            color: #1D1F2A;
+          }
         }
       }
     }

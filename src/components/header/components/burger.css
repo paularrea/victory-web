@@ -97,15 +97,15 @@
     margin-top: 1vh;
   }
   .contact-flex{
-    margin-top: 2vh;
+    margin: 4vh 0;
     display: flex;
     justify-content: flex-start;
     width: auto;
     align-items: center;
   }
   .contact-flex a {
-    color: white;
-    font-size: 14px;
+    color: #FED880;
+    font-size: 18px;
     font-weight: 100;
   }
   .contact-flex svg {

@@ -1,6 +1,6 @@
 import React from "react";
 import "./form.css";
-import { injectIntl } from "gatsby-plugin-intl";
+import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 // import ReCAPTCHA from "react-google-recaptcha";
 
 const Form = ({ intl }) => {
@@ -89,7 +89,7 @@ const Form = ({ intl }) => {
         data-sal-duration="1000"
         type="submit"
       >
-        FORMULAR SENDEN
+         <FormattedMessage id="contact.button" />
       </button>
     </form>
   );

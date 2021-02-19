@@ -71,9 +71,7 @@ const Footer = () => {
             </div>
           </div>
           <hr />
-          <div style={{paddingBottom:'2rem'}}>
             <Language />
-          </div>
           <hr />
           <div className={styles.follow_container}>
             <h3><FormattedMessage id="footer.media" /></h3>

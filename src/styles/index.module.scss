@@ -64,48 +64,11 @@ a{
     -moz-background-clip: text;
     background-clip: text;
     color: transparent;
-    -webkit-animation: fadeIn 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadeIn 2s; /* Firefox < 16 */
-     -ms-animation: fadeIn 2s; /* Internet Explorer */
-      -o-animation: fadeIn 2s; /* Opera < 12.1 */
-         animation: fadeIn 2s;
-    
     img{
-        width: 10rem;
+        width: 20rem;
     }
 }
-.fade-in {
-  animation: fadeIn ease 2s;
-  -webkit-animation: fadeIn ease 2s;
-  -moz-animation: fadeIn ease 2s;
-  -o-animation: fadeIn ease 2s;
-  -ms-animation: fadeIn ease 2s;
-  }
-  @keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-  }
-  
-  @-moz-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-  }
-  
-  @-webkit-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-  }
-  
-  @-o-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-  }
-  
-  @-ms-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-  }
-  
+
 @media (min-width: 800px) {
   button{
     color: #1D1F2A;
