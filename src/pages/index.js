@@ -22,7 +22,7 @@ const IndexPage = ({intl}) => {
   useEffect(() => {
     const entry = setTimeout(() => {
       setLateEntry(true)
-    }, 3000)
+    }, 2400)
     return () => clearTimeout(entry)
   }, [lateEntry])
 
