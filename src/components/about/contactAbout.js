@@ -29,15 +29,9 @@ const ContactForm = ({ intl }) => {
           </div>
           <div>
             <form
-              subject="CALL ME"
-              action="/thankyou"
               name="CALL ME"
               method="post"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
-              id="form-about"
-            >
-              <input type="hidden" name="form-name" value="CALL ME" />
+              action="https://www.flexyform.com/f/806f567711c45bb3db3813f0176fb30920fcf35a">
               <input
                 data-sal="slide-up"
                 data-sal-delay="100"

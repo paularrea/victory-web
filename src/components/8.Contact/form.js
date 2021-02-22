@@ -1,7 +1,6 @@
 import React from "react";
 import "./form.css";
 import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
-// import ReCAPTCHA from "react-google-recaptcha";
 
 const Form = ({ intl }) => {
   const namePlaceholder = intl.formatMessage({ id: "contact.name" });
@@ -12,15 +11,10 @@ const Form = ({ intl }) => {
   const emailPlaceholder = intl.formatMessage({ id: "contact.email" });
   return (
     <form
-    subject="CONTACT"
-      action="/thankyou"
+      action="https://www.flexyform.com/f/8e720ef63c4be85521fa15f7038e5f9eb03365c9"
       name="CONTACT"
       method="post"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
-      // data-netlify-recaptcha="true"
     >
-      <input type="hidden" name="form-name" value="CONTACT" />
       <input
         data-sal="slide-up"
         data-sal-delay="100"
@@ -89,7 +83,7 @@ const Form = ({ intl }) => {
         data-sal-duration="1000"
         type="submit"
       >
-         <FormattedMessage id="contact.button" />
+        <FormattedMessage id="contact.button" />
       </button>
     </form>
   );
