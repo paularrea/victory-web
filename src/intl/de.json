@@ -32,14 +32,14 @@
         "subtitle": "Non-Food Konzept",
         "subtitle2": "Ein erfolgreicher Verkauf beginnt mit einem guten Design. Victory Switzerland bringt Ihr Produkt direkt zum Markt.",
         "bigText": "Wir begleiten Sie von A bis Z und verwandeln Ihre Idee in ein handfestes Produkt. Folgen Sie dem Prozess Schritt für Schritt. Sie bringen den Wahnsinn, wir bringen die Technik.",
-        "text1": "Unsere Designer-Community ist in der Lage, aus einer Idee, die einem einfachen Stück Papier entspringt, oder aus einem tiefer gehenden Konzept ein Produkt zu entwickeln.",
+        "text1": "Unsere Designer sind in der Lage aus einer Idee, die einem einfachen Stück Papier entspringt oder aus einem tiefer gehenden Konzept ein Produkt zu entwickeln.",
         "text2": "Haben Sie ein trendiges Produkt auf dem Markt entdeckt? Machen Sie es besser und überflügeln Sie Ihr Konkurrent.",
         "button": "PLANUNG STARTEN"
     },
     "production": {
         "title": "PRODUKTION",
         "subtitle": "Das perfekte Produkt herzustellen ist eine Herausforderung die wir schätzen, weil wir alles tun, um sie zu erfüllen.",
-        "text1": "Wir finden die richtige Fabrik aus einer weltweiten Auswahl und nutzen unsere Erfahrung und unseren Einfluss, um Ihnen einen besseren Preis zu bieten, als Ihr Unternehmen allein erzielen könnte.",
+        "text1": "Wir finden die richtige Fabrik aus einer weltweiten Auswahl und nutzen unsere Erfahrung und unseren Einfluss, um Ihnen einen besseren Preis zu bieten.",
         "text2": "Wenn Sie in unsere Dienstleistungen investieren, sparen Sie Zeit und Geld. Ihr CFO wird uns lieben.",
         "text3": "Heute haben Sie Zugang zu noch nie dagewesenen Möglichkeiten, ein neues Produkt zu dem Preis, in der Qualität und in dem Umfang herzustellen, den Sie benötigen. Das Angebot ist so gross, dass man sich verlaufen kann. Ein weiterer Grund, mit uns zu arbeiten.",
         "button": "PRODUKTION STARTEN"
@@ -48,12 +48,12 @@
         "title": "IMPORTIEREN",
         "subtitle": "Es gibt viele Möglichkeiten, Ihr Produkt von Punkt A nach Punkt B zu transportieren. Die echte Frage ist, ob Ihr Spediteur dies effizient tut. Wir tun, was nötig ist, um jede Lieferung zu optimieren.",
         "text1": "Wenn Sie in die Schweiz oder ein anderes Land importieren, muss Ihr Produkt bestimmten Vorschriften entsprechen.",
-        "text2": "Es besteht das Risiko, dass die Ware beim Zoll verbleibt. Um dies zu vermeiden, stellen wir vor dem Verladen sicher, dass es alle Konformitätsanforderungen erfüllt.",
+        "text2": "Es besteht das Risiko, dass die Ware beim Zoll verbleibt. Um dies zu vermeiden, stellen wir vor dem Verladen sicher, dass alle Konformitätsanforderungen erfüllt sind.",
         "button": "IMPORT VERWALTEN"
     },
     "logistic": {
         "title": "LOGISTIK",
-        "subtitle": "Wir bieten logistische Dienstleistungen immer mit der Garantie und Qualität an. Unser Team stellt sich auf Ihre Bedürfnisse ein und bietet Ihnen massgeschneiderte Angebote zum besten Preis. Unsere Arbeit ist beendet, wenn unser Kunde seine Ware erhält und fühlt den Sieg!",
+        "subtitle": "Wir bieten logistische Dienstleistungen immer mit der Garantie und Qualität an. Unser Team stellt sich auf Ihre Bedürfnisse ein und bietet Ihnen massgeschneiderte Angebote zum besten Preis. Unsere Arbeit ist beendet, wenn unser Kunde seine Ware erhält und den Sieg fühlt!",
         "container": {
             "title": "Unser Team Garantiert:",
             "bullet1": {
@@ -74,21 +74,21 @@
             },
             "bullet5": {
                 "title": "Effizienter Versorgungskreislauf",
-                "description": "Sie führt zu einem preiswerten Angebot, dass den Endprodukt Preis und den Verbraucher positiv beeinflusst. Unser Team wird Ihnen gerne eine massgeschneiderte Lösung anbieten."
+                "description": "Sie führt zu einem preiswerten Angebot, das den Endpreis und den Verbraucher positiv beeinflusst. Unser Team wird Ihnen gerne eine massgeschneiderte Lösung anbieten."
             }
         },
         "button": "BERATUNG EINHOLEN"
     },
     "fuhlen": {
-        "title": "FÜHLEN DEN SIEG",
+        "title": "FÜHLE DEN SIEG",
         "title2": "DAS KRONJUWEL",
         "subtitle": "Für Kunden, die keine eigenen Kollektionen entwickeln wollen, haben wir ebenfalls eine Lösung.",
-        "text1": "Victory Shop ist eine digitale Zentrale, in der die wichtigsten europäischen Grosshändlernzusammenleben. Das Beste aus ihren Produkten in einem einzigen Warenkorb. Sie benötigen nur ein paar Klicks.",
+        "text1": "Victory Shop ist eine digitale Zentrale, in der die wichtigsten europäischen Grosshändler zusammen sind. Sie benötigen nur ein paar Klicks um die besten Produkte in einem Warenkorb zu haben.",
         "button": "VICTORY SHOP"
     },
     "contact": {
         "title": "Registrieren Sie sich für weitere Informationen über unsere Preislisten.",
-        "subtitle": "Wir werden Ihre Anfrage bearbeiten und so schnell wie möglich kontaktieren wir Sie.",
+        "subtitle": "Wir werden Ihre Anfrage bearbeiten und Sie so schnell wie möglich kontaktieren.",
         "name": "Name",
         "surname": "Vorname",
         "company": "Unternehmen",
@@ -106,7 +106,7 @@
         "button": ""
     },
     "footer": {
-        "text": "Victory Switzerland GmbH has been active as an import / wholesaler since it was founded in 2012 and makes worldwide purchases for its customers. Due to the diversity of our customers, our range is constantly being expanded; We import over 1000 new items every year.",
+        "text": "Die Victory Switzerland GmbH ist seit der Gründung im Jahr 2012 im Import / Großhandel tätig und kauft weltweit für ihre Kunden ein. Aufgrund der Vielfalt unserer Kunden wird unser Sortiment ständig erweitert; wir importieren jährlich über 1000 neue Artikel.",
         "title": "Haben Sie Fragen?",
         "copyright" : "© Alle Rechte vorbehalten",
         "media" : "folge uns"

@@ -1,3 +1,32 @@
+
+// ANIMATION SEPARATOR
+@keyframes fadeInfinite {
+  0%   { opacity:0; filter: brightness(0) saturate(0%); }
+  50%  { opacity:.8; filter: brightness(0) saturate(80%); }
+  100% { opacity:1; filter: brightness(0) saturate(100%); }
+}
+@-o-keyframes fadeInfinite{
+  0%   { opacity:0; filter: brightness(0) saturate(0%); }
+  50%  { opacity:.8; filter: brightness(0) saturate(80%); }
+  100% { opacity:1; filter: brightness(0) saturate(100%); }
+}
+@-moz-keyframes fadeInfinite{
+  0%   { opacity:0; filter: brightness(0) saturate(0%); }
+  50%  { opacity:.8; filter: brightness(0) saturate(80%); }
+  100% { opacity:1; filter: brightness(0) saturate(100%); }
+}
+@-webkit-keyframes fadeInfinite{
+  0%   { opacity:0; filter: brightness(0) saturate(0%); }
+  50%  { opacity:.8; filter: brightness(0) saturate(80%); }
+  100% { opacity:1; filter: brightness(0) saturate(100%); }
+}
+.fade_infinite {
+   -webkit-animation: fadeInfinite 2s infinite;
+   -moz-animation: fadeInfinite 2s infinite;
+   -o-animation: fadeInfinite 2s infinite;
+    animation: fadeInfinite 2s infinite;
+}
+
 .container{
   background-color: #FFFFFF;
   margin: 0 auto;
@@ -95,7 +124,7 @@
     }
 
 @media (max-width : 350px) and (max-height:660px) {
-svg{
+.fade_infinite{
   width: 80%;
 }
 .grey_container{
