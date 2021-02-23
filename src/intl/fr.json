@@ -32,13 +32,13 @@
         "subtitle" : "Concept Non-Food",
         "subtitle2" : "Une vente à succès commence avec un bon design. Victory Switzerland mène votre produit direct sur le marché.",
         "bigText" : "Nous vous soutenons de A à Z et transformons votre idée en un produit tangible. Suivez le processus étape par étape. Vous amenez la folie, nous apportons la technique.",
-        "text1" : "Notre communauté de designers est capable de travailler d’après une simple feuille de papier où d’un concept plus élaboré pour le développement de votre produit." ,
-        "text2" : "Avez-vous découvert un produit tendance sur le marché ? Faite mieux et dépassez vos concurrents.",
+        "text1" : "Notre communauté de designers est capable de travailler d’après une simple feuille de papier ou d'après un concept plus élaboré pour le développement de votre produit." ,
+        "text2" : "Avez-vous découvert un produit tendance sur le marché ? Faites mieux et dépassez vos concurrents.",
         "button" : "DÉBUTER LA PLANIFICATION"
     },
     "production": {
         "title": "PRODUCTION",
-        "subtitle" : "Développer le produit parfait est un défi que nous aimons, car nous mettant tout en œuvre pour le relever.",
+        "subtitle" : "Développer le produit parfait est un défi que nous aimons, car nous mettons tout en œuvre pour le relever.",
         "text1" : "Nous trouvons la fabrique adéquate au milieu d’un choix international et utilisons notre expérience et influence afin de vous offrir un meilleur prix que votre entreprise aurait obtenu seule." ,
         "text2" : "En investissant dans nos services, économisez du temp et de l’argent. Votre CFO va nous aimer.",
         "text3" : "Aujourd’hui vous avez accès à des possibilités infinies pour développer un produit à la qualité et au prix voulus. L’offre est si vaste qu’on peut facilement s’y perdre. Une raison supplémentaire de travailler avec nous.",
@@ -53,7 +53,7 @@
     },
     "logistic": {
         "title": "LOGISTIQUE",
-        "subtitle" : "Nous offrons un service logistique toujours garantit et de qualité. Notre équipe se base sur vos besoins et propose des offres sur mesure au meilleur prix. Notre travail se termine, lorsque le client reçoit sa commande et ressens la victoire!",
+        "subtitle" : "Nous offrons un service logistique de qualité. Notre équipe se base sur vos besoins et propose des offres sur mesure au meilleur prix. Notre travail se termine, lorsque le client reçoit sa commande et ressens la victoire!",
         "container" : {
             "title" : "Nous garantissons:" ,
             "bullet1" : {
