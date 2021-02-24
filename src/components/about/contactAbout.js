@@ -22,7 +22,7 @@ const ContactForm = ({ intl }) => {
                 href="https://www.google.com/maps/dir//Solothurnstrasse+24C,+3422+Kirchberg,+Suiza/@47.088762,7.5803751,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x478e2e8fb3298e67:0xc936accc2ffb169a!2m2!1d7.5825638!2d47.088762!3e0"
                 rel="noreferrer"
                 target="_blank"
-                className={'location-icon'}
+                className={"location-icon"}
               >
                 <Location />
               </a>
@@ -100,9 +100,11 @@ const ContactForm = ({ intl }) => {
                 data-sal-duration="1000"
                 className="btn_container"
               >
-                <input type="hidden" name="_recaptcha" id="_recaptcha" />
-                <script src="https://www.google.com/recaptcha/api.js?render=6Lf7UsoUAAAAACT2Z6gLyh7RTDfyYGxfZ-M4D0ph"></script>
-                <script src="https://www.flexyform.com/js/recaptcha.js"></script>
+                <div style={{ display: "hidden" }}>
+                  <input type="hidden" name="_recaptcha" id="_recaptcha" />
+                  <script src="https://www.google.com/recaptcha/api.js?render=6Lf7UsoUAAAAACT2Z6gLyh7RTDfyYGxfZ-M4D0ph"></script>
+                  <script src="https://www.flexyform.com/js/recaptcha.js"></script>
+                </div>
                 <button
                   data-sal="slide-up"
                   data-sal-delay="400"

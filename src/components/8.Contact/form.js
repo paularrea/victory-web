@@ -8,7 +8,7 @@ const Form = ({ intl }) => {
   const companyPlaceholder = intl.formatMessage({ id: "contact.company" });
   const industryPlaceholder = intl.formatMessage({ id: "contact.industry" });
   const phonePlaceholder = intl.formatMessage({ id: "contact.phone" });
-  const emailPlaceholder = intl.formatMessage({ id: "contact.email" }) ;
+  const emailPlaceholder = intl.formatMessage({ id: "contact.email" });
   return (
     <form
       action="https://www.flexyform.com/f/5b588b2b896183814cfe1778245b8a3e26736b35"
@@ -76,9 +76,11 @@ const Form = ({ intl }) => {
         placeholder={emailPlaceholder}
       />
       <br />
-      <input type="hidden" name="_recaptcha" id="_recaptcha" />
-      <script src="https://www.google.com/recaptcha/api.js?render=6Lf7UsoUAAAAACT2Z6gLyh7RTDfyYGxfZ-M4D0ph"></script>
-      <script src="https://www.flexyform.com/js/recaptcha.js"></script>
+      <div style={{display:'hidden'}}>
+        <input type="hidden" name="_recaptcha" id="_recaptcha" />
+        <script src="https://www.google.com/recaptcha/api.js?render=6Lf7UsoUAAAAACT2Z6gLyh7RTDfyYGxfZ-M4D0ph"></script>
+        <script src="https://www.flexyform.com/js/recaptcha.js"></script>
+      </div>
       <button
         data-sal="slide-up"
         data-sal-delay="400"
