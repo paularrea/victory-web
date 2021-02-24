@@ -8,7 +8,7 @@ const Form = ({ intl }) => {
   const companyPlaceholder = intl.formatMessage({ id: "contact.company" });
   const industryPlaceholder = intl.formatMessage({ id: "contact.industry" });
   const phonePlaceholder = intl.formatMessage({ id: "contact.phone" });
-  const emailPlaceholder = intl.formatMessage({ id: "contact.email" });
+  const emailPlaceholder = intl.formatMessage({ id: "contact.email" }) ;
   return (
     <form
       action="https://www.flexyform.com/f/5b588b2b896183814cfe1778245b8a3e26736b35"
