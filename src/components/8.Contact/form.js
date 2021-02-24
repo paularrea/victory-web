@@ -11,7 +11,7 @@ const Form = ({ intl }) => {
   const emailPlaceholder = intl.formatMessage({ id: "contact.email" });
   return (
     <form
-      action="https://www.flexyform.com/f/8e720ef63c4be85521fa15f7038e5f9eb03365c9"
+      action="https://www.flexyform.com/f/5b588b2b896183814cfe1778245b8a3e26736b35"
       name="CONTACT"
       method="post"
     >

@@ -16,18 +16,18 @@ const [start3, setStart3] = useState(false);
 const [start4, setStart4] = useState(false);
 
 useEffect(() => {
-setTimeout(() => {
-  setStart1(true)
-}, 1000);
-setTimeout(() => {
-  setStart2(true)
-}, 1300);
-setTimeout(() => {
-  setStart3(true)
-}, 1600);
-setTimeout(() => {
-  setStart4(true)
-}, 1900);
+  setTimeout(() => {
+    setStart1(true);
+  }, 1100);
+  setTimeout(() => {
+    setStart2(true);
+  }, 1200);
+  setTimeout(() => {
+    setStart3(true);
+  }, 1300);
+  setTimeout(() => {
+    setStart4(true);
+  }, 1400);
 }, [])
 
   return (

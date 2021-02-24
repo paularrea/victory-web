@@ -32,7 +32,7 @@ const ContactForm = ({ intl }) => {
             <form
               name="CALL ME"
               method="post"
-              action="https://www.flexyform.com/f/806f567711c45bb3db3813f0176fb30920fcf35a"
+              action="https://www.flexyform.com/f/36fa9b0168dabf909a781256d65abc6d89b2e2cf"
             >
               <input
                 data-sal="slide-up"
