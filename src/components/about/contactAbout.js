@@ -32,7 +32,7 @@ const ContactForm = ({ intl }) => {
             <form
               method="post"
               action="https://www.flexyform.com/f/16d3be2443eb4c2baf922a6b2a3567858496d59d"
-              name='CALL YOU'
+              name="CALL YOU"
             >
               <input
                 data-sal="slide-up"
@@ -94,18 +94,21 @@ const ContactForm = ({ intl }) => {
                 required
                 placeholder={emailPlaceholder}
               />
+              <input
+                type="text"
+                style={{ visibility: "hidden" }}
+                value=""
+                name="_empty_field"
+              />
+              <br />
               <div
                 data-sal="slide-up"
                 data-sal-delay="250"
                 data-sal-duration="1000"
                 className="btn_container"
               >
-                <div style={{ display: "hidden" }}>
-                  <input type="hidden" name="_recaptcha" id="_recaptcha" />
-                  <script src="https://www.google.com/recaptcha/api.js?render=6Lf7UsoUAAAAACT2Z6gLyh7RTDfyYGxfZ-M4D0ph"></script>
-                  <script src="https://www.flexyform.com/js/recaptcha.js"></script>
-                </div>
                 <button
+                  style={{ marginTop: "0" }}
                   data-sal="slide-up"
                   data-sal-delay="400"
                   data-sal-duration="1000"

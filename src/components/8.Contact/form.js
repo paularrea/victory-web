@@ -75,13 +75,15 @@ const Form = ({ intl }) => {
         required
         placeholder={emailPlaceholder}
       />
+      <input
+        type="text"
+        style={{ visibility: "hidden" }}
+        value=""
+        name="_empty_field"
+      />
       <br />
-      <div style={{display:'hidden'}}>
-        <input type="hidden" name="_recaptcha" id="_recaptcha" />
-        <script src="https://www.google.com/recaptcha/api.js?render=6Lf7UsoUAAAAACT2Z6gLyh7RTDfyYGxfZ-M4D0ph"></script>
-        <script src="https://www.flexyform.com/js/recaptcha.js"></script>
-      </div>
       <button
+        style={{ marginTop: "0" }}
         data-sal="slide-up"
         data-sal-delay="400"
         data-sal-duration="1000"

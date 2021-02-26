@@ -22,7 +22,7 @@ const IndexPage = ({intl}) => {
   useEffect(() => {
     const entry = setTimeout(() => {
       setLateEntry(true)
-    }, 2400)
+    }, 2200)
     return () => clearTimeout(entry)
   }, [lateEntry])
 
@@ -37,7 +37,7 @@ const IndexPage = ({intl}) => {
       )}
     <Layout>
     <SEO
-        title={intl.formatMessage({ id: "title" })}
+        title={intl.formatMessage({ id: "seo.home" })}
       />
       <div>
         <Intro />

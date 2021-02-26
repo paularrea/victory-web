@@ -11,10 +11,10 @@ import ContactAbout from "../components/about/contactAbout";
 import VideoComponent from "../components/about/video";
 // import BlogAbout from "../components/9.Blog/blogAbout";
 
-const About = () => {
+const About = ({intl}) => {
   return (
     <Layout>
-      <SEO title="About" />
+      <SEO title={intl.formatMessage({ id: "seo.about" })} />
       <div className={styles.video}>
         <VideoComponent />
       </div>
@@ -52,11 +52,11 @@ const About = () => {
             className={styles.text_container}
           >
             <p className={styles.big_p}>
-            <FormattedMessage id="about.text1" />
+              <FormattedMessage id="about.text1" />
             </p>
             <br />
             <p>
-            <FormattedMessage id="about.text2" />
+              <FormattedMessage id="about.text2" />
             </p>
           </div>
         </div>
