@@ -26,7 +26,7 @@ const Infography = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      setStart1(true);
+      setStart1(true) ;
     }, 1100);
     setTimeout(() => {
       setStart2(true);
