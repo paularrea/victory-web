@@ -39,7 +39,7 @@
     "production": {
         "title": "PRODUKTION",
         "subtitle": "Das perfekte Produkt herzustellen ist eine Herausforderung die wir schätzen, weil wir alles tun, um sie zu erfüllen.",
-        "text1": "Wir finden die richtige Fabrik aus einer weltweiten Auswahl und nutzen unsere Erfahrung und unseren Einfluss, um Ihnen einen besseren Preis zu bieten.",
+        "text1": "Wir finden die richtige Fabrik aus einer weltweiten Auswahl und nutzen unsere Erfahrung und unseren Einfluss, um Ihnen den besten Preis zu anbieten.",
         "text2": "Wenn Sie in unsere Dienstleistungen investieren, sparen Sie Zeit und Geld. Ihr CFO wird uns lieben.",
         "text3": "Heute haben Sie Zugang zu noch nie dagewesenen Möglichkeiten, ein neues Produkt zu dem Preis, in der Qualität und in dem Umfang herzustellen, den Sie benötigen. Das Angebot ist so gross, dass man sich verlaufen kann. Ein weiterer Grund, mit uns zu arbeiten.",
         "button": "PRODUKTION STARTEN"
@@ -53,7 +53,7 @@
     },
     "logistic": {
         "title": "LOGISTIK",
-        "subtitle": "Wir bieten logistische Dienstleistungen immer mit der Garantie und Qualität an. Unser Team stellt sich auf Ihre Bedürfnisse ein und bietet Ihnen massgeschneiderte Angebote zum besten Preis. Unsere Arbeit ist beendet, wenn unser Kunde seine Ware erhält und den Sieg fühlt!",
+        "subtitle": "wir garantieren eine hochwertige Logistikdienstleistung. Unser Team stellt sich auf Ihre Bedürfnisse ein und bietet Ihnen massgeschneiderte Angebote zum besten Preis. Unsere Arbeit ist beendet, wenn unser Kunde seine Ware erhält und den Sieg fühlt!",
         "container": {
             "title": "Unser Team Garantiert:",
             "bullet1": {
@@ -66,7 +66,7 @@
             },
             "bullet3": {
                 "title": "Handhabung des Produkts",
-                "description": "Erleichtert das Zählen, Verteilen und Transportieren von Verpackungsmaterialien und Packstücken."
+                "description": "Erleichtert das Zählen, Verteilung und Transport von Verpackungsmaterialien und Packstücken."
             },
             "bullet4": {
                 "title": "Lagerverwaltung",
