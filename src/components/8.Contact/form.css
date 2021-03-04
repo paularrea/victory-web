@@ -12,6 +12,10 @@ input:focus, input[type]:focus, .uneditable-input:focus {
     border-color: #1D1F2A;
     outline: 0 none;
 }
+select:focus, select[type]:focus, .uneditable-select:focus {   
+    border-color: #1D1F2A;
+    outline: 0 none;
+}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -21,6 +25,7 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
 
 /* Thank you message */
 .bg-container{

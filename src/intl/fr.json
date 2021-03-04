@@ -92,7 +92,13 @@
         "name" : "Nom" ,
         "surname" : "Prénom",
         "company" : "Entreprise",
-        "industry" : "Industrie",
+        "subject": {
+            "name" : "Concerne",
+            "productDesign": "Débuter la planification",
+            "production": "Débuter la production",
+            "import": "Gérer l'importation",
+            "logistic": "Demander conseil"
+        },
         "phone" : "Téléphone",
         "email" : "E-mail",
         "button" : "ENVOYER LE FORMULAIRE"

@@ -118,8 +118,11 @@
 .video_window{
     background-color: #1D1F2A;
     height: 60vh;
+    margin: 0 auto;
     .video{
-        width: 100vw;
+        outline: none;
+        margin-top: 2rem;
+        width: 100%;
         height: 100%;
     }
 }
