@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;800&display=swap');
 
 *{
     box-sizing: border-box;
@@ -48,34 +48,38 @@ a{
 //animation
 @keyframes fadeOut {
   0%   { opacity:1; }
-  90%   { opacity:1; }
-  95%  { opacity:.8; }
+  80%   { opacity:1; }
+  85%  { opacity:.8; }
+  90% {opacity: .7;}
   100%  { opacity:0; }
 }
 @-o-keyframes fadeOut{
   0%   { opacity:1; }
-  90%   { opacity:1; }
-  95%  { opacity:.8; }
+  80%   { opacity:1; }
+  85%  { opacity:.8; }
+  90% {opacity: .7;}
   100%  { opacity:0; }
 }
 @-moz-keyframes fadeOut{
   0%   { opacity:1; }
-  90%   { opacity:1; }
-  95%  { opacity:.8; }
+  80%   { opacity:1; }
+  85%  { opacity:.8; }
+  90% {opacity: .7;}
   100%  { opacity:0; }
 }
 @-webkit-keyframes fadeOut{
   0%   { opacity:1; }
-  90%   { opacity:1; }
-  95%  { opacity:.8; }
+  80%   { opacity:1; }
+  85%  { opacity:.8; }
+  90% {opacity: .7;}
   100%  { opacity:0; }
 }
 
 .on_load{
-  -webkit-animation: fadeOut 2.2s ease-out;
-  -moz-animation: fadeOut 2.2s ease-out;
-  -o-animation: fadeOut 2.2s ease-out;
-   animation: fadeOut 2.2s ease-out;
+  -webkit-animation: fadeOut 2.4s ease-out;
+  -moz-animation: fadeOut 2.4s ease-out;
+  -o-animation: fadeOut 2.4s ease-out;
+   animation: fadeOut 2.4s ease-out;
   width: 100vw;
   position: fixed;
   top: 0;

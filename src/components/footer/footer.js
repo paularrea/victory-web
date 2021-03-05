@@ -50,7 +50,7 @@ const Footer = () => {
                 <PhoneIcon />
               </div>
               <div>
-                <a href="tel:+41313019439" rel="noreferrer" target="_blank">
+                <a href="tel:+41313019439">
                   +41 31 301 94 39
                 </a>
               </div>

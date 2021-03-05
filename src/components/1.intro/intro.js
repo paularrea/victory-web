@@ -34,11 +34,7 @@ const Intro = () => {
               className={styles.btn_container}
             >
               <div>
-                <a
-                  href="https://www.victoryshop.ch/"
-                  rel="noreferrer"
-                  target="_blank"
-                >
+                <a href="tel:+41313019439">
                   <button>
                     {" "}
                     <FormattedMessage id="intro.button1" />
