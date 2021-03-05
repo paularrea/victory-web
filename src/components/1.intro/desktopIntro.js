@@ -27,7 +27,7 @@ const DesktopIntro = () => {
             className={styles.btn_container}
           >
             <div>
-              <a href="tel:+41313019439">
+              <a href="tel:+41313019439"> 
                 <button>
                   <FormattedMessage id="intro.button1" />
                 </button>
