@@ -17,7 +17,7 @@ const VideoComponent = () => {
       data-sal="fade"
       data-sal-delay="100"
       data-sal-duration="1000"
-      style={{ position: "relative", backgroundColor: "#1D1F2A" }}
+      style={{ position: "relative", backgroundColor: "#1D1F2A"  }}
     >
       {playVideo ? (
         <div
