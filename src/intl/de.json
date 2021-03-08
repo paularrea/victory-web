@@ -47,8 +47,8 @@
     "import": {
         "title": "IMPORTIEREN",
         "subtitle": "Es gibt viele Möglichkeiten, Ihr Produkt von Punkt A nach Punkt B zu transportieren. Die echte Frage ist, ob Ihr Spediteur dies effizient tut. Wir tun, was nötig ist, um jede Lieferung zu optimieren.",
-        "text1": "Wenn Sie in die Schweiz oder ein anderes Land importieren, muss Ihr Produkt bestimmten Vorschriften entsprechen.",
-        "text2": "Es besteht das Risiko, dass die Ware beim Zoll verbleibt. Um dies zu vermeiden, stellen wir vor dem Verladen sicher, dass alle Konformitätsanforderungen erfüllt sind.",
+        "text1": "Wenn Sie in die Schweiz oder ein anderes Land importieren, muss Ihr Produkt bestimmten Vorschriften entsprechen. Es besteht das Risiko, dass die Ware beim Zoll verbleibt.",
+        "text2": "Um dies zu vermeiden, stellen wir vor dem Verladen sicher, dass alle Konformitätsanforderungen erfüllt sind.",
         "button": "IMPORT VERWALTEN"
     },
     "logistic": {
