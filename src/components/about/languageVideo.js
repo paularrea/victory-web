@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from "../../styles/about.module.scss";
 import videoFr from "../../video/presentationFR.mp4"
 import videoDe from "../../video/presentationDE.mp4"
-import videoEn from "../../video/presentationDE.mp4"
+import videoEn from "../../video/presentationEN.mp4"
 
 const LanguageVideo = () => {
   const [french, setFrench] = useState(false);
