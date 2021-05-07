@@ -111,6 +111,9 @@
         "text3": "",
         "button": ""
     },
+    "clients": {
+        "title": "OUR CLIENTS" 
+    },
     "footer": {
         "text": "Victory Switzerland Sàrl, founded in 2012, is an importer/wholesaler. We make purchases across the whole world for our customers. With such diversity, our product range is constantly expanding; we import over 1000 different items each year.",
         "title": "Do you have any questions?",

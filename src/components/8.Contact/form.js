@@ -95,7 +95,6 @@ const Form = ({ intl }) => {
       <input
         type="text"
         style={{ visibility: "hidden" }}
-        value=""
         name="_empty_field"
       />
       <br />

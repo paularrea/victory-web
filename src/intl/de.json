@@ -113,6 +113,9 @@
         "button": ""
         
     },
+    "clients": {
+        "title": "UNSERE KUNDEN" 
+    },
     "footer": {
         "text": "Die Victory Switzerland GmbH ist seit der Gründung im Jahr 2012 im Import / Großhandel tätig und kauft weltweit für ihre Kunden ein. Aufgrund der Vielfalt unserer Kunden wird unser Sortiment ständig erweitert; wir importieren jährlich über 1000 neue Artikel.",
         "title": "Haben Sie Fragen?",

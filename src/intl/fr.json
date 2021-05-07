@@ -111,6 +111,9 @@
         "text3" : "",
         "button" : ""
     },
+    "clients": {
+        "title": "NOS CLIENTS" 
+    },
     "footer": {
         "text": "Victory Switzerland Sàrl fondée en 2012, est un importateur/grossiste. Nous effectuons des achats dans le monde entier pour nos clients. En raison de la diversité de ceux-ci, notre gamme de produits est constamment élargie ; nous importons plus de 1000 articles différents chaque année.",
         "title" : "Avez-vous des questions?",

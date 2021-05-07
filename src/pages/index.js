@@ -14,6 +14,7 @@ import Logistik from "../components/6.logistik/logistik";
 import Fulhen from "../components/7.fuhlen/fuhlen";
 import ContactForm from "../components/8.Contact/contact";
 import Animation from "../components/Animation";
+import ClientsComponent from "../components/Clients/clientsComponent";
 // import Blog from "../components/9.Blog/blog";
 
 const IndexPage = ({ intl }) => {
@@ -54,6 +55,9 @@ const IndexPage = ({ intl }) => {
         </div>
         <div>
           <ContactForm />
+        </div>
+        <div>
+          <ClientsComponent/>
         </div>
         {/* <div>
         <Blog />
