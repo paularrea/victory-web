@@ -17,7 +17,7 @@ const ContactForm = () => {
           </h5>
         </div>
         <Form />
-        <hr className={styles.hr} />
+        {/* <hr className={styles.hr} /> */}
       </div>
       </div>
     </>
