@@ -56,7 +56,7 @@ const ClientsComponent = () => {
             <img src={coop} alt="greenpeace Logo" />
           </div>
           <div>
-            <img src={denner} alt="greenpeace Logo" />
+            <img src={denner} alt="greenpeace Logo"  />
           </div>
         </div>
 
