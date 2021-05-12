@@ -4,10 +4,24 @@
 .control-dots{
     display: none;
 }
-.control-arrow{
-    display: none;
-}
-
 .thumbs-wrapper{
     display: none;
+}
+.control-arrow:hover{
+background-color:transparent !important ;
+box-shadow: none !important;
+}
+.control-next:before{
+   content:url("../images/pngs/next.png") !important;
+   border-left: 0 !important;
+    }
+.control-prev:before{
+    content:url("../images/pngs/prev.png") !important;
+    border-right: 0 !important;
+        }
+     
+@media (max-width: 800px) {
+.control-arrow{
+    display: none !important;
+}
 }

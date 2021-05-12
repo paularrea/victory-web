@@ -44,7 +44,7 @@ const ClientsComponent = () => {
       <h2>
         <FormattedMessage id="clients.title" />
       </h2>
-      <Carousel autoPlay interval={3000} stopOnHover infiniteLoop>
+      <Carousel autoPlay interval={4000} stopOnHover infiniteLoop transitionTime={2000}>
         <div className={styles.flex_container}>
           <div>
             <img src={britishAmericanTobacco} alt="patagonia Logo" />
